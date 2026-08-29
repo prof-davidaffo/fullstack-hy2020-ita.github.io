@@ -1,4 +1,4 @@
-@import '../components/common.scss';
+@use '../components/common.scss' as *;
 
 .part-intro {
   font-family: $font-heading !important;

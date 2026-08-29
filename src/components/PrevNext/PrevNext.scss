@@ -1,4 +1,4 @@
-@import '../common.scss';
+@use '../common.scss' as *;
 
 .prev-next__container {
   a:hover {

@@ -8,20 +8,14 @@ import React from 'react';
 import navigation from '../../content/partnavigation/partnavigation';
 import snakeCase from 'lodash/fp/snakeCase';
 import { useTranslation } from 'react-i18next';
+import { isContentVisible } from '../../courseConfig';
 
-const prevChar = (c) => String.fromCharCode(c.charCodeAt(0) - 1);
-const nextChar = (c) => String.fromCharCode(c.charCodeAt(0) + 1);
-// TODO change on release
 const hasPart = (part, lang) =>
   Object.keys(navigation[lang]).includes(part.toString());
-const nextLetterExists = (letter, part, lang) =>
-  nextChar(letter) in navigation[lang][part];
-const hasNext = (letter, part, lang) => {
-  return (
-    (!letter && hasPart(part + 1, lang)) ||
-    (letter && nextLetterExists(letter, part, lang))
+const visibleLetters = (part, lang) =>
+  Object.keys(navigation[lang][part] || {}).filter((letter) =>
+    isContentVisible(part, letter)
   );
-};
 
 const labelOsaPart = (lang) => (lang === 'fi' ? 'Osa' : 'Part');
 
@@ -29,6 +23,16 @@ const langUrl = (lang) => (lang === 'fi' ? '/osa' : `/${lang}/part`);
 
 const PrevNext = ({ part, letter, lang }) => {
   const { t } = useTranslation();
+  const letters = visibleLetters(part, lang);
+  const letterIndex = letter ? letters.indexOf(letter) : -1;
+  const hasNextDestination = letter
+    ? letterIndex < letters.length - 1 || hasPart(part + 1, lang)
+    : hasPart(part + 1, lang);
+
+  const contentPath = (targetLetter) =>
+    `${langUrl(lang)}${part}/${snakeCase(
+      navigation[lang][part][targetLetter]
+    )}`;
 
   const getPrev = () => {
     if (!letter && hasPart(part - 1, lang)) {
@@ -47,31 +51,30 @@ const PrevNext = ({ part, letter, lang }) => {
             </Element>
           </Link>
 
-          {hasNext(letter, part, lang) && (
+          {hasNextDestination && (
             <div className="col-1--mobile separator" />
           )}
         </>
       );
     } else if (letter) {
-      if (letter !== 'a') {
+      if (letterIndex > 0) {
+        const previousLetter = letters[letterIndex - 1];
         return (
           <>
             <Link
-              to={`${langUrl(lang)}${part}/${snakeCase(
-                navigation[lang][part][prevChar(letter)]
-              )}`}
+              to={contentPath(previousLetter)}
               className="col-4--mobile push-right-1 prev"
             >
               <Element flex dirColumn>
                 <p>
-                  {labelOsaPart(lang)} {`${part}${prevChar(letter)}`}
+                  {labelOsaPart(lang)} {`${part}${previousLetter}`}
                 </p>
 
                 <b>{t('previousPart')}</b>
               </Element>
             </Link>
 
-            {hasNext(letter, part, lang) && (
+            {hasNextDestination && (
               <div className="col-1--mobile separator" />
             )}
           </>
@@ -92,7 +95,7 @@ const PrevNext = ({ part, letter, lang }) => {
               </Element>
             </Link>
 
-            {hasNext(letter, part, lang) && (
+            {hasNextDestination && (
               <div className="col-1--mobile separator" />
             )}
           </>
@@ -125,17 +128,16 @@ const PrevNext = ({ part, letter, lang }) => {
         </Link>
       );
     } else if (letter) {
-      if (nextLetterExists(letter, part, lang)) {
+      if (letterIndex < letters.length - 1) {
+        const nextLetter = letters[letterIndex + 1];
         return (
           <Link
-            to={`${langUrl(lang)}${part}/${snakeCase(
-              navigation[lang][part][nextChar(letter)]
-            )}`}
+            to={contentPath(nextLetter)}
             className="col-4--mobile push-left-1 next"
           >
             <Element flex dirColumn>
               <p>
-                {labelOsaPart(lang)} {`${part}${nextChar(letter)}`}
+                {labelOsaPart(lang)} {`${part}${nextLetter}`}
               </p>
 
               <b>{t('nextPart')}</b>

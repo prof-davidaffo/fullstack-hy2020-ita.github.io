@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
-import { navigate } from '@reach/router';
+import { navigate } from 'gatsby';
 
 import './Navigation.scss';
 
@@ -9,29 +9,31 @@ import LanguagePicker from '../LanguagePicker';
 import { NavigationItem } from './Item';
 import SearchLink from './SearchLink';
 import ThemeSwitcher from './ThemeSwitcher';
+import { getSectionCopy } from '../../courseConfig';
 
 const getTranslationPath = (path, language) => {
   return language === 'fi' ? path : `/${language}${path}`;
 };
 
 export const getNavigation = (language, t) => {
+  const sections = getSectionCopy(language);
+
   return [
     {
-      text: t('navigation:aboutCourse'),
-      path: getTranslationPath('/about', language),
-    },
-    {
-      text: t('navigation:courseContents'),
+      text: t('homePage:startCourseButton'),
       path: getTranslationPath('/#course-contents', language),
     },
-    { text: t('navigation:faq'), path: getTranslationPath('/faq', language) },
     {
-      text: t('navigation:partners'),
-      path: getTranslationPath('/companies', language),
+      text: sections.core.title,
+      path: getTranslationPath('/#course-core', language),
     },
     {
-      text: t('navigation:challenge'),
-      path: getTranslationPath('/challenge', language),
+      text: sections.advanced.title,
+      path: getTranslationPath('/#course-advanced', language),
+    },
+    {
+      text: sections.specializations.title,
+      path: getTranslationPath('/#course-specializations', language),
     },
   ];
 };

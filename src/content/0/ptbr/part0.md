@@ -6,6 +6,6 @@ lang: ptbr
 
 <div class="intro">
 
-Nesta parte, nos familiarizaremos com os requisitos necessários para fazer o curso. Após essa etapa, será introduzida uma visão geral dos fundamentos de desenvolvimento web como também falaremos sobre os avanços no desenvolvimento de aplicações web nas últimas décadas.
+Nesta parte, construiremos a base necessária para o curso obrigatório. Veremos como navegador e servidor se comunicam, como aplicações web tradicionais diferem de aplicações de página única e como o JavaScript muda o que acontece no navegador.
 
 </div>

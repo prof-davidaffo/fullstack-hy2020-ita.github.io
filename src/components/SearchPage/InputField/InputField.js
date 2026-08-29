@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './InputField.module.css';
+import * as styles from './InputField.module.css';
 import cn from 'classnames';
 
 const InputField = ({ className: classNameProp, ...props }) => {

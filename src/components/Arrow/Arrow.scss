@@ -1,9 +1,9 @@
-@import '../common.scss';
+@use '../common.scss' as *;
 
 .arrow__container {
   position: relative;
 
-  &:not():first-child {
+  &:not(:first-child) {
     background: none;
     background-color: none;
 

@@ -1,4 +1,4 @@
-@import '../common.scss';
+@use '../common.scss' as *;
 
 .select {
   padding: 3px 6px;

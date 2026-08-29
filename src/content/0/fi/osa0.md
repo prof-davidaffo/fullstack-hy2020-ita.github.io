@@ -6,8 +6,6 @@ lang: fi
 
 <div class="intro">
 
-Tässä osassa tutustumme ensin kurssin käytänteisiin ja suorittamistapaan. Sen jälkeen käymme katsauksen websovelluskehityksen perusteisiin ja siihen, mihin suuntaan websovelluskehitys on edennyt viimeisen parin kymmenen vuoden aikana.
-
-<i>Osa päivitetty 25.4.2026</i>
+Tässä osassa rakennamme peruskurssin vaatiman pohjan. Tutustumme selaimen ja palvelimen väliseen viestintään, perinteisten websovellusten ja single page -sovellusten eroihin sekä siihen, miten JavaScript muuttaa selaimessa tapahtuvaa toimintaa.
 
 </div>

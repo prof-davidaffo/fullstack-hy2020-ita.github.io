@@ -4,21 +4,20 @@ import Arrow from '../components/Arrow/Arrow';
 import { Banner } from '../components/Banner/Banner';
 import Element from '../components/Element/Element';
 import Layout from '../components/layout';
-import Parser from 'html-react-parser';
+import Parser, { domToReact } from 'html-react-parser';
 import PrevNext from '../components/PrevNext/PrevNext';
 import React from 'react';
 import SEO from '../components/seo';
 import colors from '../colors';
-import domToReact from 'html-react-parser/lib/dom-to-react';
 import { graphql } from 'gatsby';
 import isEmpty from 'lodash/fp/isEmpty';
 import mainSEOdescription from '../content/seo/mainSEOdescription';
 import mainSEOtags from '../content/seo/mainSEOtags';
 import navigation from '../content/partnavigation/partnavigation';
 import { partColors } from './partColors';
-import path from 'path';
 import snakeCase from 'lodash/fp/snakeCase';
 import getPartTranslationPath from '../utils/getPartTranslationPath';
+import { COURSE_NAME, isContentVisible } from '../courseConfig';
 
 export default function PartIntroTemplate({ data }) {
   const { markdownRemark } = data;
@@ -26,7 +25,9 @@ export default function PartIntroTemplate({ data }) {
   const { mainImage, part, lang } = frontmatter;
 
   const titles = !isEmpty(navigation[lang][part])
-    ? Object.keys(navigation[lang][part])
+    ? Object.keys(navigation[lang][part]).filter((letter) =>
+        isContentVisible(part, letter)
+      )
     : [];
 
   const parserOptions = {
@@ -44,7 +45,7 @@ export default function PartIntroTemplate({ data }) {
     <Layout>
       <SEO
         lang={lang}
-        title={`Fullstack ${lang === 'fi' ? 'osa' : 'part'}${part}`}
+        title={`${COURSE_NAME} · ${lang === 'fi' ? 'osa' : 'part'} ${part}`}
         description={mainSEOdescription[lang]}
         keywords={[
           ...mainSEOtags,
@@ -56,7 +57,7 @@ export default function PartIntroTemplate({ data }) {
         <Banner
           className="part-intro__banner spacing--mobile--small"
           style={{
-            backgroundImage: `url(${path.resolve(mainImage.publicURL)})`,
+            backgroundImage: `url(${mainImage.publicURL})`,
             backgroundColor: colors[partColors[part]],
           }}
         >
@@ -66,7 +67,7 @@ export default function PartIntroTemplate({ data }) {
               content={[
                 {
                   backgroundColor: colors[partColors[part]],
-                  text: 'Fullstack',
+                  text: COURSE_NAME,
                   link: `/${lang === 'fi' ? '' : `${lang}/`}#course-contents`,
                 },
                 {

@@ -1,0 +1,41 @@
+@use '../common.scss' as *;
+
+.course-sections {
+  display: block;
+}
+
+.course-section {
+  scroll-margin-top: 8rem;
+
+  & + & {
+    margin-top: $vertical-spacing * 5;
+    padding-top: $vertical-spacing * 4;
+    border-top: 1px solid rgba(127, 127, 127, 0.35);
+  }
+}
+
+.course-section__header {
+  margin-bottom: $vertical-spacing * 3;
+
+  h2 {
+    margin: 0 0 $vertical-spacing;
+    font-size: 2rem;
+  }
+
+  p {
+    max-width: 46rem;
+  }
+}
+
+.course-section__eyebrow {
+  margin-bottom: $vertical-spacing;
+  color: var(--color-link-decoration);
+  font-family: $font-heading;
+  font-weight: 600;
+}
+
+.course-section__parts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

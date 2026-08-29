@@ -1,4 +1,4 @@
-@import '../common.scss';
+@use '../common.scss' as *;
 
 .company__logo {
   padding: 10px;

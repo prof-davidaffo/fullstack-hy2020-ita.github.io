@@ -4,7 +4,7 @@ import cn from 'classnames';
 
 import SrOnly from '../SrOnly';
 import { TRANSLATION_LANGUAGE_OPTIONS } from '../../config';
-import styles from './LanguagePicker.module.scss';
+import * as styles from './LanguagePicker.module.scss';
 
 const LanguagePicker = ({
   value = 'fi',

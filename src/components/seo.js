@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import defaultImage from '../images/seo_image.jpg';
 import englishVersionSeoImage from '../images/EYE_green_wide.jpg';
-import path from 'path';
 
 function SEO({ description, lang, meta, keywords, title }) {
   const seoImage = lang === 'fi' ? defaultImage : englishVersionSeoImage;
@@ -38,7 +37,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 name: 'og:image',
-                content: path.resolve(seoImage),
+                content: seoImage,
               },
               {
                 property: 'og:type',
@@ -62,11 +61,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 name: 'twitter:image',
-                content: path.resolve(seoImage),
-              },
-              {
-                name: 'google-site-verification',
-                content: 'ds9pQKiK3kjhRSHHbf5ccoG-oJggn7Lq4A8uHxM3Mkw',
+                content: seoImage,
               },
             ]
               .concat(

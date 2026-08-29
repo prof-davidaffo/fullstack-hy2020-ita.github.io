@@ -1,4 +1,16 @@
 const IS_DEV = process.env.NODE_ENV === 'development';
+const navigation = require('./src/content/partnavigation/partnavigation');
+const { COURSE_NAME, isContentVisible } = require('./src/courseConfig');
+
+const ignoredContent = [
+  `${__dirname}/src/content/pages/*`,
+  `${__dirname}/src/content/**/it/**`,
+];
+
+const isSearchableContent = ({ part, letter, lang }) => {
+  if (letter && !navigation[lang]?.[part]?.[letter]) return false;
+  return !letter || isContentVisible(part, letter);
+};
 
 const createSearchConfig = (indexName, language) => {
   return {
@@ -28,13 +40,15 @@ const createSearchConfig = (indexName, language) => {
       normalizer: ({ data }) => {
         return IS_DEV
           ? []
-          : data.allMarkdownRemark.nodes.map((node) => ({
-              id: node.id,
-              part: node.frontmatter.part,
-              letter: node.frontmatter.letter,
-              lang: node.frontmatter.lang,
-              body: node.rawMarkdownBody,
-            }));
+          : data.allMarkdownRemark.nodes
+              .filter((node) => isSearchableContent(node.frontmatter))
+              .map((node) => ({
+                id: node.id,
+                part: node.frontmatter.part,
+                letter: node.frontmatter.letter,
+                lang: node.frontmatter.lang,
+                body: node.rawMarkdownBody,
+              }));
       },
     },
   };
@@ -46,18 +60,6 @@ const plugins = [
   createSearchConfig('spanish', 'es'),
   createSearchConfig('chinese', 'zh'),
   createSearchConfig('portuguese', 'ptbr'),
-  {
-    resolve: `gatsby-plugin-sitemap`,
-  },
-  {
-    resolve: 'gatsby-plugin-i18n',
-    options: {
-      langKeyDefault: 'fi',
-      langKeyForNull: 'fi',
-      prefixDefault: false,
-      useLangKeyLayout: false,
-    },
-  },
   'gatsby-plugin-react-helmet',
   {
     resolve: `gatsby-source-filesystem`,
@@ -71,8 +73,8 @@ const plugins = [
   {
     resolve: `gatsby-plugin-manifest`,
     options: {
-      name: 'gatsby-starter-default',
-      short_name: 'starter',
+      name: COURSE_NAME,
+      short_name: COURSE_NAME,
       start_url: '/',
       background_color: '#e1e1e1',
       theme_color: '#e1e1e1',
@@ -80,31 +82,27 @@ const plugins = [
       icon: 'src/images/favicon.png',
     },
   },
-  'gatsby-plugin-remove-serviceworker',
   'gatsby-plugin-sass',
-  `gatsby-transformer-json`,
-  {
-    resolve: `gatsby-source-filesystem`,
-    options: {
-      name: `src`,
-      path: `${__dirname}/src/content/`,
-      ignore: [`${__dirname}/src/content/pages/*`],
-    },
-  },
   {
     resolve: `gatsby-source-filesystem`,
     options: {
       path: `${__dirname}/src/content`,
       name: 'markdown-pages',
-      ignore: [`${__dirname}/src/content/pages/*`],
+      ignore: ignoredContent,
     },
   },
   {
     resolve: 'gatsby-transformer-remark',
     options: {
       plugins: [
-        'gatsby-remark-unwrap-images',
-        'gatsby-remark-picture',
+        {
+          resolve: 'gatsby-remark-images',
+          options: {
+            maxWidth: 1200,
+            linkImagesToOriginal: false,
+            showCaptions: false,
+          },
+        },
         {
           resolve: `gatsby-remark-prismjs`,
           options: {
@@ -118,30 +116,14 @@ const plugins = [
       ],
     },
   },
-  {
-    resolve: `gatsby-plugin-google-analytics`,
-    options: {
-      trackingId: 'UA-135975842-1',
-      head: false,
-      respectDNT: true,
-      exclude: [],
-      cookieDomain: 'fullstackopen.com',
-    },
-  },
-  {
-    resolve: `gatsby-plugin-canonical-urls`,
-    options: {
-      siteUrl: `https://fullstackopen.com`,
-    },
-  },
 ];
 
 module.exports = {
+  trailingSlash: 'never',
   siteMetadata: {
-    title: 'Full Stack open 2020',
-    description: '',
-    author: 'Houston Inc. Consulting oy',
-    siteUrl: 'https://fullstack-hy2020.github.io/',
+    title: COURSE_NAME,
+    description: 'A structured path through modern full stack JavaScript development.',
+    author: 'Full Stack JavaScript contributors',
   },
   plugins,
 };

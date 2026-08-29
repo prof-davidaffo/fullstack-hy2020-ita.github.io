@@ -5,24 +5,22 @@ import React, { Component } from 'react';
 import Arrow from '../components/Arrow/Arrow';
 import ArrowToTop from '../images/up-arrow.svg';
 import { Banner } from '../components/Banner/Banner';
-import EditLink from '../components/EditLink/EditLink';
 import Element from '../components/Element/Element';
 import Layout from '../components/layout';
-import Parser from 'html-react-parser';
+import Parser, { domToReact } from 'html-react-parser';
 import PrevNext from '../components/PrevNext/PrevNext';
 import SEO from '../components/seo';
 import ScrollNavigation from '../components/ScrollNavigation/ScrollNavigation';
 import { SubHeader } from '../components/SubHeader/SubHeader';
 import colors from '../colors';
-import domToReact from 'html-react-parser/lib/dom-to-react';
 import { graphql } from 'gatsby';
 import mainSEOdescription from '../content/seo/mainSEOdescription';
 import mainSEOtags from '../content/seo/mainSEOtags';
 import navigation from '../content/partnavigation/partnavigation';
 import { partColors } from './partColors';
-import path from 'path';
 import snakeCase from 'lodash/fp/snakeCase';
 import getPartTranslationPath from '../utils/getPartTranslationPath';
+import { COURSE_NAME } from '../courseConfig';
 import { createCopyButton } from './copy-code-button/create-copy-buttons';
 
 export default class ContentTemplate extends Component {
@@ -156,7 +154,7 @@ export default class ContentTemplate extends Component {
       <Layout isCoursePage={true}>
         <SEO
           lang={lang}
-          title={`Fullstack ${lang === 'fi' ? 'osa' : 'part'}${part} | ${
+          title={`${COURSE_NAME} · ${lang === 'fi' ? 'osa' : 'part'} ${part} | ${
             this.state.h1Title
           }`}
           description={mainSEOdescription[lang]}
@@ -189,7 +187,7 @@ export default class ContentTemplate extends Component {
             className="part-main__banner spacing--mobile--small"
             backgroundColor={colorCode}
             style={{
-              backgroundImage: `url(${path.resolve(mainImage.publicURL)})`,
+              backgroundImage: `url(${mainImage.publicURL})`,
               backgroundColor: colorCode,
             }}
           >
@@ -199,7 +197,7 @@ export default class ContentTemplate extends Component {
                 content={[
                   {
                     backgroundColor: colorCode,
-                    text: 'Fullstack',
+                    text: COURSE_NAME,
                     link: `/${lang === 'fi' ? '' : `${lang}/`}#course-contents`,
                   },
                   {
@@ -250,8 +248,6 @@ export default class ContentTemplate extends Component {
               {Parser(html, parserOptions)}
             </Element>
           </Element>
-
-          <EditLink part={part} letter={letter} lang={lang} />
 
           <PrevNext part={part} letter={letter} lang={lang} />
         </div>

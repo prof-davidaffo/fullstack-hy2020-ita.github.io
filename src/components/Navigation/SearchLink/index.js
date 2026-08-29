@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 import SearchIcon from '../../SearchIcon';
 import SrOnly from '../../SrOnly';
-import styles from './SearchLink.module.scss';
+import * as styles from './SearchLink.module.scss';
 
 const getLinkTo = (lang) => {
   return lang === 'fi' ? '/search' : `/${lang}/search`;

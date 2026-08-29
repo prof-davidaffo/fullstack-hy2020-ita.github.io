@@ -1,4 +1,4 @@
-@import '../common.scss';
+@use '../common.scss' as *;
 
 .body-text:not(:last-of-type) {
   margin-bottom: 2.5 * $vertical-spacing;

@@ -1,110 +1,15 @@
+import './PartBanner.scss';
+
 import translationProgress from '../../utils/translationProgress';
 import { Banner } from '../Banner/Banner';
 import { ContentLiftup } from '../ContentLiftup/ContentLiftup';
 import React from 'react';
-import navigation from '../../content/partnavigation/partnavigation';
 import getPartTranslationPath from '../../utils/getPartTranslationPath';
-
-const partNameTranslations = {
-  fi: [
-    'Web-sovellusten toiminnan perusteet',
-    'Reactin perusteet',
-    'Palvelimen kanssa tapahtuva kommunikointi',
-    'Palvelimen ohjelmointi NodeJS:n Express-kirjastolla',
-    'Express-sovellusten testaaminen, käyttäjänhallinta',
-    'React-sovelluksen testaaminen, React Router',
-    'Edistynyt tilan hallinta',
-    'custom-hookit, esbuild',
-    'GraphQL',
-    'TypeScript',
-    'React Native',
-    'CI/CD',
-    'Konttiteknologia',
-    'Relaatiotietokannan käyttö',
-    'Next.JS'
-  ],
-  en: [
-    'Fundamentals of Web apps',
-    'Introduction to React',
-    'Communicating with server',
-    'Programming a server with NodeJS and Express',
-    'Testing Express servers, user administration',
-    'Testing React apps, React Router',
-    'Advanced state management',
-    'Custom hooks, esbuild',
-    'GraphQL',
-    'TypeScript',
-    'React Native',
-    'CI/CD',
-    'Containers',
-    'Using relational databases',
-    'Next.JS'
-  ],
-  es: [
-    'Fundamentos de las aplicaciones web',
-    'Introducción a React',
-    'Comunicándose con el servidor',
-    'Programando un servidor con NodeJS y Express',
-    'Probando servidores Express, administración de usuarios',
-    'Probando aplicaciones React',
-    'Gestión avanzada del estado',
-    'React router, custom hooks, estilando la aplicación con CSS y webpack',
-    'GraphQL',
-    'TypeScript',
-    'React Native',
-    'CI/CD (Disponible en inglés)',
-    'Contenedores',
-    'Utilizando bases de datos relacionales',
-  ],
-  zh: [
-    'Web 应用的基础设施',
-    'React 入门',
-    '与服务端通信',
-    '用NodeJS和Express写服务端程序',
-    '测试 Express 服务端程序, 以及用户管理',
-    '测试 React 应用',
-    '利用Redux进行状态管理',
-    'React router、自定义 hook，利用CSS和webpack给app添加样式',
-    'GraphQL',
-    'TypeScript',
-    'React Native',
-    'CI/CD',
-    '容器',
-    '使用关系型数据库',
-  ],
-  fr: [
-    'Introduction aux applications Web',
-    'Premiers pas avec React',
-    'Communiquer avec le serveur',
-    'Programmation côté serveur avec NodeJS et Express',
-    'Test des serveurs Express, gestion des utilisateurs',
-    'Tester des applications React',
-    "Gestion d'état avec Redux",
-    'React router, hooks personnalisés, application de style avec CSS et webpack',
-    'GraphQL',
-    'TypeScript',
-    'React Native',
-    'CI/CD',
-    'Conteneurs',
-    'Utilisation de bases de donées relationnelles',
-  ],
-  ptbr: [
-    'Fundamentos de aplicações web',
-    'Introdução ao React',
-    'Comunicação com o servidor',
-    'Programando um servidor com NodeJS e Express',
-    'Teste de servidores Express e Administração de Usuários',
-    'Teste de aplicações React',
-    'Gerenciamento de Estado com Redux',
-    'React router, hooks personalizados, estilização de aplicações com CSS e Webpack',
-    'GraphQL',
-    'TypeScript',
-    'React Native',
-    'CI/CD',
-    'Containers',
-    'Utilizando bancos de dados relacionais',
-  ],
-};
+import {
+  curriculum,
+  getPartNames,
+  getSectionCopy,
+} from '../../courseConfig';
 
 const partName = {
   en: 'Part',
@@ -116,40 +21,56 @@ const partName = {
 };
 
 export const PartBanner = ({ lang }) => {
-  // TODO change on release
-  const parts = Object.keys(navigation[lang]);
+  const partNames = getPartNames(lang);
+  const sections = getSectionCopy(lang);
 
   return (
     <Banner
       className="spacing spacing--after-small spacing--after-mobile offset"
       id="course-contents"
     >
-      <div className="container spacing flex-fix-aligning col-7--mobile">
-        {parts.map((part) => {
-          const partNames =
-            partNameTranslations[lang] || partNameTranslations.en;
+      <div className="container course-sections spacing col-7--mobile">
+        {curriculum.map(({ id, parts }) => (
+          <section
+            className="course-section col-10"
+            id={`course-${id}`}
+            key={id}
+          >
+            <header className="course-section__header col-8 col-10--mobile">
+              <p className="course-section__eyebrow">
+                {id === 'core' ? '01' : id === 'advanced' ? '02' : '03'}
+              </p>
+              <h2>{sections[id].title}</h2>
+              <p>{sections[id].description}</p>
+            </header>
 
-          const summary =
-            translationProgress[lang] < part
-              ? partNames[part] + ' (english only)'
-              : partNames[part];
-          return (
-            <ContentLiftup
-              key={partNames[part]}
-              className="col-3 col-10--mobile col-4--tablet"
-              image={{
-                src: require(`../../images/thumbnails/part-${part}.svg`),
-                alt: partNames[part],
-              }}
-              hoverImageSrc={require(
-                `../../images/thumbnails/part-${part}_ovr.svg`
-              )}
-              name={`${partName[lang]} ${part}`}
-              summary={summary}
-              path={getPartTranslationPath(lang, part)}
-            />
-          );
-        })}
+            <div className="course-section__parts flex-fix-aligning">
+              {parts.map((part) => {
+                const englishOnly = translationProgress[lang] < part;
+                const summary = englishOnly
+                  ? `${partNames[part]} · English only`
+                  : partNames[part];
+
+                return (
+                  <ContentLiftup
+                    key={part}
+                    className="col-3 col-10--mobile col-4--tablet"
+                    image={{
+                      src: require(`../../images/thumbnails/part-${part}.svg`),
+                      alt: partNames[part],
+                    }}
+                    hoverImageSrc={require(
+                      `../../images/thumbnails/part-${part}_ovr.svg`
+                    )}
+                    name={`${partName[lang] || partName.en} ${part}`}
+                    summary={summary}
+                    path={getPartTranslationPath(lang, part)}
+                  />
+                );
+              })}
+            </div>
+          </section>
+        ))}
       </div>
     </Banner>
   );

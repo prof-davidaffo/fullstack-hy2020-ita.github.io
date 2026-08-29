@@ -2,6 +2,41 @@ const path = require('path');
 const snakeCase = require('lodash/fp/snakeCase');
 const isEmpty = require('lodash/fp/isEmpty');
 const navigation = require('./src/content/partnavigation/partnavigation');
+const { isContentVisible } = require('./src/courseConfig');
+
+const legacyPagePattern = /\/(about|faq|companies|challenge)(\.[a-z]+)?\/?$/;
+const translatedPagePattern = /^\/(.+)\.(en|es|fr|ptbr|zh)\/?$/;
+
+exports.onCreatePage = ({ page, actions }) => {
+  if (legacyPagePattern.test(page.path)) {
+    actions.deletePage(page);
+    return;
+  }
+
+  const translatedPage = page.path.match(translatedPagePattern);
+
+  if (translatedPage) {
+    const [, pageName, lang] = translatedPage;
+    const localizedPath =
+      pageName === 'index' ? `/${lang}` : `/${lang}/${pageName}`;
+
+    actions.deletePage(page);
+    actions.createPage({
+      ...page,
+      path: localizedPath,
+      context: { ...page.context, langKey: lang },
+    });
+    return;
+  }
+
+  if (!page.context.langKey && !page.context.lang) {
+    actions.deletePage(page);
+    actions.createPage({
+      ...page,
+      context: { ...page.context, langKey: 'fi' },
+    });
+  }
+};
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
@@ -53,7 +88,8 @@ exports.createPages = ({ actions, graphql }) => {
         legitPart &&
         navigation[lang] &&
         !isEmpty(navigation[lang][part]) &&
-        frontmatter.letter
+        frontmatter.letter &&
+        isContentVisible(part, frontmatter.letter)
       ) {
         createPage({
           path:

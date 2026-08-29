@@ -1,4 +1,4 @@
-@import '../../common.scss';
+@use '../../common.scss' as *;
 
 .themeSwitcher {
   border-radius: 4px;

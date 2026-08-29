@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import ThemeSwitcherIcon from '../../ThemeSwitcherIcon';
 import SrOnly from '../../SrOnly';
-import styles from './ThemeSwitcher.module.scss';
+import * as styles from './ThemeSwitcher.module.scss';
 
 const getInitialTheme = () => {
   if (typeof document === 'undefined') {

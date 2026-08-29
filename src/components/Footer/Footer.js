@@ -5,23 +5,8 @@ import { useTranslation } from 'react-i18next';
 import './Footer.scss';
 
 import Element from '../Element/Element';
-import { Image } from '../Image/Image';
-import houston from '../../images/company_logos/houston.svg';
 import { getNavigation } from '../Navigation/Navigation';
-import yliopisto from '../../images/company_logos/uoh_centre.svg';
-
-const images = [
-  {
-    src: yliopisto,
-    alt: 'Helsingin yliopiston logo',
-    href: 'https://www.helsinki.fi/',
-  },
-  {
-    src: houston,
-    alt: 'Houston inc. logo',
-    href: 'https://www.houston-inc.com/',
-  },
-];
+import { COURSE_NAME } from '../../courseConfig';
 
 const Footer = () => {
   const { t, i18n } = useTranslation();
@@ -34,31 +19,11 @@ const Footer = () => {
       className="container spacing--after-small spacing--mobile"
       flex
     >
-      <Element
-        className="col-5 push-right-3 col-10--mobile order-2--mobile order-2--tablet footer__links"
-        flex
-        spaceBetween
-      >
-        {images.map((image) => (
-          <a
-            key={image.alt}
-            href={image.href}
-            className="col-5 col-4--mobile spacing--mobile"
-          >
-            <Image
-              contain
-              darkThemeInvert
-              src={image.src}
-              alt={image.alt}
-              className="col-6"
-            />
-          </a>
-        ))}
-      </Element>
+      <p className="col-3 col-10--mobile">{COURSE_NAME}</p>
 
       <Element
         flex
-        className="col-5 col-5--mobile order-1--mobile order-1--tablet footer__navigation"
+        className="col-7 col-10--mobile footer__navigation"
       >
         <div className="footer__navigation-link-container">
           {navigation.map((item) => (

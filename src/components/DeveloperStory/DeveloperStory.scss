@@ -1,4 +1,4 @@
-@import '../common.scss';
+@use '../common.scss' as *;
 
 .developer-story__image {
   margin-bottom: auto;

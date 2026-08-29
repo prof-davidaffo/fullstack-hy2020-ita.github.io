@@ -5,10 +5,7 @@ import React, { Component } from 'react';
 import { BodyText } from '../BodyText/BodyText';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
-import ReactGA from 'react-ga';
 import snakeCase from 'lodash/fp/snakeCase';
-
-ReactGA.initialize('UA-135975842-1');
 
 class Accordion extends Component {
   constructor(props) {
@@ -25,15 +22,8 @@ class Accordion extends Component {
 
   handleClick() {
     const { isOpened } = this.state;
-    const { title, track } = this.props;
 
-    this.setState({ isOpened: !isOpened }, () => {
-      track &&
-        ReactGA.event({
-          category: 'FAQ',
-          action: `${title} ${!isOpened ? 'expanded' : 'closed'}`,
-        });
-    });
+    this.setState({ isOpened: !isOpened });
   }
 
   render() {

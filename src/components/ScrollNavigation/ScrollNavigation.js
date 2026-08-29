@@ -10,6 +10,7 @@ import kebabCase from 'lodash/fp/kebabCase';
 import navigation from '../../content/partnavigation/partnavigation';
 import snakeCase from 'lodash/fp/snakeCase';
 import getPartTranslationPath from '../../utils/getPartTranslationPath';
+import { isContentVisible } from '../../courseConfig';
 
 class ScrollNavigation extends Component {
   constructor(props) {
@@ -74,6 +75,8 @@ class ScrollNavigation extends Component {
     let arr = [];
 
     for (let key in partsNode) {
+      if (!isContentVisible(part, key)) continue;
+
       if (currentPartTitle !== partsNode[key]) {
         arr.push(
           <Link
