@@ -133,8 +133,8 @@ lang: zh
 <!-- You most likely need to do some restructuring to get all the pieces together. A logical first step is to store both the frontend and backend code in the same repository. This is not a requirement but it is recommended since it makes things much more simple.-->
 你很可能需要做一些结构调整，以使所有的部分都在一起。合理的第一步是将前端和后端代码存储在同一个仓库里。这不是一个要求，但建议这样做，因为它使事情更简单。
 
-<!-- One possible repository structure would be to have the backend at the root of the repository and the frontend as a subdirectory. You can also "copy paste" the structure of the example app of this part or try out the [example app](https://github.com/fullstack-hy2020/create-app) mentioned in [part 7](/en/part7/class_components_miscellaneous#frontend-and-backend-in-the-same-repository).-->
- 一种可能的版本库结构是将后端放在版本库的根目录下，前端作为一个子目录。你也可以 "复制粘贴 "本章节的示例程序的结构，或者试试[第7章节](/en/part7/class_components_miscellaneous#frontend-and-backend-in-the-same-repository)中提到的[示例程序](https://github.com/fullstack-hy2020/create-app)。
+<!-- One possible repository structure would be to have the backend at the root of the repository and the frontend as a subdirectory. You can also "copy paste" the structure of the example app of this part or try out the [example app](https://github.com/fullstack-hy2020/create-app) mentioned in [part 7](/en/part7/miscellaneous#frontend-and-backend-in-the-same-repository).-->
+一种可能的版本库结构是将后端放在版本库的根目录下，前端作为一个子目录。你也可以 "复制粘贴 "本章节的示例程序的结构，或者试试[第7章节](/en/part7/miscellaneous#frontend-and-backend-in-the-same-repository)中提到的[示例程序](https://github.com/fullstack-hy2020/create-app)。
 
 <!-- It is perhaps best to create a new repository for this exercise and simply copy and paste the old code there. In real life, you most likely would do this all in the old repository but now "a fresh start" makes things easier.-->
  也许最好为这个练习创建一个新的仓库，并简单地复制和粘贴旧代码。在现实生活中，你很可能会在旧版本库中完成这些工作，但现在 "重新开始 "使事情变得更容易。
@@ -173,11 +173,11 @@ lang: zh
 
 ![Submissions](../../images/11/21.png)
 
-<!-- Note that the "exam done in Moodle" note refers to the [Full Stack Open course's exam](/en/part0/general_info#sign-up-for-the-exam), which has to be completed before you can earn credits from this part.-->
- 注意，"在Moodle中完成的考试 "说明是指[全栈开放课程的考试](/en/part0/general_info#sign-up-for-the-exam)，在你从这部分获得学分之前必须完成。
+<!-- Note that the "exam done in Moodle" note refers to the [Full Stack Open course's exam](/en/part0), which has to be completed before you can earn credits from this part.-->
+ 注意，"在Moodle中完成的考试 "说明是指[全栈开放课程的考试](/en/part0)，在你从这部分获得学分之前必须完成。
 
-<!-- **Note** that you need a registration to the corresponding course part for getting the credits registered, see [here](/en/part0/general_info#parts-and-completion) for more information.-->
- **注意**你需要注册相应的课程部分以获得注册的学分，更多信息见[这里](/en/part0/general_info#parts-and-completion)。
+<!-- **Note** that you need a registration to the corresponding course part for getting the credits registered, see [here](/en/part0) for more information.-->
+ **注意**你需要注册相应的课程部分以获得注册的学分，更多信息见[这里](/en/part0)。
 
 <!-- You can download the certificate for completing this part by clicking one of the flag icons. The flag icon corresponds to the certificate's language.-->
  你可以通过点击其中一个标志图标来下载完成这部分的证书。旗帜图标与证书的语言相对应。

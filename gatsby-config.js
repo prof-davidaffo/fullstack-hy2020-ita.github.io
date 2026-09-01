@@ -1,6 +1,20 @@
 const IS_DEV = process.env.NODE_ENV === 'development';
 const navigation = require('./src/content/partnavigation/partnavigation');
-const { COURSE_NAME, isContentVisible } = require('./src/courseConfig');
+const {
+  COURSE_NAME,
+  REPOSITORY_URL,
+  SITE_URL,
+  isContentVisible,
+} = require('./src/courseConfig');
+
+const repositoryName = process.env.GITHUB_REPOSITORY?.split('/').pop();
+const automaticPagesPrefix =
+  process.env.GITHUB_ACTIONS === 'true' &&
+  repositoryName &&
+  !repositoryName.endsWith('.github.io')
+    ? `/${repositoryName}`
+    : '/';
+const pathPrefix = process.env.PATH_PREFIX || automaticPagesPrefix;
 
 const ignoredContent = [
   `${__dirname}/src/content/pages/*`,
@@ -38,17 +52,15 @@ const createSearchConfig = (indexName, language) => {
       index: ['body'],
       store: ['id', 'part', 'letter', 'lang'],
       normalizer: ({ data }) => {
-        return IS_DEV
-          ? []
-          : data.allMarkdownRemark.nodes
-              .filter((node) => isSearchableContent(node.frontmatter))
-              .map((node) => ({
-                id: node.id,
-                part: node.frontmatter.part,
-                letter: node.frontmatter.letter,
-                lang: node.frontmatter.lang,
-                body: node.rawMarkdownBody,
-              }));
+        return data.allMarkdownRemark.nodes
+          .filter((node) => isSearchableContent(node.frontmatter))
+          .map((node) => ({
+            id: node.id,
+            part: node.frontmatter.part,
+            letter: node.frontmatter.letter,
+            lang: node.frontmatter.lang,
+            body: node.rawMarkdownBody,
+          }));
       },
     },
   };
@@ -60,7 +72,7 @@ const plugins = [
   createSearchConfig('spanish', 'es'),
   createSearchConfig('chinese', 'zh'),
   createSearchConfig('portuguese', 'ptbr'),
-  'gatsby-plugin-react-helmet',
+  ...(IS_DEV ? [] : ['gatsby-plugin-react-helmet']),
   {
     resolve: `gatsby-source-filesystem`,
     options: {
@@ -82,7 +94,14 @@ const plugins = [
       icon: 'src/images/favicon.png',
     },
   },
-  'gatsby-plugin-sass',
+  {
+    resolve: 'gatsby-plugin-sass',
+    options: {
+      sassOptions: {
+        silenceDeprecations: ['legacy-js-api'],
+      },
+    },
+  },
   {
     resolve: `gatsby-source-filesystem`,
     options: {
@@ -108,7 +127,9 @@ const plugins = [
           options: {
             classPrefix: 'language-',
             inlineCodeMarker: null,
-            aliases: {},
+            aliases: {
+              conf: 'bash',
+            },
             showLineNumbers: false,
             noInlineHighlight: false,
           },
@@ -119,9 +140,12 @@ const plugins = [
 ];
 
 module.exports = {
+  pathPrefix,
   trailingSlash: 'never',
   siteMetadata: {
     title: COURSE_NAME,
+    siteUrl: SITE_URL,
+    repositoryUrl: REPOSITORY_URL,
     description: 'A structured path through modern full stack JavaScript development.',
     author: 'Full Stack JavaScript contributors',
   },

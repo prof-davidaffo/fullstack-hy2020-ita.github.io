@@ -706,7 +706,7 @@ Full stack development is <i> extremely hard</i>, that is why I will use all the
 - I will progress with small steps
 - I will write lots of _console.log_ statements to make sure I understand how the code behaves and to help pinpoint problems
 - If my code does not work, I will not write more code. Instead, I start deleting the code until it works or just return to a state when everything was still working
-- When I ask for help in the course Discord channel or elsewhere I formulate my questions properly, see [here](/en/part0/general_info#how-to-get-help-in-discord) how to ask for help
+- When I ask for help in the course Discord channel or elsewhere I formulate my questions properly, see [here](/en/part0) how to ask for help
 
 </div>
 
@@ -745,7 +745,7 @@ const delete = (id) => {
 
 <h4>2.15*: The Phonebook step 10</h4>
 
-<i>Why is there an asterisk in the exercise? See [here](/en/part0/general_info#taking-the-course) for the explanation.</i>
+<i>Why is there an asterisk in the exercise? See [here](/en/part0) for the explanation.</i>
 
 Change the functionality so that if a number is added to an already existing user, the new number will replace the old number. It's recommended to use the HTTP PUT method for updating the phone number.
 

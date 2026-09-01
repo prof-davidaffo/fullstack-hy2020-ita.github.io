@@ -5,7 +5,7 @@ import Layout from '../layout';
 import { BodyText } from '../BodyText/BodyText';
 import { DeveloperStory } from '../DeveloperStory/DeveloperStory';
 import Element from '../Element/Element';
-import SEO from '../seo';
+import Seo from '../seo';
 import mainSEOtags from '../../content/seo/mainSEOtags';
 import stories from '../../content/pages/stories.json';
 
@@ -15,7 +15,7 @@ const CompaniesPage = ({ lang, title, seoDescription }) => {
 
   return (
     <Layout>
-      <SEO
+      <Seo
         lang={lang}
         title={title}
         description={seoDescription}

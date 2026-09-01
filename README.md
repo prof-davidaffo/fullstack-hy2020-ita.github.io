@@ -5,6 +5,9 @@ development. The required path focuses on React, Node.js, Express, and MongoDB.
 Advanced topics and independent specializations are kept available without
 interrupting the core learning path.
 
+The published course is available at
+[prof-davidaffo.github.io/fullstackopen-ita](https://prof-davidaffo.github.io/fullstackopen-ita/).
+
 ## Course structure
 
 - **Core course (parts 0–5):** web fundamentals, React, REST APIs, Node.js,

@@ -1296,8 +1296,8 @@ const App = () => {
 - 我会写大量的_console.log_语句来确保我理解代码是怎么运行的，并借此准确找到问题
 <!-- - If my code does not work, I will not write more code. Instead I will start deleting the code until it works or just return to a state when everything was still working -->
 - 如果我的代码出问题了，我不会写更多的代码。而是删除代码直到它能运行，或者直接回到之前代码能运行的状态
-<!-- - When I ask for help in the course Discord channel or elsewhere I formulate my questions properly, see [here](http://fullstackopen.com/en/part0/general_info#how-to-get-help-in-discord) how to ask for help -->
-- 当我在课程的Discord群或者其他地方寻求帮助时，我会准确表达我的问题，点[此](http://fullstackopen.com/en/part0/general_info#how-to-get-help-in-discord)了解如何寻求帮助。
+<!-- - When I ask for help in the course Discord channel or elsewhere I formulate my questions properly, see [here](/en/part0) how to ask for help -->
+- 当我在课程的Discord群或者其他地方寻求帮助时，我会准确表达我的问题，点[此](/en/part0)了解如何寻求帮助。
 
 <!-- ### Utilization of Large language models -->
 ### 利用大语言模型

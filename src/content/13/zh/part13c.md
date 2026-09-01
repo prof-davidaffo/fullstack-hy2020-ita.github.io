@@ -1643,10 +1643,8 @@ npx sequelize-cli model:generate --name User --attributes name:string,username:s
 
 ![Submissions](../../images/11/21.png)
 
-<!-- Note that the "exam done in Moodle" note refers to the [Full Stack Open course's exam](/en/part0/general_info#sign-up-for-the-exam), which has to be completed before you can earn credits from this part.-->
- 注意 "在Moodle中完成考试 "的说明是指[全栈开放课程的考试](/en/part0/general_info#sign-up-for-the-exam)，在你从这部分获得学分之前必须完成。
+<!-- Note that the "exam done in Moodle" note refers to the [Full Stack Open course's exam](/en/part0), which has to be completed before you can earn credits from this part.-->
+ 注意 "在Moodle中完成考试 "的说明是指[全栈开放课程的考试](/en/part0)，在你从这部分获得学分之前必须完成。
 
-<!-- **Note** that you need a registration to the corresponding course part for getting the credits registered, see [here](/part0/general_info#parts-and-completion) for more information.-->
- **注意**，你需要注册相应的课程部分才能获得学分，更多信息请看[这里](/part0/general_info#parts-and-completion)。
 
 </div>

@@ -1516,6 +1516,4 @@ Una vez que hayas completado los ejercicios y quieras obtener los créditos, inf
 
 ![Submissions](../../images/11/21.png)
 
-**Tenga en cuenta** que necesita registrarse en la parte del curso correspondiente para obtener los créditos registrados, consulte [aquí](/part0/general_info#parts-and-completion) para obtener más información.
-
 </div>

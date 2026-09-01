@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Accordion from '../Accordion/Accordion';
 import Element from '../Element/Element';
 import Layout from '../layout';
-import SEO from '../seo';
+import Seo from '../seo';
 import { SubHeader } from '../SubHeader/SubHeader';
 import content from '../../content/pages/faq.json';
 import mainSEOtags from '../../content/seo/mainSEOtags';
@@ -15,7 +15,7 @@ const FaqPage = ({ lang, title, seoDescription }) => {
 
   return (
     <Layout>
-      <SEO
+      <Seo
         lang={lang}
         title={title}
         description={seoDescription}

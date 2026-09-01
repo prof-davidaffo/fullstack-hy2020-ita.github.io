@@ -55,7 +55,7 @@ const InfoBanner = ({ visible, onHide, language }) => {
             The format of submission repository in the part 6 has changed, see {' '}
             <a
               style={linkStyle}
-              href="https://fullstackopen.com/en/part6/flux_architecture_and_zustand#submission-repository"
+              href="/en/part6/flux_architecture_and_zustand#submission-repository"
               target="_blank"
               rel="noreferrer"
             >
@@ -68,7 +68,7 @@ const InfoBanner = ({ visible, onHide, language }) => {
             Osan 6 tehtävien palautusrepositorion formaatti on muuttunut, katso tarkemmin {' '}
             <a
               style={linkStyle}
-              href="https://fullstackopen.com/osa6/flux_arkkitehtuuri_ja_zustand#tehtavarepositorio"
+              href="/osa6/flux_arkkitehtuuri_ja_zustand#tehtavarepositorio"
               target="_blank"
               rel="noreferrer"
             >

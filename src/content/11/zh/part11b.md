@@ -103,8 +103,8 @@ lang: zh
 <!-- Also for these two tasks, there are ready-made npm scripts in the project!-->
  同样对于这两项任务，项目中也有现成的npm脚本!
 
-<!-- Study the structure of the project for a while. As you notice both the frontend and the backend code is now [in the same repository](/en/part7/class_components_miscellaneous#frontend-and-backend-in-the-same-repository). In earlier parts of the course we had a separate repository for both, but having those in the same repository makes things much simpler when setting up a CI environment.-->
- 研究一下这个项目的结构。正如你所注意到的，前端和后端代码现在都[在同一个仓库](/en/part7/class_components_miscellaneous#frontend-and-backend-in-the-same-repository)。在课程的早期部分，我们为二者建立了单独的仓库，但在建立CI环境时，将它们放在同一个仓库里会使事情变得更简单。
+<!-- Study the structure of the project for a while. As you notice both the frontend and the backend code is now [in the same repository](/en/part7/miscellaneous#frontend-and-backend-in-the-same-repository). In earlier parts of the course we had a separate repository for both, but having those in the same repository makes things much simpler when setting up a CI environment.-->
+研究一下这个项目的结构。正如你所注意到的，前端和后端代码现在都[在同一个仓库](/en/part7/miscellaneous#frontend-and-backend-in-the-same-repository)。在课程的早期部分，我们为二者建立了单独的仓库，但在建立CI环境时，将它们放在同一个仓库里会使事情变得更简单。
 
 <!-- In contrast to most projects in this course, the frontend code <i>does not use</i> create-react-app, but it has a relatively simple [webpack](/en/part7/webpack) configuration that takes care of creating the development environment and creating the production bundle.-->
  与本课程中的大多数项目相反，前端代码<i>没有使用</i>create-react-app，但它有一个相对简单的[webpack](/en/part7/webpack)配置，负责创建开发环境和创建生产包。

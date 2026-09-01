@@ -993,6 +993,6 @@ Jos haluat suoritusmerkinnän, merkitse kurssi suoritetuksi:
 
 ![Submissions](../../images/11/21.png)
 
-**Huomaa**, että suoritusmerkintää ei voida kirjata, ellet ole ilmoittautunut tätä osaa vastaavaan "kurssiin palaan", katso lisätietoja ilmoittautumisesta [täältä](/osa0/yleista#osat-ja-suorittaminen).
+**Huomaa**, että suoritusmerkintää ei voida kirjata, ellet ole ilmoittautunut tätä osaa vastaavaan "kurssiin palaan", katso lisätietoja ilmoittautumisesta [täältä](/osa0).
 
 </div>

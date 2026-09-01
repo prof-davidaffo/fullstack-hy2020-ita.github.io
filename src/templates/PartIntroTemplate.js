@@ -7,7 +7,7 @@ import Layout from '../components/layout';
 import Parser, { domToReact } from 'html-react-parser';
 import PrevNext from '../components/PrevNext/PrevNext';
 import React from 'react';
-import SEO from '../components/seo';
+import Seo from '../components/seo';
 import colors from '../colors';
 import { graphql } from 'gatsby';
 import isEmpty from 'lodash/fp/isEmpty';
@@ -43,7 +43,7 @@ export default function PartIntroTemplate({ data }) {
 
   return (
     <Layout>
-      <SEO
+      <Seo
         lang={lang}
         title={`${COURSE_NAME} · ${lang === 'fi' ? 'osa' : 'part'} ${part}`}
         description={mainSEOdescription[lang]}

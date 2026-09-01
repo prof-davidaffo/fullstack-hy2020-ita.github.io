@@ -9,7 +9,7 @@ import Element from '../components/Element/Element';
 import Layout from '../components/layout';
 import Parser, { domToReact } from 'html-react-parser';
 import PrevNext from '../components/PrevNext/PrevNext';
-import SEO from '../components/seo';
+import Seo from '../components/seo';
 import ScrollNavigation from '../components/ScrollNavigation/ScrollNavigation';
 import { SubHeader } from '../components/SubHeader/SubHeader';
 import colors from '../colors';
@@ -46,8 +46,13 @@ export default class ContentTemplate extends Component {
 
     links.map((i) => {
       i.style = `border-color: ${colors[partColors[frontmatter.part]]}`;
-      !i.classList.contains('language-switcher__language') &&
-        (i.target = '_blank');
+      const isExternal = new URL(i.href, window.location.origin).origin !==
+        window.location.origin;
+
+      if (isExternal) {
+        i.target = '_blank';
+        i.rel = 'noopener noreferrer';
+      }
 
       function over() {
         i.style.backgroundColor = colors[partColors[frontmatter.part]];
@@ -152,7 +157,7 @@ export default class ContentTemplate extends Component {
 
     return (
       <Layout isCoursePage={true}>
-        <SEO
+        <Seo
           lang={lang}
           title={`${COURSE_NAME} · ${lang === 'fi' ? 'osa' : 'part'} ${part} | ${
             this.state.h1Title

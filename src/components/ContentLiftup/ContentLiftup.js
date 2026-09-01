@@ -1,6 +1,6 @@
 import './ContentLiftup.scss';
 
-import { Image } from '../Image/Image';
+import { Image, resolveImageSource } from '../Image/Image';
 import { Link } from 'gatsby';
 import { PropTypes } from 'prop-types';
 import React from 'react';
@@ -27,6 +27,8 @@ export const ContentLiftup = ({
   applyPadding,
 }) => {
   const classes = [];
+  const imageSrc = resolveImageSource(image.src);
+  const hoverSrc = resolveImageSource(hoverImageSrc) || imageSrc;
 
   small && classes.push('content-liftup--small');
   applyPadding && classes.push('content-liftup--padding');
@@ -38,14 +40,15 @@ export const ContentLiftup = ({
           className="content-liftup__link"
           to={path}
           onMouseOver={(e) => {
-            setSrcToChildrenImage(e, hoverImageSrc ? hoverImageSrc : image.src);
+            setSrcToChildrenImage(e, hoverSrc);
           }}
           onMouseOut={(e) => {
-            setSrcToChildrenImage(e, image.src);
+            setSrcToChildrenImage(e, imageSrc);
           }}
         >
           <Image
             {...image}
+            src={imageSrc}
             className="content-liftup__image image--square-big"
             overlay={colors[background]}
           />

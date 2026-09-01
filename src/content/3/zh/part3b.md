@@ -606,7 +606,7 @@ npm remove cors
 ```
 
 <!-- We have now successfully deployed the entire application to the internet. There are many other ways to implement deployments. For example, deploying the frontend code as its own application may be sensible in some situations, as it can facilitate the implementation of an automated [deployment pipeline](https://martinfowler.com/bliki/DeploymentPipeline.html). A deployment pipeline refers to an automated and controlled way to move code from the developer's machine through various tests and quality control stages to the production environment. This topic is covered in [part 11](/en/part11) of the course. -->
-我们现在已经成功将整个应用部署到互联网上了。此外还有许多方法来实现部署。比如，将前端代码部署为自己的应用在某些情况下是一个明智的方法，因为这样可以方便实现自动化的[部署管道](https://martinfowler.com/bliki/DeploymentPipeline.html)。部署管道是指通过不同测试和质量检查，将代码从开发者的电脑转移到生产环境的一种自动化和可控的方式。本课程[第 11 章节](https://fullstackopen.com/en/part11)涵盖了这一话题。
+我们现在已经成功将整个应用部署到互联网上了。此外还有许多方法来实现部署。比如，将前端代码部署为自己的应用在某些情况下是一个明智的方法，因为这样可以方便实现自动化的[部署管道](https://martinfowler.com/bliki/DeploymentPipeline.html)。部署管道是指通过不同测试和质量检查，将代码从开发者的电脑转移到生产环境的一种自动化和可控的方式。本课程[第 11 章节](/en/part11)涵盖了这一话题。
 
 <!-- Current code of the backend can be found on [Github](https://github.com/fullstack-hy2020/part3-notes-backend/tree/part3-3), in the branch <i>part3-3</i>. The changes in frontend code are in <i>part3-1</i> branch of the [frontend repository](https://github.com/fullstack-hy2020/part2-notes/tree/part3-1).-->
 当前的后端代码可以在 [Github](https://github.com/fullstack-hy2020/part3-notes-backend/tree/part3-3) 的 <i>part3-3</i> 分支中找到。前端代码的更改在 [frontend repository](https://github.com/fullstack-hy2020/part2-notes/tree/part3-1) 的<i>part3-1</i>分支中。

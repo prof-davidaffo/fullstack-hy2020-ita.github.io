@@ -6,7 +6,7 @@ import React from 'react';
 import defaultImage from '../images/seo_image.jpg';
 import englishVersionSeoImage from '../images/EYE_green_wide.jpg';
 
-function SEO({ description, lang, meta, keywords, title }) {
+function Seo({ description, lang, meta, keywords, title }) {
   const seoImage = lang === 'fi' ? defaultImage : englishVersionSeoImage;
 
   return (
@@ -80,14 +80,14 @@ function SEO({ description, lang, meta, keywords, title }) {
   );
 }
 
-SEO.defaultProps = {
+Seo.defaultProps = {
   lang: 'fi',
   image: null,
   meta: [],
   keywords: [],
 };
 
-SEO.propTypes = {
+Seo.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.array,
@@ -96,7 +96,7 @@ SEO.propTypes = {
   title: PropTypes.string.isRequired,
 };
 
-export default SEO;
+export default Seo;
 
 const detailsQuery = graphql`
   query DefaultSEOQuery {

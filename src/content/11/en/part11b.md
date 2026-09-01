@@ -75,7 +75,7 @@ As you might remember from [part 3](/en/part3/deploying_app_to_internet#frontend
 
 Also for these two tasks, there are ready-made npm scripts in the project!
 
-Study the structure of the project for a while. As you notice both the frontend and the backend code are now [in the same repository](/en/part7/class_components_miscellaneous#frontend-and-backend-in-the-same-repository). In earlier parts of the course we had a separate repository for both, but having those in the same repository makes things much simpler when setting up a CI environment. 
+Study the structure of the project for a while. As you notice both the frontend and the backend code are now [in the same repository](/en/part7/miscellaneous#frontend-and-backend-in-the-same-repository). In earlier parts of the course we had a separate repository for both, but having those in the same repository makes things much simpler when setting up a CI environment.
 
 In contrast to most projects in this course, the frontend code <i>does not use</i> Vite but it has a relatively simple [Webpack](/en/part7/webpack) configuration that takes care of creating the development environment and creating the production bundle.
 

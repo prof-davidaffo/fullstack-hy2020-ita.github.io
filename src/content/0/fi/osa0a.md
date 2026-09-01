@@ -63,7 +63,7 @@ Arvosana/opintopisterajat:
 
 6 ja 7 opintopisteen rajaa muutettu osan 5 uusien tehtävien myötä.
 
-Jos haluat kurssista virallisen suoritusmerkinnän, kuuluu kurssiin myös koe. Hyväksytty suoritus edellyttää kokeen läpäisemistä, koe ei kuitenkaan vaikuta arvosanaan. Lisää tietoa kurssikokeesta [täällä](/osa0/yleista/#kurssikoe).
+Jos haluat kurssista virallisen suoritusmerkinnän, kuuluu kurssiin myös koe. Hyväksytty suoritus edellyttää kokeen läpäisemistä, koe ei kuitenkaan vaikuta arvosanaan. Lisää tietoa kurssikokeesta [täällä](/osa0).
 
 Voit osallistua kokeeseen vasta siinä vaiheessa, kun olet tehnyt riittävästi tehtäviä 5 opintopisteen suoritukseen. Käytännössä kokeeseen ei kuitenkaan kannata osallistua heti, kun riittävä tehtäväpistemäärä on suoritettu. Koe on sisällöltään sama riippumatta siitä, onko suorituksesi laajuus 5–14 opintopistettä. Koe ei vaikuta kurssilta saamaasi arvosanaan. Kokeen läpipääsyyn riittää 75 % kokeen tarjolla olevista pisteistä.
 
@@ -71,14 +71,14 @@ Voit osallistua kokeeseen vasta siinä vaiheessa, kun olet tehnyt riittävästi 
 Suorittamalla vähintään 127 tehtävää kurssin osista 0–7 ydinkurssin suorittamisen yhteydessä, voit laajentaa suoritustasi yhdellä opintopisteellä. 
 -	Tee vähintään 135 tehtävää osista 0–7. 
 -	[Ilmoittaudu tähän osaan Avoimen yliopiston kautta.](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-759cfee1-370b-4200-8e11-dc86b1a8ed88)
--	[Pyydä suoritusmerkintää](https://fullstackopen.com/osa0/yleista#suoritusmerkinnan-pyytaminen) tästä osasta. 
+-	[Pyydä suoritusmerkintää](/osa0) tästä osasta.
 
 #### Osa 7 - Full Stack ‑websovelluskehitys, lisäosa 2 (1 op, CSM141083)
 
 Suorittamalla vähintään 150 tehtävää kurssin osista 0–7 ydinkurssin suorittamisen yhteydessä, voit laajentaa suoritustasi yhdellä opintopisteellä. 
 -	Tee vähintään 150 tehtävää osista 0–7. 
 -	[Ilmoittaudu tähän osaan Avoimen yliopiston kautta.](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-4142645d-5690-4527-9d57-79bd1fbc8770)
--	[Pyydä suoritusmerkintää](https://fullstackopen.com/osa0/yleista#suoritusmerkinnan-pyytaminen) tästä osasta. 
+-	[Pyydä suoritusmerkintää](/osa0) tästä osasta.
 
 #### Osa 8 - Full Stack ‑websovelluskehitys: GraphQL (1 op, CSM14113)
 
@@ -115,17 +115,17 @@ Opintopisteitä tästä osasta on mahdollista saada 1.8.2026 alkaen.
 #### Kurssin suoritusohjeet pähkinänkuoressa (5 op ydinkurssi CSM141081) 
 
 - Tee tehtävät. Palauta vastauksesi [palautussovelluksen](https://studies.cs.helsinki.fi/stats/courses/fullstackopen) kautta.
-- Ilmoittaudu kurssille. Pääset ilmoittautumaan palautussovelluksesta löytyvän [linkin](/osa0/yleista#kurssikoe) kautta sen jälkeen kun olet palauttanut riittävän määrän tehtäviä. 
-- Tallenna Helsingin yliopiston opiskelijanumerosi palautussovellukseen. Lue lisää [täältä](/osa0/yleista/#suoritusmerkinnan-pyytaminen)
-- Tee kurssikoe palautusjärjestelmässä, lue lisää [täältä](/osa0/yleista#kurssikoe).
-- Pyydä suoritusmerkintää palautussovelluksessa. Lue lisää [täältä](/osa0/yleista#suoritusmerkinnan-pyytaminen)
+- Ilmoittaudu kurssille. Pääset ilmoittautumaan palautussovelluksesta löytyvän [linkin](/osa0) kautta sen jälkeen kun olet palauttanut riittävän määrän tehtäviä.
+- Tallenna Helsingin yliopiston opiskelijanumerosi palautussovellukseen. Lue lisää [täältä](/osa0)
+- Tee kurssikoe palautusjärjestelmässä, lue lisää [täältä](/osa0).
+- Pyydä suoritusmerkintää palautussovelluksessa. Lue lisää [täältä](/osa0)
 
 #### Kurssin suoritusohjeet pähkinänkuoressa (Osat 6 ja 7) 
 
 - Tee tehtävät. Palauta vastauksesi palautussovelluksen kautta. Huomaa, että osa 8 palautetaan palautussovelluksessa erillisiin kurssi-instansseihin. 
 
-- Ilmoittaudu kurssille. Pääset ilmoittautumaan kurssimateriaalista (ks. [Osat ja suorittaminen](/osa0/yleista#osat-ja-suorittaminen)) löytyvän ilmoittautumislinkin kautta.  Ilmoittaudu erikseen kuhunkin osaan. 
-- Pyydä suoritusmerkintää palautussovelluksessa. Lue lisää [täältä](/osa0/yleista#suoritusmerkinnan-pyytaminen)
+- Ilmoittaudu kurssille. Pääset ilmoittautumaan kurssimateriaalista (ks. [Osat ja suorittaminen](/osa0)) löytyvän ilmoittautumislinkin kautta. Ilmoittaudu erikseen kuhunkin osaan.
+- Pyydä suoritusmerkintää palautussovelluksessa. Lue lisää [täältä](/osa0)
 
 #### Kurssin suoritusohjeet pähkinänkuoressa (Osat 8-14) 
 
@@ -166,7 +166,7 @@ Tallenna Helsingin Yliopiston opiskelijanumerosi [palautussovellukseen](https://
 
 ![](../../images/0/28b.png)
 
-Saat selville opiskelijanumerosi [täällä](/osa0/yleista#miten-saan-selville-helsingin-yliopiston-opiskelijanumeroni) kuvatulla tavalla.
+Saat selville opiskelijanumerosi [täällä](/osa0) kuvatulla tavalla.
 
 Tämän jälkeen pääset tekemään kokeen palautusjärjestelmässä:
 
@@ -198,7 +198,7 @@ Jos haluat kurssilta virallisen suorituksen, tallenna <b>Helsingin yliopiston</b
 
 ![](../../images/0/28b.png)
 
-Jos et ole Helsingin yliopiston opiskelija, saat opiskelijanumeron ilmoittautumalla kurssille [Avoimen yliopiston](/osa0/yleista/#kokeeseen-ilmoittautuminen) jälkeen [täällä](/osa0/yleista#miten-saan-selville-helsingin-yliopiston-opiskelijanumeroni) kuvatulla tavalla.
+Jos et ole Helsingin yliopiston opiskelija, saat opiskelijanumeron ilmoittautumalla kurssille [Avoimen yliopiston](/osa0) jälkeen [täällä](/osa0) kuvatulla tavalla.
 
 Saat suoritusmerkinnän sen jälkeen kun olet tehnyt hyväksyttävään suoritukseen oikeuttavan määrän tehtäviä, suorittanut kokeen hyväksytysti ja ilmoittanut palautussovelluksessa olevasi valmis kurssin suorituksen kanssa:
 
@@ -214,7 +214,7 @@ Kun nappia on painettu tarpeeksi monta kertaa, näet seuraavan tekstin:
 
 > <i>University credit registration in progress...</i>
 
-**Huomaa**, että suoritusmerkintää ei voida kirjata, jos et ole ilmoittautunut kaikkiin suorittamiisi osiin, katso [täältä](/osa0/yleista#osat-ja-suorittaminen) ohjeet ilmoittautumiseen.
+**Huomaa**, että suoritusmerkintää ei voida kirjata, jos et ole ilmoittautunut kaikkiin suorittamiisi osiin, katso [täältä](/osa0) ohjeet ilmoittautumiseen.
 
 Arvosana siirtyy Helsingin yliopiston opintorekisteriin Sisuun ja [Opintopolkuun](https://opintopolku.fi/oma-opintopolku/) neljän viikon sisällä suoritusmerkintäpyynnön jälkeen. Heinäkuu saattaa aiheuttaa viiveen suorituksen kirjaamiseen.
 

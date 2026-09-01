@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Arrow from '../components/Arrow/Arrow';
 import Element from '../components/Element/Element';
 import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Seo from '../components/seo';
 import colors from '../colors';
 import getTranslationPath from '../utils/getPartTranslationPath';
 
@@ -16,7 +16,7 @@ const NotFoundPage = () => {
 
   return (
     <Layout>
-      <SEO title={`${title} | Full Stack JavaScript`} lang={siteLanguage} />
+      <Seo title={`${title} | Full Stack JavaScript`} lang={siteLanguage} />
 
       <Element className="container spacing--large spacing--after">
         <h1>404 - {title}</h1>

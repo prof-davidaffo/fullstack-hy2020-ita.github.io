@@ -410,7 +410,7 @@ Katsotaan vielä lopuksi muutamaa huomisen tai oikeastaan jo tämän päivän te
 
 #### JavaScriptin tyypitetyt versiot
 
-JavaScriptin muuttujien [dynaaminen tyypitys](https://developer.mozilla.org/en-US/docs/Glossary/Dynamic_typing) aiheuttaa välillä ikäviä bugeja. Osassa 5 käsittelimme lyhyesti [PropTypejä](/osa5/props_children_ja_proptypet#prop-types), eli mekanismia, jonka avulla React-komponenteille välitettäville propseille on mahdollista tehdä tyyppitarkastuksia.
+JavaScriptin muuttujien [dynaaminen tyypitys](https://developer.mozilla.org/en-US/docs/Glossary/Dynamic_typing) aiheuttaa välillä ikäviä bugeja. Osassa 5 käsittelimme lyhyesti [PropTypejä](/osa5/props_children_ja_komponentin_ref#prop-types), eli mekanismia, jonka avulla React-komponenteille välitettäville propseille on mahdollista tehdä tyyppitarkastuksia.
 
 Viime aikoina on ollut havaittavissa nousevaa kiinnostusta [staattiseen tyypitykseen](https://en.wikipedia.org/wiki/Type_system#Static_type_checking). Tämän hetken suosituin JavaScriptin tyypitetty versio on Microsoftin kehittämä [TypeScript](https://www.typescriptlang.org/), joka on aiheena kurssin [osassa 9](/osa9).
 

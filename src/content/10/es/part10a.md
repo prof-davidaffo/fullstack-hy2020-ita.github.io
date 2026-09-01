@@ -39,7 +39,7 @@ Una vez que haya completado los ejercicios y desee obtener los créditos, hágan
 
 ![Envío de ejercicios para créditos](../../images/10/23.png)
 
-Tenga en cuenta que la nota "examen realizado en Moodle" se refiere al [examen del curso Full Stack Open](https://fullstackopen.com/en/part0/general_info#sign-up-for-the-exam), que <i>debe completarse</i> antes de poder obtener créditos de esta parte.
+Tenga en cuenta que la nota "examen realizado en Moodle" se refiere al [examen del curso Full Stack Open](/en/part0), que <i>debe completarse</i> antes de poder obtener créditos de esta parte.
 
 Puede descargar el certificado por completar esta parte haciendo clic en uno de los iconos de bandera. El icono de la bandera corresponde al idioma del certificado. Tenga en cuenta que debe haber completado al menos un crédito de ejercicios antes de poder descargar el certificado.
 

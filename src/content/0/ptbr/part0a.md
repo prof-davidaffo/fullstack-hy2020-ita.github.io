@@ -98,7 +98,7 @@ Os créditos e as notas são calculados da seguinte maneira:
 
 Assim que tiver completado exercícios suficientes para elevar sua nota, fica disponível para download o certificado de conclusão do curso pelo [sistema de envio de exercícios](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
 
-Se deseja receber créditos universitários, você deve completar a prova do curso. A prova não conta para sua nota final, mas é necessário passar nela. Mais informações sobre a prova [aqui](/ptbr/part0/informacoes_gerais#a-prova-do-curso).
+Se deseja receber créditos universitários, você deve completar a prova do curso. A prova não conta para sua nota final, mas é necessário passar nela. Mais informações sobre a prova [aqui](/ptbr/part0).
 
 Você só pode fazer a prova após entregar exercícios suficientes para cinco créditos. Não é aconselhável fazer a prova imediatamente após entregar o número exato de exercícios. A prova é a mesma para os créditos de 5 a 14 e não conta para sua nota.
 
@@ -110,7 +110,7 @@ Ao entregar pelo menos 127 dos exercícios das partes 0 a 7 ao avançar no curso
 
 - Entregue pelo menos 127 exercícios das partes 0 a 7. 
 - [Inscreva-se na Parte 6 através da Universidade Aberta](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-de83e85f-a06e-4258-ad8c-30326d76228e). 
-- [Solicite créditos para a Parte 6](/ptbr/part0/informacoes_gerais#como-conseguir-seus-creditos).
+- [Solicite créditos para a Parte 6](/ptbr/part0).
 
 #### Parte 7 - Desenvolvimento Full Stack, extensão 2 (1 cr, CSM141083)
 
@@ -118,7 +118,7 @@ Ao entregar pelo menos 138 dos exercícios das partes de 0 a 7 enquanto trabalha
 
 - Entregue pelo menos 138 exercícios para as partes 0 a 7.
 - [Matricule-se na Parte 7 através da Universidade Aberta](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-53ccca2f-8e77-47e3-931a-63f9d5c8cc2e).
-- [Solicite créditos para a Parte 7](/ptbr/part0/informacoes_gerais#como-conseguir-seus-creditos).
+- [Solicite créditos para a Parte 7](/ptbr/part0).
 
 #### Parte 8 - Desenvolvimento Full Stack: GraphQL (1 cr, CSM14113)
 
@@ -126,7 +126,7 @@ Ao entregar pelo menos 22 dos 26 exercícios da Parte 8 do curso, GraphQL, você
 
 - Entregue pelo menos 22 dos 26 exercícios da Parte 8.
 - [Matricule-se na Parte 8 através da Universidade Aberta](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-b7f5ef26-b780-45f2-962d-f8d3432cae78).
-- [Solicite créditos para a Parte 8](/ptbr/part0/informacoes_gerais#como-conseguir-seus-creditos).
+- [Solicite créditos para a Parte 8](/ptbr/part0).
 
 #### Parte 9 - Desenvolvimento Full Stack: TypeScript (1 cr, CSM14110)
 
@@ -134,7 +134,7 @@ Ao entregar pelo menos 24 dos 27 exercícios da Parte 9 do curso, TypeScript, vo
 
 - Entregue pelo menos 24 dos 27 exercícios da Parte 9.
 - [Inscreva-se na Parte 9 através da Universidade Aberta](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-e45a36b7-24d7-424b-9dc5-1c9b59a52a23).
-- [Solicite créditos para a Parte 9](/ptbr/part0/informacoes_gerais#como-conseguir-seus-creditos).
+- [Solicite créditos para a Parte 9](/ptbr/part0).
 
 #### Parte 10 - Desenvolvimento Full Stack: React Native (2 cr, CSM14111)
 
@@ -142,7 +142,7 @@ Ao entregar 25 exercícios da Parte 10 do curso de React Native, você pode ganh
 
 - Entregue pelo menos 25 exercícios da Parte 10.
 - [Inscreva-se na Parte 10 através da Universidade Aberta] (https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-ec172afe-bc01-46ab-af23-694311f1950a). 
-- [Solicite créditos para a Parte 10](/ptbr/part0/informacoes_gerais#como-conseguir-seus-creditos).
+- [Solicite créditos para a Parte 10](/ptbr/part0).
 
 #### Parte 11 - Desenvolvimento Full Stack Web: Integração Contínua / Entrega Contínua (1 cr, CSM14112)
 
@@ -150,7 +150,7 @@ Ao entregar todos os exercícios da Parte 11 do curso de Integração/Entrega Co
 
 - Entregue todos os exercícios da Parte 11. 
 - [Inscreva-se na Parte 11 através da Universidade Aberta](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-23e79dc2-64e4-4f7e-86a4-8923a411443c). 
-- [Solicite créditos para a Parte 11](/ptbr/part0/informacoes_gerais#como-conseguir-seus-creditos).
+- [Solicite créditos para a Parte 11](/ptbr/part0).
 
 #### Parte 12 - Desenvolvimento Full Stack Web: Containers (1 cr, CSM141084)
 
@@ -158,7 +158,7 @@ Ao entregar todos os exercícios da parte 12 do curso sobre a tecnologia "Contai
 
 - Envie todos os exercícios para a Parte 12. 
 - [Inscreva-se na Parte 12 através da Universidade Aberta](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-bb07e139-3de0-4cb3-843d-414b1bb992cc). 
-- [Solicite créditos para a Parte 12](/ptbr/part0/informacoes_gerais#como-conseguir-seus-creditos).
+- [Solicite créditos para a Parte 12](/ptbr/part0).
 
 #### Parte 13 - Desenvolvimento Web Full Stack: Bases de Dados Relacionais (1 cr, CSM14114)
 
@@ -173,22 +173,22 @@ Ao entregar todos os exercícios da Parte 13 do curso sobre bancos de dados rela
 Como estudar no curso – instruções resumidas: curso básico de 5 créditos CSM141081
 
 - Faça os exercícios. Os exercícios são enviados através do GitHub e marcados como concluídos no [sistema de envio de exercícios](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-   - [O certificado do curso](/ptbr/part0/informacoes_gerais#certificado-do-curso) estará disponível no sistema de envio de exercícios
+   - [O certificado do curso](/ptbr/part0) estará disponível no sistema de envio de exercícios
 - Se deseja obter os créditos da Universidade de Helsinque:
-   - Inscreva-se no curso. Você receberá o link de inscrição por meio do sistema de envio de exercícios assim que concluir os exercícios suficientes. Leia mais [aqui](/ptbr/part0/informacoes_gerais#enviando-exercicios)
+   - Inscreva-se no curso. Você receberá o link de inscrição por meio do sistema de envio de exercícios assim que concluir os exercícios suficientes. Leia mais [aqui](/ptbr/part0)
    - Salve seu número de aluno. Após a inscrição no curso, salve seu número de identificação de aluno da Universidade de Helsinque no sistema de envio de exercícios.
-   - Faça a prova online no sistema de envio de exercícios. Leia mais [aqui](/ptbr/part0/informacoes_gerais#a-prova-do-curso)
-   - Marque o curso concluído no sistema de envio de exercícios. Leia mais [aqui](/ptbr/part0/informacoes_gerais#como-conseguir-seus-creditos)
+   - Faça a prova online no sistema de envio de exercícios. Leia mais [aqui](/ptbr/part0)
+   - Marque o curso concluído no sistema de envio de exercícios. Leia mais [aqui](/ptbr/part0)
 
-Observe que se você fizer o "curso básico" com 6 ou 7 créditos, precisará de registros separados para os créditos extras. Consulte [Partes e conclusão](/ptbr/part0/informacoes_gerais#das-partes-e-conclusao) para saber mais.
+Observe que se você fizer o "curso básico" com 6 ou 7 créditos, precisará de registros separados para os créditos extras. Consulte [Partes e conclusão](/ptbr/part0) para saber mais.
 
 Como estudar no curso – instruções resumidas: outras partes do curso
 
 - Faça os exercícios. Os exercícios são enviados por meio do GitHub e marcados como concluídos no sistema de envio de exercícios. Observe que as partes 8 a 13 têm uma instância separada no sistema de envio
-   - [O certificado do curso](/ptbr/part0/informacoes_gerais#certificado-do-curso) estará disponível no sistema de envio de exercícios
+   - [O certificado do curso](/ptbr/part0) estará disponível no sistema de envio de exercícios
 - Se você deseja obter créditos da Universidade de Helsinque
-   - Inscreva-se no curso. Você pode se inscrever em cada parte através do link no material do curso ([Das partes e conclusão](/ptbr/part0/informacoes_gerais#das-partes-e-conclusao)). Inscreva-se em cada parte separadamente.
-  - Marque a parte concluída no sistema de envio de exercícios. Leia mais [aqui](/ptbr/part0/informacoes_gerais#como-conseguir-seus-creditos)
+   - Inscreva-se no curso. Você pode se inscrever em cada parte através do link no material do curso ([Das partes e conclusão](/ptbr/part0)). Inscreva-se em cada parte separadamente.
+  - Marque a parte concluída no sistema de envio de exercícios. Leia mais [aqui](/ptbr/part0)
 
 ### Enviando exercícios
 
@@ -220,7 +220,7 @@ Após sua matrícula no curso, salve seu número de identificação de aluno da 
 
 ![saving the student number](../../images/0/28b.png)
 
-Leia mais [aqui](/ptbr/part0/informacoes_gerais#onde-obtenho-meu-numero-de-identificacao-de-aluno-da-universidade-de-helsinque) para obter informações sobre como descobrir seu número de identificação de aluno.
+Leia mais [aqui](/ptbr/part0) para obter informações sobre como descobrir seu número de identificação de aluno.
 
 Após essas etapas, você já poderá fazer a prova do curso no sistema de envio de exercícios:
 
@@ -254,7 +254,7 @@ Se você deseja receber os créditos da Universidade de Helsinque, salve seu nú
 
 ![salvando o número de identificação do aluno](../../images/0/28b.png)
 
-Se você não é aluno da Universidade de Helsinque, pode obter um número de aluno registrando-se no curso através da [Universidade Aberta](/ptbr/part0/informacoes_gerais#a-prova-do-curso). Entre [aqui](/ptbr/part0/informacoes_gerais#onde-obtenho-meu-numero-de-identificacao-de-aluno-da-universidade-de-helsinque) para mais informações.
+Se você não é aluno da Universidade de Helsinque, pode obter um número de aluno registrando-se no curso através da [Universidade Aberta](/ptbr/part0). Entre [aqui](/ptbr/part0) para mais informações.
 
 Você receberá seus créditos depois de enviar exercícios suficientes para sua aprovação, passar na prova e nos informar através do sistema de envio de exercícios que você concluiu o curso:
 
@@ -270,7 +270,7 @@ Quando clicado duas vezes, você deve ver o seguinte texto:
 
 > <i>Crédito universitário em andamento...</i>
 
-**Note** que para obter créditos universitários, você precisa de um registro de cada parte concluída. Consulte [mais informações sobre o registro](/ptbr/part0/informacoes_gerais#das-partes-e-conclusao).
+**Note** que para obter créditos universitários, você precisa de um registro de cada parte concluída. Consulte [mais informações sobre o registro](/ptbr/part0).
 
 Você já poderá ver sua nota no SISU da Universidade de Helsinque e no [Opintopolku](https://opintopolku.fi/oma-opintopolku/) aproximadamente quatro semanas após nos notificar.
 

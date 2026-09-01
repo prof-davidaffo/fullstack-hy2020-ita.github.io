@@ -1,4 +1,6 @@
 const COURSE_NAME = 'Full Stack JavaScript';
+const REPOSITORY_URL = 'https://github.com/prof-davidaffo/fullstackopen-ita';
+const SITE_URL = 'https://prof-davidaffo.github.io/fullstackopen-ita';
 
 const partNames = {
   fi: [
@@ -225,6 +227,8 @@ const isContentVisible = (part, letter) =>
 
 module.exports = {
   COURSE_NAME,
+  REPOSITORY_URL,
+  SITE_URL,
   curriculum,
   getPartNames,
   getSectionCopy,

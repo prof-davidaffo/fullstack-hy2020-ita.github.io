@@ -102,7 +102,7 @@ The 6- and 7-credit thresholds have been adjusted to reflect the new exercises i
 
 Once you have completed enough exercises for a passing grade, you can download the course certificate from the [submission system](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
 
-If you wish to receive university credits, you must complete the course exam. The exam does not count toward your final grade, but you must pass it. More information about the exam [here](/en/part0/general_info#the-course-exam).
+If you wish to receive university credits, you must complete the course exam. The exam does not count toward your final grade, but you must pass it. More information about the exam [here](/en/part0).
 
 You can only take the exam after submitting enough exercises for five credits. It is not wise in practice to take the exam immediately after submitting the critical number of exercises. The exam is the same for 5-14 credits and does not count toward your grade.
 
@@ -114,7 +114,7 @@ By submitting at least 135 of the exercises for parts 0-7 while working on the c
 
 - Submit at least 135 exercises for parts 0-7.
 - [Enroll in part 6 through the Open University](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-759cfee1-370b-4200-8e11-dc86b1a8ed88).
-- [Request credits for part 6](/en/part0/general_info/#how-to-get-your-credits).
+- [Request credits for part 6](/en/part0).
 
 #### Part 7 - Full Stack Web Development, extension 2 (1 cr, CSM141083)
 
@@ -122,7 +122,7 @@ By submitting at least 150 of the exercises for parts 0-7 while working on the c
 
 - Submit at least 150 exercises for parts 0-7.
 - [Enroll in part 7 through the Open University](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-4142645d-5690-4527-9d57-79bd1fbc8770).
-- [Request credits for part 7](/en/part0/general_info/#how-to-get-your-credits).
+- [Request credits for part 7](/en/part0).
 
 #### Part 8 - Full Stack Web Development: GraphQL (1 cr, CSM14113)
 
@@ -159,14 +159,14 @@ Note that university credits of this part are available starting 1st August 2026
 #### How to study the course – instructions in a nutshell: 5 cr core course CSM141081
 
 - Do the exercises. The exercises are submitted through GitHub and marking them as done on the [submission system](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-    - [The course certificate](/en/part0/general_info#course-certificate) will be available in the submission system.
+    - [The course certificate](/en/part0) will be available in the submission system.
 - If you want to get University of Helsinki credits
-    - Enroll in the course. You will get the enrollment link through the submission system once you have completed enough exercises. Read more [here](/en/part0/general_info#submitting-exercises)
+    - Enroll in the course. You will get the enrollment link through the submission system once you have completed enough exercises. Read more [here](/en/part0)
     - Save your student number. After course enrollment, save your University of Helsinki student ID number in the submission system.
-    - Do the online exam in the submission system. Read more [here](/en/part0/general_info#the-course-exam)
-    - Mark the course completed in the submission system. Read more [here](/en/part0/general_info#how-to-get-your-credits)
+    - Do the online exam in the submission system. Read more [here](/en/part0)
+    - Mark the course completed in the submission system. Read more [here](/en/part0)
 
-Please note that if you do the "base course" with 6 or 7 credits, you need separate registrations for the extra credits, see [Parts and completion](/en/part0/general_info#parts-and-completion) for more.
+Please note that if you do the "base course" with 6 or 7 credits, you need separate registrations for the extra credits, see [Parts and completion](/en/part0) for more.
 
 #### How to study the course – instructions in a nutshell: parts 8-14
 
@@ -211,7 +211,7 @@ After the course enrollment, save your University of Helsinki student number in 
 
 ![saving the student number](../../images/0/28b.png)
 
-See [this](/en/part0/general_info#where-do-i-get-my-university-of-helsinki-student-number) for information on how to find your student number.
+See [this](/en/part0) for information on how to find your student number.
 
 After these steps, you can do the course exam in the submission system:
 
@@ -243,7 +243,7 @@ If you want to receive University of Helsinki credits, save your <b>University o
 
 ![saving the student number](../../images/0/28b.png)
 
-If you are not a student at the University of Helsinki, you can get a student number by registering for the course through [Open University](/en/part0/general_info#the-course-exam), see [this](/en/part0/general_info#where-do-i-get-my-university-of-helsinki-student-number) for more information.
+If you are not a student at the University of Helsinki, you can get a student number by registering for the course through [Open University](/en/part0), see [this](/en/part0) for more information.
 
 You will receive your credits after you have submitted enough exercises for a passing grade, passed the exam and then letting us know through the exercise submission system that you have completed the course:
 
@@ -259,7 +259,7 @@ When pressed twice you should see the following text
 
 > *University credit registration in progress...*
 
-**Please note** that to get university credits you need a registration for each completed part. Please see [more information about registration](/en/part0/general_info#parts-and-completion).
+**Please note** that to get university credits you need a registration for each completed part. Please see [more information about registration](/en/part0).
 
 You can view your grade in the University of Helsinki Sisu and [Opintopolku](https://opintopolku.fi/oma-opintopolku/) approximately four weeks after notifying us.
 

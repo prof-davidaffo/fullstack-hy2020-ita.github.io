@@ -8,7 +8,7 @@ import Element from '../Element/Element';
 import Form from '../Form/Form';
 import { Image } from '../Image/Image';
 import Layout from '../layout';
-import SEO from '../seo';
+import Seo from '../seo';
 import { SubHeader } from '../SubHeader/SubHeader';
 import landingImage from '../../images/haaste.svg';
 import mainSEOtags from '../../content/seo/mainSEOtags';
@@ -24,7 +24,7 @@ const ChallengePage = ({
 
   return (
     <Layout>
-      <SEO
+      <Seo
         lang={lang}
         title={title}
         description={seoDescription}

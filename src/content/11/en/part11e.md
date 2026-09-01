@@ -101,7 +101,7 @@ Build a similar CI/CD-pipeline for some of your own applications. Some of the go
 
 You most likely need to do some restructuring to get all the pieces together. A logical first step is to store both the frontend and backend code in the same repository. This is not a requirement but it is recommended since it makes things much more simple.
 
-One possible repository structure would be to have the backend at the root of the repository and the frontend as a subdirectory. You can also "copy paste" the structure of the example app of this part or try out the [example app](https://github.com/fullstack-hy2020/create-app) mentioned in [part 7](/en/part7/class_components_miscellaneous#frontend-and-backend-in-the-same-repository).
+One possible repository structure would be to have the backend at the root of the repository and the frontend as a subdirectory. You can also "copy paste" the structure of the example app of this part or try out the [example app](https://github.com/fullstack-hy2020/create-app) mentioned in [part 7](/en/part7/miscellaneous#frontend-and-backend-in-the-same-repository).
 
 It is perhaps best to create a new repository for this exercise and simply copy and paste the old code there. In real life, you most likely would do this all in the old repository but now "a fresh start" makes things easier.
 
@@ -133,7 +133,7 @@ Once you have completed the exercises and want to get the credits, let us know t
 
 ![Submissions](../../images/11/21.png)
 
-**Note** that you need a registration to the corresponding course part for getting the credits registered, see [here](/en/part0/general_info#parts-and-completion) for more information.
+**Note** that you need a registration to the corresponding course part for getting the credits registered, see [here](/en/part0) for more information.
 
 You can download the certificate for completing this part by clicking one of the flag icons. The flag icon corresponds to the certificate's language. 
 

@@ -67,9 +67,9 @@ Virheiden ilmaantuessa <i>ylivoimaisesti huonoin strategia</i> on jatkaa koodin 
 
 Jotta saisimme talletettua muistiinpanot pysyvästi, tarvitsemme tietokannan. Useimmilla Tietojenkäsittelytieteen osaston kursseilla on käytetty relaatiotietokantoja. Melkein kaikissa tämän kurssin osissa käytämme [MongoDB](https://www.mongodb.com/):tä, joka on ns. [dokumenttitietokanta](https://en.wikipedia.org/wiki/Document-oriented_database). 
 
-Tärkein syy Mongon käytölle kurssilla on se, että Mongo on tietokantanoviiseille helpompikäyttöisempi kuin relaatiotietokannat. Kurssin [osassa 13](https://fullstackopen.com/osa13) tutustutaan relaatiotietokantoja käyttävien Node-sovellusten tekemiseen.
+Tärkein syy Mongon käytölle kurssilla on se, että Mongo on tietokantanoviiseille helpompikäyttöisempi kuin relaatiotietokannat. Kurssin [osassa 13](/osa13) tutustutaan relaatiotietokantoja käyttävien Node-sovellusten tekemiseen.
 
-Mongon valinta tämän kurssin alkuun on siis tehty enimmäkseen pedagogisista perusteista. Itse suosittelen useimpiin sovelluksiin lähtökohtaisesti relaatiotietokantaa. Eli suosittelen lämpimästi tekemään myös tämän kurssin [Osan 13](https://fullstackopen.com/osa13). 
+Mongon valinta tämän kurssin alkuun on siis tehty enimmäkseen pedagogisista perusteista. Itse suosittelen useimpiin sovelluksiin lähtökohtaisesti relaatiotietokantaa. Eli suosittelen lämpimästi tekemään myös tämän kurssin [Osan 13](/osa13).
 
 Dokumenttitietokannat poikkeavat jossain määrin relaatiotietokannoista niin datan organisointitapansa kuin kyselykielensäkin suhteen. Dokumenttitietokantojen ajatellaan kuuluvan sateenvarjotermin [NoSQL](https://en.wikipedia.org/wiki/NoSQL) alle. Lyhyt johdanto dokumenttitietokantoihin on [täällä](https://github.com/fullstack-hy2020/misc/blob/master/dokumenttitietokannat.MD).
 
@@ -632,7 +632,7 @@ Full stack ‑ohjelmointi on <i>todella</i> hankalaa, ja sen takia lupaan hyödy
 - etenen pienin askelin
 - käytän koodissa runsaasti _console.log_-komentoja varmistamaan sen, että varmasti ymmärrän jokaisen kirjoittamani koodirivin, sekä etsiessäni koodista mahdollisia bugin aiheuttajia
 - jos koodini ei toimi, en kirjoita enää yhtään lisää koodia, vaan alan poistamaan toiminnan rikkoneita rivejä tai palaan suosiolla tilanteeseen, missä koodi vielä toimi
-- kun kysyn apua kurssin Discord-kanavalla, tai muualla internetissä, muotoilen kysymyksen järkevästi, esim. [täällä](/en/part0/general_info#how-to-get-help-in-discord) esiteltyyn tapaan
+- kun kysyn apua kurssin Discord-kanavalla, tai muualla internetissä, muotoilen kysymyksen järkevästi, esim. [täällä](/en/part0) esiteltyyn tapaan
 
 </div>
 

@@ -560,7 +560,7 @@ Ohjelmointi on hankalaa, ja sen takia lupaan hyödyntää kaikkia ohjelmointia h
 - etenen pienin askelin
 - käytän koodissani runsaasti _console.log_-komentoja sekä varmistamaan sen, että varmasti ymmärrän jokaisen kirjoittamani koodirivin, että etsiessäni koodistani mahdollisia bugin aiheuttajia
 - jos koodini ei toimi, en kirjoita enää yhtään lisää koodia, vaan alan poistaa toiminnan rikkoneita rivejä tai palaan suosiolla tilanteeseen, missä koodini vielä toimi
-- kun kysyn apua kurssin Discord-kanavalla, tai muualla internetissä, muotoilen kysymyksen järkevästi, esim. [täällä](/en/part0/general_info#how-to-get-help-in-discord) esiteltyyn tapaan
+- kun kysyn apua kurssin Discord-kanavalla, tai muualla internetissä, muotoilen kysymyksen järkevästi, esim. [täällä](/en/part0) esiteltyyn tapaan
 
 </div>
 
@@ -652,7 +652,7 @@ Ilmoita myös kurssin yhteenlaskettu tehtävien lukumäärä:
 
 <h4>2.3*: kurssitiedot step8</h4>
 
-<i>Miksi tehtävä on merkattu tähdellä? Selitys asiaan  [täällä](/osa0/yleista#suoritustapa).</i>
+<i>Miksi tehtävä on merkattu tähdellä? Selitys asiaan  [täällä](/osa0).</i>
 
 Jos et jo niin tehnyt, laske koodissasi tehtävien määrä taulukon metodilla [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce).
 

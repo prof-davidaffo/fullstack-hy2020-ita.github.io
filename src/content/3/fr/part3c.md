@@ -68,7 +68,7 @@ Lorsque des bugs surviennent, <i>la pire des stratégies possibles</i> est de co
 
 Afin de stocker indéfiniment nos notes enregistrées, nous avons besoin d'une base de données. La plupart des cours dispensés à l'Université d'Helsinki utilisent des bases de données relationnelles. Dans la majeure partie de ce cours, nous utiliserons [MongoDB](https://www.mongodb.com/) qui est une base de données documentaire (https://en.wikipedia.org/wiki/Document-oriented_database).
 
-La raison de l'utilisation de Mongo comme base de données est sa moindre complexité par rapport à une base de données relationnelle. [La partie 13](https://fullstackopen.com/en/part13) du cours montre comment construire des backends node.js qui utilisent une base de données relationnelle.
+La raison de l'utilisation de Mongo comme base de données est sa moindre complexité par rapport à une base de données relationnelle. [La partie 13](/en/part13) du cours montre comment construire des backends node.js qui utilisent une base de données relationnelle.
 
 Les bases de données documentaires diffèrent des bases de données relationnelles par la manière dont elles organisent les données ainsi que par les langages d'interrogation qu'elles prennent en charge. Les bases de données documentaires sont généralement classées sous le terme générique [NoSQL](https://en.wikipedia.org/wiki/NoSQL).
 

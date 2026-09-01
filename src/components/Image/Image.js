@@ -3,6 +3,11 @@ import './Image.scss';
 import PropTypes from 'prop-types';
 import React from 'react';
 
+export const resolveImageSource = (source) => {
+  if (!source || typeof source === 'string') return source;
+  return source.default || source.publicURL || '';
+};
+
 export const Image = ({
   src,
   alt,
@@ -42,7 +47,7 @@ export const Image = ({
         <img
           style={{ backgroundColor: overlay, backgroundOpacity: '0.5' }}
           className="image__content"
-          src={src}
+          src={resolveImageSource(src)}
           alt={alt}
         />
       </div>

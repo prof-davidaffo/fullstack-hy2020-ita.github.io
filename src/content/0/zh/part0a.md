@@ -74,8 +74,8 @@ lang: zh
 | 83           |       5        | 2        |
 | 72           |       5        | 1        |
 
-<!-- If you wish to receive university credits, you must complete an exam. The exam does not count towards your final grade, but you must pass it. You do the exam in the Moodle learning environment, which can be accessed via the [Open University course page](https://studies.helsinki.fi/courses/cur/otm-dbf5a51d-2121-4110-af0f-f1e8f0b74fb9/_Full_Stack_Web_Development) once you have [signed up](https://fullstackopen.com/en/part0/general_info#sign-up-for-the-exam) for the exam.-->
-如果你想获得大学学分，你必须通过考试。考试不计入你的最终成绩，但你必须通过。你在Moodle学习环境中进行考试，一旦你[注册](https://fullstackopen.com/en/part0/general_info#sign-up-for-the-exam)参加考试，就可以通过[开放大学课程网页](https://studies.helsinki.fi/courses/cur/otm-dbf5a51d-2121-4110-af0f-f1e8f0b74fb9/_Full_Stack_Web_Development)进入该网页。
+<!-- If you wish to receive university credits, you must complete an exam. The exam does not count towards your final grade, but you must pass it. You do the exam in the Moodle learning environment, which can be accessed via the [Open University course page](https://studies.helsinki.fi/courses/cur/otm-dbf5a51d-2121-4110-af0f-f1e8f0b74fb9/_Full_Stack_Web_Development) once you have [signed up](/en/part0) for the exam.-->
+如果你想获得大学学分，你必须通过考试。考试不计入你的最终成绩，但你必须通过。你在Moodle学习环境中进行考试，一旦你[注册](/en/part0)参加考试，就可以通过[开放大学课程网页](https://studies.helsinki.fi/courses/cur/otm-dbf5a51d-2121-4110-af0f-f1e8f0b74fb9/_Full_Stack_Web_Development)进入该网页。
 
 <!-- Once you have completed enough exercises for a passing grade, you can download the course certificate from the [submission system](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).-->
 一旦你完成了足够的练习，达到了合格的成绩，你可以从[提交系统](https://studies.cs.helsinki.fi/stats/courses/fullstackopen)下载课程证书。
@@ -95,8 +95,8 @@ lang: zh
  - 提交至少127道0-7章节的练习。
 <!-- - [Enroll in part 6 through the Open University](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-de83e85f-a06e-4258-ad8c-30326d76228e).-->
  - [通过开放大学报名学习第6章节](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-de83e85f-a06e-4258-ad8c-30326d76228e)。
-<!-- - [Request credits for part 6](https://fullstackopen.com/en/part0/general_info/#how-to-get-your-credits).-->
- - [申请第六章节的学分](https://fullstackopen.com/en/part0/general_info/#how-to-get-your-credits)。
+<!-- - [Request credits for part 6](/en/part0).-->
+ - [申请第六章节的学分](/en/part0)。
 
 #### Part 7 - Full Stack Web Development, extension 2 (1 cr, CSM141083)
 <!-- By submitting at least 138 of the exercises for parts 0-7 while working on the core course, you can receive an additional credit through this extension.-->
@@ -106,8 +106,8 @@ lang: zh
  - 提交至少138道0-7章节的练习。
 <!-- - [Enroll in part 7 through the Open University](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-53ccca2f-8e77-47e3-931a-63f9d5c8cc2e).-->
  - [通过开放大学报名学习第7章节](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-53ccca2f-8e77-47e3-931a-63f9d5c8cc2e)。
-<!-- - [Request credits for part 7](https://fullstackopen.com/en/part0/general_info/#how-to-get-your-credits).-->
- - [申请第七章节的学分](https://fullstackopen.com/en/part0/general_info/#how-to-get-your-credits)。
+<!-- - [Request credits for part 7](/en/part0).-->
+ - [申请第七章节的学分](/en/part0)。
 
 #### Part 8 - Full Stack Web Development: GraphQL (1 cr, CSM14113)
 <!-- By submitting at least 22/26 of the exercises for part 8 of the course, GraphQL, you can get one additional credit. Part 8 can be done any time after part 5, because its contents are independent from parts 6 and 7.-->
@@ -117,8 +117,8 @@ lang: zh
  - 第8章节提交至少22/26道练习。
 <!-- - [Enroll in part 8 through the Open University](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-b7f5ef26-b780-45f2-962d-f8d3432cae78).-->
  - [通过开放大学报名参加第八章节](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-b7f5ef26-b780-45f2-962d-f8d3432cae78)。
-<!-- - [Request credits for part 8](https://fullstackopen.com/en/part0/general_info/#how-to-get-your-credits).-->
- - [申请第八章节的学分](https://fullstackopen.com/en/part0/general_info/#how-to-get-your-credits)。
+<!-- - [Request credits for part 8](/en/part0).-->
+ - [申请第八章节的学分](/en/part0)。
 
 #### Part 9 - Full Stack Web Development: TypeScript (1 cr, CSM14110)
 <!-- By submitting at least 24/29 of the exercises for part 9 of the course, TypeScript, you can get one additional credit. It is recommended that you complete parts 0-7 before taking part 9.-->
@@ -127,8 +127,8 @@ lang: zh
  - 提交至少24/29道第九章节的练习。
 <!-- - [Enroll in part 9 through the Open University](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-e45a36b7-24d7-424b-9dc5-1c9b59a52a23).-->
  - [通过开放大学报名参加第9章节](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-e45a36b7-24d7-424b-9dc5-1c9b59a52a23)。
-<!-- - [Request credits for part 9](https://fullstackopen.com/en/part0/general_info/#how-to-get-your-credits).-->
- - [申请第九章节的学分](https://fullstackopen.com/en/part0/general_info/#how-to-get-your-credits)。
+<!-- - [Request credits for part 9](/en/part0).-->
+ - [申请第九章节的学分](/en/part0)。
 
 #### Part 10 - Full Stack Web Development: React Native (2 cr, CSM14111)
 <!-- By submitting 25 exercises for part 10 of the course on React Native, you can earn two additional credits. More information about this part's prerequisites, exercise submission, and credits can be found in[part 10](/en/part10/introduction_to_react_native).-->
@@ -138,8 +138,8 @@ lang: zh
  - 为第10章节提交至少25道练习。
 <!-- - [Enroll in part 10 through the Open University](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-ec172afe-bc01-46ab-af23-694311f1950a).-->
  - [通过开放大学报名参加第10章节](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-ec172afe-bc01-46ab-af23-694311f1950a)。
-<!-- - [Request credits for part 10](https://fullstackopen.com/en/part0/general_info/#how-to-get-your-credits).-->
- - [申请第十章节的学分](https://fullstackopen.com/en/part0/general_info/#how-to-get-your-credits)。
+<!-- - [Request credits for part 10](/en/part0).-->
+ - [申请第十章节的学分](/en/part0)。
 
 #### Part 11 - Full Stack Web Development: Continuous Integration / Continuous Delivery (1 cr, CSM14112)
 
@@ -150,8 +150,8 @@ lang: zh
  - 提交第11章节的所有练习。
 <!-- - [Enroll in part 11 through the Open University](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-23e79dc2-64e4-4f7e-86a4-8923a411443c).-->
  - [通过开放大学报名参加第11章节](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-23e79dc2-64e4-4f7e-86a4-8923a411443c)。
-<!-- - [Request credits for part 11](https://fullstackopen.com/en/part0/general_info/#how-to-get-your-credits).-->
- - [申请第11章节的学分](https://fullstackopen.com/en/part0/general_info/#how-to-get-your-credits)。
+<!-- - [Request credits for part 11](/en/part0).-->
+ - [申请第11章节的学分](/en/part0)。
 
 #### Part 12 - Full Stack Web Development: Containers (1 cr, CSM141084)
 
@@ -162,8 +162,8 @@ lang: zh
  - 提交第12章节的所有练习。
 <!-- - [Enroll in part 12 through the Open University](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-bb07e139-3de0-4cb3-843d-414b1bb992cc).-->
  - [通过开放大学报名参加第12章节](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-bb07e139-3de0-4cb3-843d-414b1bb992cc)。
-<!-- - [Request credits for part 12](https://fullstackopen.com/en/part0/general_info/#how-to-get-your-credits).-->
- - [申请第12章节的学分](https://fullstackopen.com/en/part0/general_info/#how-to-get-your-credits)。
+<!-- - [Request credits for part 12](/en/part0).-->
+ - [申请第12章节的学分](/en/part0)。
 
 #### Part 13 - Full Stack Web Development: relational databases (1 cr, CSM14114)
 
@@ -174,8 +174,8 @@ lang: zh
  - 提交第13章节的所有练习。
 <!-- - [Enroll in part 13 through the Open University](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-a9204ed8-1346-4174-b27c-9e02c6136088).-->
  - [通过开放大学报名参加第13章节](https://www.avoin.helsinki.fi/palvelut/esittely.aspx?s=otm-a9204ed8-1346-4174-b27c-9e02c6136088)。
-<!-- - [Request credits for part 13](https://fullstackopen.com/en/part0/general_info/#how-to-get-your-credits).-->
- - [申请第13章节的学分](https://fullstackopen.com/en/part0/general_info/#how-to-get-your-credits)。
+<!-- - [Request credits for part 13](/en/part0).-->
+ - [申请第13章节的学分](/en/part0)。
 
 
 ### Studying the course in a nutshell
@@ -185,36 +185,36 @@ lang: zh
 
 <!-- - Do the exercises. The exercises are submitted through GitHub and marking them as done on the [submission system](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).-->
 - 做练习。练习是通过GitHub提交的，并在[提交系统](https://studies.cs.helsinki.fi/stats/courses/fullstackopen)上标记为已完成。
-  <!--   - [The course certificate](/en/part0/general_info#course-certificate) will be available in the submission system-->
-- [课程证书](/en/part0/general_info#course-certificate)将在提交系统中提供。
+  <!--   - [The course certificate](/en/part0) will be available in the submission system-->
+- [课程证书](/en/part0)将在提交系统中提供。
   <!-- - If you want to get University of Helsinki credits-->
 - 如果你想获得赫尔辛基大学的学分
 
-  <!--   - Enroll on the course. You will get the enrollment link through submission system once you have completed enough exercises. Read more [here](/en/part0/general_info#sign-up-for-the-exam)-->
+  <!--   - Enroll on the course. You will get the enrollment link through submission system once you have completed enough exercises. Read more [here](/en/part0)-->
 
-  - 报名参加课程。一旦你完成了足够的练习，你将通过提交系统得到注册链接。阅读[这里](/en/part0/general_info#sign-up-for-the-exam)获取更多信息。
-    <!--   - Activate your University of Helsinki user account. You can activate your user account after you have successfully enrolled on the course. The user account must be activated before attempting the course exam. Read more about activating the user account [here](/en/part0/general_info#sign-up-for-the-exam).-->
-  - 激活你的赫尔辛基大学用户账户。你可以在成功报名参加课程后激活你的用户账户。在尝试课程考试之前必须激活用户账户。阅读更多关于激活用户账户的信息，点击[这里](/en/part0/general_info#sign-up-for-the-exam)。
+  - 报名参加课程。一旦你完成了足够的练习，你将通过提交系统得到注册链接。阅读[这里](/en/part0)获取更多信息。
+    <!--   - Activate your University of Helsinki user account. You can activate your user account after you have successfully enrolled on the course. The user account must be activated before attempting the course exam. Read more about activating the user account [here](/en/part0).-->
+  - 激活你的赫尔辛基大学用户账户。你可以在成功报名参加课程后激活你的用户账户。在尝试课程考试之前必须激活用户账户。阅读更多关于激活用户账户的信息，点击[这里](/en/part0)。
     <!--   - Do the online exam in Moodle. You can access Moodle through [this](https://moodle.helsinki.fi/course/view.php?id=46197) link. Log into Moodle with your University of Helsinki user account.-->
   - 在Moodle中进行在线考试。你可以通过[此](https://moodle.helsinki.fi/course/view.php?id=46197)链接进入Moodle。用你的赫尔辛基大学用户账户登录Moodle。
     <!--   - Save your student number. After course enrollment, save your University of Helsinki student ID number in the submission system.-->
   - 保存你的学生号。课程注册后，在提交系统中保存你的赫尔辛基大学学生号。
-    <!--    - Mark the course completed in the submission system, read more [here](/en/part0/general_info#how-to-get-your-credits)-->
-  - 在提交系统中标记课程完成，阅读更多信息，点击[这里](/en/part0/general_info#how-to-get-your-credits)
+    <!--    - Mark the course completed in the submission system, read more [here](/en/part0)-->
+  - 在提交系统中标记课程完成，阅读更多信息，点击[这里](/en/part0)
 
 <!-- How to study the course – instructions in a nutshell (5 cr core course CSM141081)-->
  如何学习该课程 - 简要说明 (5 cr 核心课程 CSM141081)
 
 <!-- - Do the exercises. The exercises are submitted through GitHub and marking them as done on the submission system. Note that each of the parts 8- have a separate instance in the submission system-->
  - 做练习。练习是通过GitHub提交的，并在提交系统上标记为完成。请注意，第8章节后，每个章节在提交系统中都有一个单独的实例
-<!--   - [The course certificate](/en/part0/general_info#course-certificate) will be available in the submission system-->
- - [课程证书](/en/part0/general_info#course-certificate)将在提交系统中提供。
+<!--   - [The course certificate](/en/part0) will be available in the submission system-->
+ - [课程证书](/en/part0)将在提交系统中提供。
 <!-- - If you want to get University of Helsinki credits-->
  - 如果你想获得赫尔辛基大学的学分
-  <!--   - Enroll on the course. You can enroll in each part through the link in the course material ([Parts and completion](/en/part0/general_info#parts-and-completion)). Enroll in each part separately.-->
-  - 报名参加该课程。你可以通过教材中的链接注册每个章节（[部分和完成](/en/part0/general_info#parts-and-completion)）。分别报名参加每个章节的学习。
-    <!--  - Mark the part completed in the submission system, read more [here](/en/part0/general_info#how-to-get-your-credits)-->
-  - 在提交系统中标记完成的章节，阅读更多，点击[这里](/en/part0/general_info#how-to-get-your-credits)
+  <!--   - Enroll on the course. You can enroll in each part through the link in the course material ([Parts and completion](/en/part0)). Enroll in each part separately.-->
+  - 报名参加该课程。你可以通过教材中的链接注册每个章节（[部分和完成](/en/part0)）。分别报名参加每个章节的学习。
+    <!--  - Mark the part completed in the submission system, read more [here](/en/part0)-->
+  - 在提交系统中标记完成的章节，阅读更多，点击[这里](/en/part0)
 
 
 ### Submitting exercises
@@ -257,8 +257,8 @@ lang: zh
   - 你可以在成功注册课程后激活你的用户账户。用户账户必须在尝试课程考试前激活。阅读更多关于激活用户账户的信息，点击[这里](https://studies.helsinki.fi/instructions/article/university-helsinki-user-account-open-university)。
 
 
-<!-- After course enrollment, save your University of Helsinki student number in the [submission system](https://studies.cs.helsinki.fi/stats/myinfo). See [this](/en/part0/general_info#where-do-i-get-my-university-of-helsinki-student-number) for info how you find out your student number.-->
-课程注册后，在[提交系统](https://studies.cs.helsinki.fi/stats/myinfo)中保存你的赫尔辛基大学学生号。参见[这里](/en/part0/general_info#wher-do-i-get-my-university-of-helsinki-student-number)，了解如何找到你的学生号。
+<!-- After course enrollment, save your University of Helsinki student number in the [submission system](https://studies.cs.helsinki.fi/stats/myinfo). See [this](/en/part0) for info how you find out your student number.-->
+课程注册后，在[提交系统](https://studies.cs.helsinki.fi/stats/myinfo)中保存你的赫尔辛基大学学生号。参见[这里](/en/part0)，了解如何找到你的学生号。
 
 <!-- Please note:-->
  请注意。
@@ -274,8 +274,8 @@ lang: zh
 
 ![](../../images/0/28b.png)
 
-<!-- If you are not a student at the University of Helsinki, you can get a student number by registering for the course through [Open University](/en/part0/general_info#sign-up-for-the-exam), see [this](/en/part0/general_info#where-do-i-get-my-university-of-helsinki-student-number) for more info.-->
- 如果你不是赫尔辛基大学的学生，你可以通过[开放大学](/en/part0/general_info#sign-up-for-the-exam)注册课程来获得学号，更多信息见[这里](/en/part0/general_info#where-do-i-get-my-university-of-helsinki-student-number)。
+<!-- If you are not a student at the University of Helsinki, you can get a student number by registering for the course through [Open University](/en/part0), see [this](/en/part0) for more info.-->
+ 如果你不是赫尔辛基大学的学生，你可以通过[开放大学](/en/part0)注册课程来获得学号，更多信息见[这里](/en/part0)。
 
 <!-- You will receive your credits after you have submitted enough exercises for a passing grade, passed the exam and let us know through the exercise submission system that you have completed the course:-->
 当你提交了足够的练习以获得合格的成绩，通过了考试，并通过练习提交系统让我们知道你已经完成了课程，你就会收到你的学分。
@@ -285,8 +285,8 @@ lang: zh
 <!-- You can view your grade in University of Helsinki Sisu and and to [Opintopolku](https://opintopolku.fi/oma-opintopolku/) approximately four weeks after notifying us.-->
 你可以在通知我们之后的大约四周，在赫尔辛基大学的Sisu和[Opintopolku](https://opintopolku.fi/oma-opintopolku/)查看你的成绩。
 
-<!-- **Please note** that in order to get university credits you need a registration for each completed part, please see [more info about registration](/en/part0/general_info#parts-and-completion).-->
- **请注意**，为了获得大学学分，你需要对每一个完成的章节进行注册，请参见[关于注册的更多信息](/en/part0/general_info#parts-and-completion) 。
+<!-- **Please note** that in order to get university credits you need a registration for each completed part, please see [more info about registration](/en/part0).-->
+ **请注意**，为了获得大学学分，你需要对每一个完成的章节进行注册，请参见[关于注册的更多信息](/en/part0) 。
 
 ### Where do I get my University of Helsinki Student number
 

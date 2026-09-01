@@ -3,8 +3,8 @@
     "mainTitle": "Syväsukellus moderniin websovelluskehitykseen",
     "intro": "Ota haltuusi React, Redux, Node.js, MongoDB, GraphQL ja TypeScript! Kurssilla tutustutaan JavaScriptilla tapahtuvaan moderniin websovelluskehitykseen. Pääpaino on React-kirjaston avulla toteutettavissa single page -sovelluksissa, ja niitä tukevissa Node.js:llä toteutetuissa REST-rajapinnoissa.",
     "current": [
-      "Kurssilla ei ole enää vuosittaisia versiota, kurssi jatkuu katkeamattomasti ilman taukoja. Lue <a href='/osa0/yleista#ei-enaa-vuosittaisia-versioita'>täältä</a> lisää!",
-      "Kurssiin liittyvää keskustelua Discordissa, kanavalla <a target='_blank' href='https://study.cs.helsinki.fi/discord/join/fullstack'>https://study.cs.helsinki.fi/discord/join/fullstack</a>, tule mukaan! <ul><li>Katso <a href='/en/part0/general_info#how-to-get-help-in-discord'>täältä</a> miten kanavalla kysytyt kysymykset kannattaa muotoilla</li><li>Huom: kaikki epäasialliset, halventavat ja jotain ihmisryhmää syrjivät kommentit kanavalla ovat kiellettyjä ja tällaisten kommenttien esittäjät poistetaan kanavalta.</li></ul>",
+      "Kurssilla ei ole enää vuosittaisia versiota, kurssi jatkuu katkeamattomasti ilman taukoja. Lue <a href='/osa0'>täältä</a> lisää!",
+      "Kurssiin liittyvää keskustelua Discordissa, kanavalla <a target='_blank' href='https://study.cs.helsinki.fi/discord/join/fullstack'>https://study.cs.helsinki.fi/discord/join/fullstack</a>, tule mukaan! <ul><li>Katso <a href='/en/part0'>täältä</a> miten kanavalla kysytyt kysymykset kannattaa muotoilla</li><li>Huom: kaikki epäasialliset, halventavat ja jotain ihmisryhmää syrjivät kommentit kanavalla ovat kiellettyjä ja tällaisten kommenttien esittäjät poistetaan kanavalta.</li></ul>",
       "Yhteistyökumppaneina kurssilla on <a href='https://www.houston-inc.com/'>Houston Inc</a>, <a href='https://www.terveystalo.com/fi/Yritystietoa/Terveystalo-tyontantajana/Digital-Health/'>Terveystalo</a>, <a href='https://elisa.fi/'>Elisa</a>, <a href='https://www.instagram.com/unitytechnologies/?hl=en'>Unity Technologies</a>, <a href='https://careers.konecranes.com/Konecranes/'>Konecranes</a> ja <a href='https://www.smartly.io/'>Smartly.io</a>. Katso <a href='https://www.youtube.com/playlist?list=PLumQiZ25uijis31zaRL7rhzLalSwLqUtm'>täältä</a> yhteistyökumppaniemme asiantuntijoiden vierailuluentoja kurssin aihepiireistä."
     ],
     "notice": "Huom: kaikki epäasialliset, halventavat ja jotain ihmisryhmää syrjivät kommentit kanavalla ovat kiellettyjä ja tällaisten kommenttien esittäjät poistetaan kanavalta.",
@@ -21,9 +21,9 @@
     "mainTitle": "Deep Dive Into Modern Web Development",
     "intro": "Learn React, Redux, Node.js, MongoDB, GraphQL and TypeScript in one go! This course will introduce you to modern JavaScript-based web development. The main focus is on building single page applications with ReactJS that use REST APIs built with Node.js.",
     "current": [
-      "<em>Questions about the course? Read carefully <a href='/en/part0/general_info'>Part 0</a>, that has an answer to most of them...</em>",
-      "No more yearly versions, the course just continues without any break! See <a href='/en/part0/general_info/#no-more-yearly-versions'>here</a> for more details.",
-      "You can discuss the course and related topics in our dedicated group on Discord <a target='_blank' href='https://study.cs.helsinki.fi/discord/join/fullstack'>https://study.cs.helsinki.fi/discord/join/fullstack</a>. Please join the conversation! <ul><li>See <a href='/en/part0/general_info#how-to-get-help-in-discord'>here</a> how to ask questions in a proper way</li><ul>"
+      "<em>Questions about the course? Read carefully <a href='/en/part0'>Part 0</a>, that has an answer to most of them...</em>",
+      "No more yearly versions, the course just continues without any break! See <a href='/en/part0'>here</a> for more details.",
+      "You can discuss the course and related topics in our dedicated group on Discord <a target='_blank' href='https://study.cs.helsinki.fi/discord/join/fullstack'>https://study.cs.helsinki.fi/discord/join/fullstack</a>. Please join the conversation! <ul><li>See <a href='/en/part0'>here</a> how to ask questions in a proper way</li><ul>"
     ],
     "notice": "NB: Inappropriate, degrading and discriminatory comments are strictly forbidden on the channel, and anyone who sends these types of messages will be permanently removed from the discussion.",
     "licence": [
@@ -39,9 +39,9 @@
     "mainTitle": "Inmersión Profunda en el Desarrollo Web Moderno.",
     "intro": "¡Aprende React, Redux, Node.js, MongoDB, GraphQL y TypeScript de una sola vez! Este curso te presentará el desarrollo web moderno basado en JavaScript. El enfoque principal es crear aplicaciones de una sola página con ReactJS que usan REST API creadas con Node.js.",
     "current": [
-      "<em>¿Preguntas sobre el curso? Lee cuidadosamente la <a href='/es/part0/informacion_general'>Parte 0</a>, que contiene respuestas a la mayoría de ellas...</em>",
-      "No más versiones anuales, ¡el curso simplemente continua sin interrupciones! Más detalles <a href='/en/part0/general_info/#no-more-yearly-versions'>aquí</a>",
-      "Puedes discutir el curso y temas relacionados en nuestro grupo dedicado en Discord <a target='_blank' href='https://study.cs.helsinki.fi/discord/join/fullstack'>https://study.cs.helsinki.fi/discord/join/fullstack</a>. ¡Únete a la conversación! <ul><li>Mira <a href='/en/part0/general_info#how-to-get-help-in-discord'>¿cómo hacer preguntas apropiadamente?</a></li><ul>"
+      "<em>¿Preguntas sobre el curso? Lee cuidadosamente la <a href='/es/part0'>Parte 0</a>, que contiene respuestas a la mayoría de ellas...</em>",
+      "No más versiones anuales, ¡el curso simplemente continua sin interrupciones! Más detalles <a href='/en/part0'>aquí</a>",
+      "Puedes discutir el curso y temas relacionados en nuestro grupo dedicado en Discord <a target='_blank' href='https://study.cs.helsinki.fi/discord/join/fullstack'>https://study.cs.helsinki.fi/discord/join/fullstack</a>. ¡Únete a la conversación! <ul><li>Mira <a href='/en/part0'>¿cómo hacer preguntas apropiadamente?</a></li><ul>"
     ],
     "notice": "Nota: Los comentarios inapropiados, degradantes y discriminatorios están estrictamente prohibidos en el canal, y cualquiera que envíe este tipo de mensajes será eliminado permanentemente de la discusión.",
     "licence": [
@@ -57,7 +57,7 @@
     "mainTitle": "深入浅出现代Web编程",
     "intro": "一站式学习 React, Redux, Node.js, MongoDB, GraphQL 以及 TypeScript！这门课程会向你介绍基于 JavaScript 的现代 Web 开发技术。重点是利用 ReactJS 搭建单页面应用程序（SPA：Single Page Application），并使用Node.js构建REST API。",
     "current": [
-      "2022年的课程已经开始了。你可以在新版本使用新的教材继续之前的课程, 点击<a href='/zh/part0/基础知识#expanding-on-a-previously-completed-course'>这里</a>查看详情.",
+      "2022年的课程已经开始了。你可以在新版本使用新的教材继续之前的课程, 点击<a href='/zh/part0'>这里</a>查看详情.",
       "你可以加入我们的 Discord 群组 <a target='_blank' href='https://study.cs.helsinki.fi/discord/join/fullstack'>https://study.cs.helsinki.fi/discord/join/fullstack</a>."
     ],
     "notice": "NB: Inappropriate, degrading and discriminatory comments are strictly forbidden on the channel, and anyone who sends these types of messages will be permanently removed from the discussion.",
@@ -75,7 +75,7 @@
     "intro": "Apprenez React, Redux, Node.js, MongoDB, GraphQL et TypeScript en une seule fois ! Ce cours vous présentera le développement Web moderne basé sur JavaScript. L'accent est mis sur la création d'applications à page unique avec ReactJS qui utilisent des API REST construites avec Node.js.",
     "current": [
       "<a href='https://github.com/fullstack-hy2020/fullstack-hy2020.github.io/issues/1164'>Looking for contributors for the French translation</a>",
-      "L'édition 2022 est lancée ! Vous pouvez continuer un cours précédent dans la nouvelle édition, consultez <a href='/en/part0/general_info#expanding-on-a-previously-completed-course'>ceci</a> pour plus de détails.",
+      "L'édition 2022 est lancée ! Vous pouvez continuer un cours précédent dans la nouvelle édition, consultez <a href='/en/part0'>ceci</a> pour plus de détails.",
       "Vous pouvez discuter du cours et des sujets connexes dans notre groupe dédié sur Discord <a target='_blank' href='https://study.cs.helsinki.fi/discord/join/fullstack'>https://study.cs.helsinki.fi/discord/join/fullstack</a>. Veuillez vous joindre à la conversation !"
     ],
     "notice": "NB : Les commentaires déplacés, dégradants et discriminatoires sont strictement interdits sur le canal, et toute personne envoyant ce type de messages sera définitivement retirée de la discussion.",
@@ -92,9 +92,9 @@
     "mainTitle": "Dê um mergulho profundo em desenvolvimento web moderno",
     "intro": "Aprenda React, Redux, Node.js, MongoDB, GraphQL e TypeScript em único lugar! Este curso irá introduzi-lo ao desenvolvimento de aplicações web modernas em JavaScript. O objetivo principal é construir aplicações SPA (Aplicações de Página Única) com ReactJS que utilizam APIs REST construídas em Node.js.",
     "current": [
-      "<em>Dúvidas sobre o curso? Leia cuidadosamente a <a href='/ptbr/part0/informacoes_gerais'>Parte 0</a>, pois lá é possível encontrar a resposta para a maioria delas...</em>",
-      "O ano de 2022 acabou, mas o curso continua! Veja <a href='/ptbr/part0/informacoes_gerais#continuando-o-curso-no-ano-de-2023'>aqui</a> para mais detalhes.",
-      "Você pode discutir o curso e tópicos relacionados em nosso grupo dedicado no Discord <a target='_blank' href='https://study.cs.helsinki.fi/discord/join/fullstack'>https://study.cs.helsinki.fi/discord/join/fullstack</a>. Vem conversar com a gente! <ul><li>Entre <a href='/ptbr/part0/informacoes_gerais#como-pedir-ajuda-no-discord'>aqui</a> para aprender a como pedir ajuda de forma adequada.</li><ul>"
+      "<em>Dúvidas sobre o curso? Leia cuidadosamente a <a href='/ptbr/part0'>Parte 0</a>, pois lá é possível encontrar a resposta para a maioria delas...</em>",
+      "O ano de 2022 acabou, mas o curso continua! Veja <a href='/ptbr/part0'>aqui</a> para mais detalhes.",
+      "Você pode discutir o curso e tópicos relacionados em nosso grupo dedicado no Discord <a target='_blank' href='https://study.cs.helsinki.fi/discord/join/fullstack'>https://study.cs.helsinki.fi/discord/join/fullstack</a>. Vem conversar com a gente! <ul><li>Entre <a href='/ptbr/part0'>aqui</a> para aprender a como pedir ajuda de forma adequada.</li><ul>"
     ],
     "notice": "N.B.: Comentários inadequados, degradantes e discriminatórios são estritamente proibidos no canal e qualquer pessoa que enviar esses tipos de mensagens será removida permanentemente da discussão.",
     "licence": [

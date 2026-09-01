@@ -817,8 +817,8 @@ notes.filter(n => n.id !== id)
 - 我会写大量_console.log_语句来确保我理解代码的行为，并借助其定位问题
 <!-- - If my code does not work, I will not write more code. Instead, I start deleting the code until it works or just return to a state when everything was still working -->
 - 如果我的代码无法运行，我不会写更多的代码。相反，我会开始删除代码，直到它起作用，或者直接回到一切正常的状态
-<!-- - When I ask for help in the course Discord channel or elsewhere I formulate my questions properly, see [here](/en/part0/general_info#how-to-get-help-in-discord) how to ask for help -->
-- 当我在课程的Discord频道或其他地方寻求帮助时，我会正确地表述我的问题，参见[这里](/en/part0/general_info#how-to-get-help-in-discord)了解如何提问
+<!-- - When I ask for help in the course Discord channel or elsewhere I formulate my questions properly, see [here](/en/part0) how to ask for help -->
+- 当我在课程的Discord频道或其他地方寻求帮助时，我会正确地表述我的问题，参见[这里](/en/part0)了解如何提问
 
 </div>
 
@@ -869,8 +869,8 @@ const delete = (id) => {
 <!-- <h4>2.15*: The Phonebook step 10</h4> -->
 <h4>2.15*：电话簿 第10步</h4>
 
-<!-- <i>Why is there an asterisk in the exercise? See [here](/en/part0/general_info#taking-the-course) for the explanation.</i> -->
-<i>为什么这道练习有个星号？[这里](/zh/part0/基础知识#taking-the-course)有解释。</i>
+<!-- <i>Why is there an asterisk in the exercise? See [here](/en/part0) for the explanation.</i> -->
+<i>为什么这道练习有个星号？[这里](/zh/part0)有解释。</i>
 
 <!-- Change the functionality so that if a number is added to an already existing user, the new number will replace the old number. It's recommended to use the HTTP PUT method for updating the phone number.-->
 改变功能，如果向一个已经存在的用户添加号码，新的号码将替换旧的号码。建议使用HTTP PUT方法来更新电话号码。

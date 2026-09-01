@@ -7,7 +7,7 @@ import Element from '../Element/Element';
 import { Image } from './../Image/Image';
 import Layout from '../layout';
 import { PartBanner } from '../PartBanner/PartBanner';
-import SEO from '../seo';
+import Seo from '../seo';
 import content from '../../content/pages/about.json';
 import landingImage from '../../images/landing.svg';
 import mainSEOdescription from '../../content/seo/mainSEOdescription';
@@ -20,7 +20,7 @@ const AboutPage = ({ title, lang }) => {
 
   return (
     <Layout>
-      <SEO
+      <Seo
         lang={lang}
         title={title}
         description={seoDescription}

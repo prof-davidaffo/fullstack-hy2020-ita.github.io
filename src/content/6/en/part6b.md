@@ -329,7 +329,7 @@ found 0 vulnerabilities
 
 So the command would install not only the Axios library but over 20 other npm packages that Axios requires to work.
 
-The <i>Fetch API</i> offers a similar way to make HTTP requests as Axios, but using the Fetch API does not require installing external libraries. Application maintenance becomes easier when there are fewer libraries to update, and security also improves since the potential attack surface of the application is reduced. Application security and maintenance are touched upon in [Part 7](https://fullstackopen.com/en/part7/class_components_miscellaneous#security-in-react-and-node-applications) of the course.
+The <i>Fetch API</i> offers a similar way to make HTTP requests as Axios, but using the Fetch API does not require installing external libraries. Application maintenance becomes easier when there are fewer libraries to update, and security also improves since the potential attack surface of the application is reduced. Application security and maintenance are touched upon in [Part 7](/en/part7/miscellaneous#react-node-application-security) of the course.
 
 Making requests is done in practice by using the <i>fetch()</i> function. The syntax used has some differences compared to Axios. We'll also soon notice that Axios took care of some things for us and made our lives easier. We'll use the Fetch API now, however, because it is a widely-used native solution that every Full Stack developer should be familiar with.
 

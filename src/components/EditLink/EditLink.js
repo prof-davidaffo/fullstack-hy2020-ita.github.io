@@ -3,17 +3,15 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import Element from '../Element/Element';
+import { REPOSITORY_URL } from '../../courseConfig';
 import './EditLink.scss';
-
-const BASE_URL =
-  'https://github.com/fullstack-hy2020/fullstack-hy2020.github.io';
 
 const EditLink = ({ part, letter }) => {
   const { t, i18n } = useTranslation();
   const lang = i18n.language;
   const link = lang === 'fi' ? `osa${part}` : `part${part}`;
 
-  const url = `${BASE_URL}/edit/source/src/content/${part}/${lang}/${link}${letter}.md`;
+  const url = `${REPOSITORY_URL}/edit/source/src/content/${part}/${lang}/${link}${letter}.md`;
 
   return (
     <Element flex className="container spacing" centered>

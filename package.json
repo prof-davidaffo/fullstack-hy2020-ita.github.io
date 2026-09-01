@@ -1,8 +1,16 @@
 {
-  "name": "full-stack-javascript-course",
+  "name": "fullstackopen-ita",
   "description": "A structured course in modern full stack JavaScript development",
   "version": "1.0.0",
   "author": "Full Stack JavaScript contributors",
+  "homepage": "https://prof-davidaffo.github.io/fullstackopen-ita",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prof-davidaffo/fullstackopen-ita.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prof-davidaffo/fullstackopen-ita/issues"
+  },
   "dependencies": {
     "anchorate": "^1.2.4",
     "axios": "^1.20.0",
@@ -42,8 +50,9 @@
   ],
   "license": "Creative Commons BY-NC-SA 3.0",
   "scripts": {
-    "serve": "gatsby serve",
-    "build": "gatsby build",
+    "serve": "gatsby serve --prefix-paths",
+    "prebuild": "gatsby clean",
+    "build": "gatsby build --prefix-paths",
     "gatsby": "gatsby build",
     "develop": "gatsby develop",
     "clean": "gatsby clean",

@@ -704,7 +704,7 @@ Full stack ‑ohjelmointi on <i>todella</i> hankalaa, ja sen takia lupaan hyödy
 - etenen pienin askelin
 - käytän koodissa runsaasti _console.log_-komentoja varmistamaan sen, että varmasti ymmärrän jokaisen kirjoittamani koodirivin, sekä etsiessäni koodista mahdollisia bugin aiheuttajia
 - jos koodini ei toimi, en kirjoita enää yhtään lisää koodia, vaan alan poistamaan toiminnan rikkoneita rivejä tai palaan suosiolla tilanteeseen, missä koodi vielä toimi
-- kun kysyn apua kurssin Discord-kanavalla, tai muualla internetissä, muotoilen kysymyksen järkevästi, esim. [täällä](/en/part0/general_info#how-to-get-help-in-discord) esiteltyyn tapaan
+- kun kysyn apua kurssin Discord-kanavalla, tai muualla internetissä, muotoilen kysymyksen järkevästi, esim. [täällä](/en/part0) esiteltyyn tapaan
 
 
 </div>
@@ -744,7 +744,7 @@ const delete = (id) => {
 
 <h4>2.15*: puhelinluettelo step10</h4>
 
-<i>Miksi tehtävä on merkattu tähdellä? Selitys asiaan [täällä](/osa0/yleista#suoritustapa).</i>
+<i>Miksi tehtävä on merkattu tähdellä? Selitys asiaan [täällä](/osa0).</i>
 
 Muuta toiminnallisuutta siten, että jos jo olemassa olevalle henkilölle lisätään numero, korvaa lisätty numero aiemman numeron. Korvaaminen kannattaa tehdä HTTP PUT ‑pyynnöllä.
 

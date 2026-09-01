@@ -706,7 +706,7 @@ El desarrollo Full Stack es <i>extremadamente difícil</i>, por eso usaré todos
 - Progresaré con pequeños pasos.
 - Escribiré muchos mensajes de _console.log_ para asegurarme de entender cómo se comporta el código y ayudar a identificar problemas.
 - Si mi código no funciona, no escribiré más código. En cambio, empezaré a eliminar el código hasta que funcione o simplemente volveré a un estado en el que todo seguía funcionando.
-- Cuando pida ayuda en el canal de Discord del curso o en otro lugar, formularé mis preguntas adecuadamente, consulta [aquí](/es/part0/informacion_general#como-obtener-ayuda-en-discord) cómo pedir ayuda.
+- Cuando pida ayuda en el canal de Discord del curso o en otro lugar, formularé mis preguntas adecuadamente, consulta [aquí](/es/part0) cómo pedir ayuda.
 
 </div> 
 
@@ -745,7 +745,7 @@ const delete = (id) => {
 
 <h4> 2.15*: La Agenda Telefónica paso 10 </h4>
 
-<i>¿Por qué hay un asterisco en el ejercicio? Consulta [aquí](/es/part0/informacion_general#tomando-el-curso) para obtener la explicación.</i>
+<i>¿Por qué hay un asterisco en el ejercicio? Consulta [aquí](/es/part0) para obtener la explicación.</i>
 
 Cambia la funcionalidad para que si se agrega un número a un usuario que ya existe, el nuevo número reemplace al antiguo. Se recomienda usar el método HTTP PUT para actualizar el número de teléfono.
 

@@ -1763,11 +1763,11 @@ const AddEntryForm = ({ onSubmit, onCancel }: Props) => {
 
 ![Submissions](../../images/11/21.png)
 
-<!-- Note that the "exam done in Moodle" note refers to the [Full Stack Open course's exam](/en/part0/general_info#sign-up-for-the-exam), which has to be completed before you can earn credits from this part.-->
- 注意 "在Moodle中完成的考试 "是指[全栈开放课程的考试](/en/part0/general_info#sign-up-for-the-exam)，在你从这部分获得学分之前必须完成。
+<!-- Note that the "exam done in Moodle" note refers to the [Full Stack Open course's exam](/en/part0), which has to be completed before you can earn credits from this part.-->
+ 注意 "在Moodle中完成的考试 "是指[全栈开放课程的考试](/en/part0)，在你从这部分获得学分之前必须完成。
 
-<!-- **Note** that you need a registration to the corresponding course part for getting the credits registered, see [here](/en/part0/general_info#parts-and-completion) for more information.-->
- **注意**你需要注册相应的课程部分以获得注册的学分，更多信息见[这里](/en/part0/general_info#parts-and-completion)。
+<!-- **Note** that you need a registration to the corresponding course part for getting the credits registered, see [here](/en/part0) for more information.-->
+ **注意**你需要注册相应的课程部分以获得注册的学分，更多信息见[这里](/en/part0)。
 
 <!-- You can download the certificate for completing this part by clicking one of the flag icons. The flag icon corresponds to the certificate's language.-->
  你可以通过点击其中一个旗子图标下载完成这部分的证书。旗帜图标与证书的语言相对应。

@@ -166,7 +166,7 @@ Eso es todo, ahora el componente <em>RepositoryList</em> ya no es consciente de 
 
 ### Cliente GraphQL y Apollo
 
-En la [parte 8](https://fullstackopen.com/en/part8) aprendimos sobre GraphQL y cómo enviar consultas GraphQL a un servidor Apollo utilizando el [Cliente Apollo](https://www.apollographql.com/docs/react/) en aplicaciones React. La buena noticia es que podemos usar Apollo Client en una aplicación React Native exactamente como lo haríamos con una aplicación web React.
+En la [parte 8](/en/part8) aprendimos sobre GraphQL y cómo enviar consultas GraphQL a un servidor Apollo utilizando el [Cliente Apollo](https://www.apollographql.com/docs/react/) en aplicaciones React. La buena noticia es que podemos usar Apollo Client en una aplicación React Native exactamente como lo haríamos con una aplicación web React.
 
 Como se mencionó anteriormente, el servidor rate-repository-api proporciona una API GraphQL que se implementa con Apollo Server. Una vez que el servidor se está ejecutando, puede acceder a [GraphQL Playground](https://www.apollographql.com/docs/apollo-server/testing/graphql-playground/#gatsby-focus-wrapper) en [http://localhost:5000/graphql](http://localhost:5000/graphql). GraphQL Playground es una herramienta de desarrollo para realizar consultas GraphQL e inspeccionar el esquema y la documentación de las API GraphQL. Si necesita enviar una consulta en su aplicación <i>siempre</i> pruébela con GraphQL Playground antes de implementarla en el código. Es mucho más fácil depurar posibles problemas en la consulta en GraphQL Playground que en la aplicación. Si no está seguro de cuáles son las consultas disponibles o cómo utilizarlas, haga clic en la pestaña <i>docs</i> para abrir la documentación:
 

@@ -1,9 +1,10 @@
 import './Some.scss';
 
 import React from 'react';
+import { REPOSITORY_URL } from '../../courseConfig';
 
 const urls = {
-  github: 'https://github.com/fullstack-hy2020/fullstack-hy2020.github.io',
+  github: REPOSITORY_URL,
   x: 'https://x.com/moocfi',
   facebook: 'https://www.facebook.com/Moocfi',
   youtube:

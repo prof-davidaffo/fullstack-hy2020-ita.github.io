@@ -453,7 +453,7 @@ Once you have completed the exercises and want to get the credits, let us know t
 
 ![Submissions](../../images/11/21.png)
 
-**Note** that you need a registration to the corresponding course part to get the credits registered, see [here](/en/part0/general_info#parts-and-completion) for more information.
+**Note** that you need a registration to the corresponding course part to get the credits registered, see [here](/en/part0) for more information.
 
 You can download the certificate for completing this part by clicking one of the flag icons. The flag icon corresponds to the certificate's language.
 

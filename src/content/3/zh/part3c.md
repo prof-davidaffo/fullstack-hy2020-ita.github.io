@@ -776,8 +776,8 @@ app.get('/api/notes/:id', (request, response) => {
 - 我会写大量的 _console.log_ 语句，以确保我理解代码的行为，并借此定位问题
 <!-- - If my code does not work, I will not write more code. Instead, I start deleting the code until it works or just return to a state when everything was still working -->
 - 如果我的代码不能正确运行，我不会写更多的代码。相反，我会开始删除代码直到它能正确运行，或者直接回到一切都还正常的状态
-<!-- - When I ask for help in the course Discord channel or elsewhere I formulate my questions properly, see [here](https://fullstackopen.com/en/part0/general_info#how-to-get-help-in-discord) how to ask for help -->
-- 当我在课程的 Discord 频道或其他地方寻求帮助时，我会恰当地陈述我的问题，参见[这里](https://fullstackopen.com/en/part0/general_info#how-to-get-help-in-discord)了解如何寻求帮助
+<!-- - When I ask for help in the course Discord channel or elsewhere I formulate my questions properly, see [here](/en/part0) how to ask for help -->
+- 当我在课程的 Discord 频道或其他地方寻求帮助时，我会恰当地陈述我的问题，参见[这里](/en/part0)了解如何寻求帮助
 
 </div>
 

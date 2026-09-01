@@ -48,11 +48,11 @@ lang: zh
 
 ![Submitting exercises for credits](../../images/10/23.png)
 
-<!-- Note that the "exam done in Moodle" note refers to the [Full Stack Open course's exam](https://fullstackopen.com/en/part0/general_info#sign-up-for-the-exam), which <i>has to be completed</i> before you can earn credits from this part.-->
- 注意，"在Moodle中完成的考试 "说明是指[全栈开放课程''的考试](https://fullstackopen.com/en/part0/general_info#sign-up-for-the-exam)，在你从这部分获得学分之前，必须完成<i></i>。
+<!-- Note that the "exam done in Moodle" note refers to the [Full Stack Open course's exam](/en/part0), which <i>has to be completed</i> before you can earn credits from this part.-->
+ 注意，"在Moodle中完成的考试 "说明是指[全栈开放课程''的考试](/en/part0)，在你从这部分获得学分之前，必须完成<i></i>。
 
-<!-- **Note** that you need a registration to the corresponding course part for getting the credits registered, see [here](/en/part0/general_info#parts-and-completion) for more information.-->
- **注意**你需要注册相应的课程部分来获得学分，更多信息请看[这里](/en/part0/general_info#parts-and-completion)。
+<!-- **Note** that you need a registration to the corresponding course part for getting the credits registered, see [here](/en/part0) for more information.-->
+ **注意**你需要注册相应的课程部分来获得学分，更多信息请看[这里](/en/part0)。
 
 <!-- You can download the certificate for completing this part by clicking one of the flag icons. The flag icon corresponds to the certificate's language. Note that you must have completed at least one credit worth of exercises before you can download the certificate.-->
  你可以通过点击其中一个旗帜图标下载完成这部分的证书。旗帜图标与证书的语言相对应。注意，你必须至少完成一个学分的练习才能下载证书。

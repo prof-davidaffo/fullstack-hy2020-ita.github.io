@@ -1133,7 +1133,7 @@ Programming is hard. That is why, as a developer, I will use all possible means 
 - I will progress in small steps, making sure that my code is working at each step.
 - I will write many _console.log_ statements to make sure I understand how the code behaves and to help pinpointing problems.
 - If my code does not work, I will not write more code. Instead, I will either start deleting the code until it works or return to a state where my program was working.
-- When I ask for help in the course Discord channel or elsewhere, I will formulate my questions properly. See [this section](http://fullstackopen.com/en/part0/general_info#how-to-get-help-in-discord) to learn how to ask for help.
+- When I ask for help in the course Discord channel or elsewhere, I will formulate my questions properly. See [this section](/en/part0) to learn how to ask for help.
 
 ### Utilization of Large language models
 

@@ -6,7 +6,7 @@ import Element from '../Element/Element';
 import { Image } from './../Image/Image';
 import Layout from '../layout';
 import { PartBanner } from '../PartBanner/PartBanner';
-import SEO from '../seo';
+import Seo from '../seo';
 import { SubHeader } from '../SubHeader/SubHeader';
 import { TripleBorder } from '../TripleBorder/TripleBorder';
 import content from '../../content/pages/main.json';
@@ -29,7 +29,7 @@ const IndexPage = ({ lang, title = COURSE_NAME }) => {
 
   return (
     <Layout hideFooter={true}>
-      <SEO
+      <Seo
         lang={lang}
         title={title}
         description={seoDescription}

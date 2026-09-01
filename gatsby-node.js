@@ -4,6 +4,19 @@ const isEmpty = require('lodash/fp/isEmpty');
 const navigation = require('./src/content/partnavigation/partnavigation');
 const { isContentVisible } = require('./src/courseConfig');
 
+exports.onCreateWebpackConfig = ({ actions, getConfig }) => {
+  const config = getConfig();
+  const cssPlugin = config.plugins.find(
+    (plugin) => plugin.constructor.name === 'MiniCssExtractPlugin'
+  );
+
+  // Component styles use independent BEM selectors, so their bundle order is
+  // intentionally irrelevant across the different page templates.
+  if (cssPlugin) cssPlugin.options.ignoreOrder = true;
+
+  actions.replaceWebpackConfig(config);
+};
+
 const legacyPagePattern = /\/(about|faq|companies|challenge)(\.[a-z]+)?\/?$/;
 const translatedPagePattern = /^\/(.+)\.(en|es|fr|ptbr|zh)\/?$/;
 
