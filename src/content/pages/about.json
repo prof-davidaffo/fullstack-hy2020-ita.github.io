@@ -57,6 +57,17 @@
       }
     ]
   },
+  "it": {
+    "name": "Informazioni generali",
+    "intro": [
+      "Il corso è dedicato allo sviluppo di applicazioni web moderne con JavaScript. L'attenzione principale è rivolta alle applicazioni a pagina singola realizzate con React e alle API REST sviluppate con Node.js; viene trattato anche GraphQL come alternativa alle API REST.",
+      "Il programma comprende inoltre test, configurazione, gestione degli ambienti di esecuzione e uso dei database per conservare i dati delle applicazioni.",
+      "Ai partecipanti sono richieste buone capacità di programmazione, conoscenze di base dello sviluppo web, dei database e di Git, oltre a perseveranza e autonomia nella ricerca delle informazioni e nella risoluzione dei problemi. Non è richiesta una conoscenza preliminare di JavaScript o delle tecnologie affrontate.",
+      "Le modalità di svolgimento e tutti i dettagli sul contenuto sono descritti nella parte 0 del materiale.",
+      "Puoi discutere del corso nel gruppo Discord dedicato: <a target='_blank' href='https://study.cs.helsinki.fi/discord/join/fullstack'>study.cs.helsinki.fi/discord/join/fullstack</a>."
+    ],
+    "info": []
+  },
   "en": {
     "name": "General",
     "intro": [

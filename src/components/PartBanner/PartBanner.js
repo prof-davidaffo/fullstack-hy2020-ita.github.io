@@ -16,6 +16,7 @@ const partName = {
   es: 'Parte',
   fi: 'Osa',
   fr: 'Partie',
+  it: 'Parte',
   ptbr: 'Parte',
   zh: '部分',
 };

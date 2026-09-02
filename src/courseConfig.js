@@ -105,6 +105,23 @@ const partNames = {
     'Bancos de dados relacionais',
     'Next.js',
   ],
+  it: [
+    'Fondamenti delle applicazioni web',
+    'Introduzione a React',
+    'Comunicare con il server',
+    'Programmare un server con Node.js ed Express',
+    'Testare server Express e amministrare gli utenti',
+    'Testare applicazioni React e React Router',
+    'Gestione avanzata dello stato',
+    'Hook personalizzati e strumenti di build',
+    'GraphQL',
+    'TypeScript',
+    'React Native',
+    'CI/CD',
+    'Container',
+    'Database relazionali',
+    'Next.js',
+  ],
 };
 
 const sectionCopy = {
@@ -206,6 +223,23 @@ const sectionCopy = {
     specializations: {
       title: '专项模块',
       description: '根据项目需要和可用时间选择的独立后续模块。',
+    },
+  },
+  it: {
+    core: {
+      title: 'Corso fondamentale',
+      description:
+        'Il percorso principale. Segui queste parti in ordine per realizzare un’applicazione completa con React, Node.js, Express e MongoDB.',
+    },
+    advanced: {
+      title: 'Argomenti avanzati',
+      description:
+        'Materiale facoltativo per approfondire architettura React, gestione dello stato, hook, strumenti e struttura delle applicazioni.',
+    },
+    specializations: {
+      title: 'Specializzazioni',
+      description:
+        'Moduli successivi indipendenti. Sceglili in base al progetto e al tempo disponibile; non sono necessari per il corso fondamentale.',
     },
   },
 };

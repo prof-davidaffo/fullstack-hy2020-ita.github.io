@@ -18,7 +18,7 @@ exports.onCreateWebpackConfig = ({ actions, getConfig }) => {
 };
 
 const legacyPagePattern = /\/(about|faq|companies|challenge)(\.[a-z]+)?\/?$/;
-const translatedPagePattern = /^\/(.+)\.(en|es|fr|ptbr|zh)\/?$/;
+const translatedPagePattern = /^\/(.+)\.(en|es|fr|it|ptbr|zh)\/?$/;
 
 exports.onCreatePage = ({ page, actions }) => {
   if (legacyPagePattern.test(page.path)) {

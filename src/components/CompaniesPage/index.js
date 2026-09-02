@@ -11,7 +11,7 @@ import stories from '../../content/pages/stories.json';
 
 const CompaniesPage = ({ lang, title, seoDescription }) => {
   const { t } = useTranslation();
-  const langStories = stories[lang] || [];
+  const langStories = stories[lang] || stories.en;
 
   return (
     <Layout>

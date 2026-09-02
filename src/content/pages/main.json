@@ -17,6 +17,19 @@
     "contacts": ["Full stack open", "matti.luukkainen@helsinki.fi"],
     "licenced": "Materiaali on lisensoitu Creative Commons BY-NC-SA 3.0 -lisenssillä."
   },
+  "it": {
+    "mainTitle": "Un'immersione profonda nello sviluppo web moderno",
+    "intro": "Impara React, Redux, Node.js, MongoDB, GraphQL e TypeScript in un unico corso. Il corso introduce allo sviluppo web moderno basato su JavaScript, con particolare attenzione alle applicazioni a pagina singola realizzate con React e alle API REST sviluppate con Node.js.",
+    "current": [],
+    "notice": "I commenti inappropriati, offensivi o discriminatori sono severamente vietati.",
+    "licence": [
+      "Le parti 0-8 e 13 del materiale sono state scritte da <a href='https://github.com/mluukkai'>Matti Luukkainen</a>. La parte 9 è stata scritta dagli sviluppatori di Terveystalo, la parte 10 da Kalle Ilves, la parte 11 dagli sviluppatori di Smartly e la parte 12 da Jami Kousa. Numerosi collaboratori hanno migliorato e corretto il materiale. Anche tu puoi contribuire al corso. La traduzione italiana è curata dai collaboratori di <a href='https://github.com/prof-davidaffo/fullstackopen-ita'>fullstackopen-ita</a>."
+    ],
+    "university": "L'Università di Helsinki è la più antica e grande università accademica della Finlandia.",
+    "houston": "Houston Inc. è una società finlandese specializzata nello sviluppo agile di software.",
+    "contacts": ["Full Stack open", "matti.luukkainen@helsinki.fi"],
+    "licenced": "Questo materiale è distribuito con licenza Creative Commons BY-NC-SA 3.0."
+  },
   "en": {
     "mainTitle": "Deep Dive Into Modern Web Development",
     "intro": "Learn React, Redux, Node.js, MongoDB, GraphQL and TypeScript in one go! This course will introduce you to modern JavaScript-based web development. The main focus is on building single page applications with ReactJS that use REST APIs built with Node.js.",

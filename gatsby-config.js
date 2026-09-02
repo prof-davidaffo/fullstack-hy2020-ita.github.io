@@ -18,7 +18,6 @@ const pathPrefix = process.env.PATH_PREFIX || automaticPagesPrefix;
 
 const ignoredContent = [
   `${__dirname}/src/content/pages/*`,
-  `${__dirname}/src/content/**/it/**`,
 ];
 
 const isSearchableContent = ({ part, letter, lang }) => {
@@ -72,6 +71,7 @@ const plugins = [
   createSearchConfig('spanish', 'es'),
   createSearchConfig('chinese', 'zh'),
   createSearchConfig('portuguese', 'ptbr'),
+  createSearchConfig('italian', 'it'),
   ...(IS_DEV ? [] : ['gatsby-plugin-react-helmet']),
   {
     resolve: `gatsby-source-filesystem`,

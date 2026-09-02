@@ -1,0 +1,59 @@
+{
+  "common": {
+    "nextPart": "Parte successiva",
+    "previousPart": "Parte precedente",
+    "readMore": "Continua a leggere",
+    "proposeChanges": "Proponi modifiche al materiale"
+  },
+  "searchPage": {
+    "noMatches": "Nessun risultato trovato",
+    "matchesTitle": "Trovati {{count}} risultati per la ricerca \"{{query}}\""
+  },
+  "aboutPage": {
+    "generalTitle": "Informazioni generali"
+  },
+  "navigation": {
+    "skipToContent": "Vai al contenuto",
+    "aboutCourse": "Informazioni sul corso",
+    "courseContents": "Contenuti del corso",
+    "faq": "Domande frequenti",
+    "partners": "Partner",
+    "challenge": "Sfida",
+    "searchLinkSrLabel": "Cerca nel materiale",
+    "ThemeSwitcherSrLabel": "Attiva o disattiva il tema scuro",
+    "LanguagePickerSrLabel": "Seleziona la lingua"
+  },
+  "challengePage": {
+    "aboutTitle": "La sfida Full Stack",
+    "joinTitle": "Aziende, raccogliete la sfida!",
+    "registerButton": "Iscrivi la tua azienda alla sfida Full Stack",
+    "nameLabel": "Nome",
+    "namePlaceholder": "Mario Rossi",
+    "titleLabel": "Ruolo",
+    "companyLabel": "Azienda",
+    "companyPlaceholder": "Azienda S.p.A.",
+    "phoneLabel": "Telefono",
+    "emailLabel": "Indirizzo email",
+    "whereDidYouHearLabel": "Come hai conosciuto la sfida?",
+    "submitButton": "Invia",
+    "submitSuccessMessage": "Grazie! Ti contatteremo presto.",
+    "participantsTitle": "Queste aziende hanno aderito alla sfida Full Stack",
+    "coOperationTitle": "In collaborazione con",
+    "infoButton": "Scopri di più sulla sfida"
+  },
+  "companiesPage": {
+    "storiesTitle": "Le esperienze degli sviluppatori delle aziende partner"
+  },
+  "faqPage": {
+    "faqTitle": "Domande frequenti"
+  },
+  "homePage": {
+    "startCourseButton": "Inizia il corso",
+    "announcementsTitle": "Comunicazioni",
+    "authorsTitle": "Autori e licenza",
+    "courseNameTitle": "Full Stack open"
+  },
+  "notFoundPage": {
+    "title": "Pagina non trovata"
+  }
+}
