@@ -11,7 +11,7 @@ Haluamme toteuttaa sovellukseemme käyttäjien hallinnan. Käyttäjät tulee tal
 
 Aloitetaan lisäämällä tietokantaan tieto käyttäjistä. Käyttäjän <i>User</i> ja muistiinpanojen <i>Note</i> välillä on yhden suhde moneen ‑yhteys:
 
-![Yhteen käyttäjään liittyy monta muistiinpanoa eli UML:nä User 1 --- * Note](https://yuml.me/a187045b.png)
+![Yhteen käyttäjään liittyy monta muistiinpanoa eli UML:nä User 1 --- * Note](../../images/external/user-notes-relation.png)
 
 Relaatiotietokantoja käytettäessä ratkaisua ei tarvitsisi juuri miettiä. Molemmille olisi oma taulunsa, ja muistiinpanoihin liitettäisiin sen luonutta käyttäjää vastaava id vierasavaimeksi (foreign key).
 

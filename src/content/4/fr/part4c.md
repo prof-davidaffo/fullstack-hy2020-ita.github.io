@@ -11,7 +11,7 @@ Nous souhaitons ajouter l'authentification et l'autorisation des utilisateurs à
 
 Commençons par ajouter des informations sur les utilisateurs dans la base de données. Il existe une relation un-à-plusieurs entre l'utilisateur (<i>User</i>) et les notes (<i>Note</i>):
 
-![diagramme liant user et notes](https://yuml.me/a187045b.png)
+![diagramme liant user et notes](../../images/external/user-notes-relation.png)
 
 Si nous travaillions avec une base de données relationnelle, la mise en oeuvre serait simple. Les deux ressources auraient leurs propres tables de base de données séparées, et l'identifiant de l'utilisateur qui a créé une note serait stocké dans la table des notes comme une clé étrangère.
 

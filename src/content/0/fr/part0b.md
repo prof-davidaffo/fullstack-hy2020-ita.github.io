@@ -7,14 +7,14 @@ lang: fr
 
 <div class="content">
 
-Avant de commencer la programmation, nous passerons en revue certains principes du développement Web en examinant un exemple d'application sur <https://studies.cs.helsinki.fi/exampleapp>.
+Avant de commencer la programmation, nous passerons en revue certains principes du développement Web en examinant un exemple d'application sur [/exampleapp](/exampleapp).
 
 L'application n'existe que pour introduire certains concepts de base du cours et n'est en aucun cas un exemple de <i>comment</i> une application Web moderne doit être créée.
 Au contraire, elle illustre certaines anciennes techniques du développement Web, qui pourraient même être considérées comme de <i>mauvaises pratiques</i> de nos jours.
 
 Le code sera conforme aux bonnes pratiques actuelles à partir de la [partie 1](/fr/part1).
 
-Ouvrez l'[exemple d'application](https://studies.cs.helsinki.fi/exampleapp) dans votre navigateur. Cela peut prendre un certain temps.
+Ouvrez l'[exemple d'application](/exampleapp) dans votre navigateur. Cela peut prendre un certain temps.
 
 **La 1ère règle du développement Web** : gardez toujours la console de développement du navigateur ouverte sur votre navigateur Web. Sur macOS, ouvrez la console en appuyant simultanément sur _F12_ ou _option-cmd-i_. Sous Windows ou Linux, ouvrez la console en appuyant simultanément sur _F12_ ou _ctrl-shift-i_. La console peut également être ouverte via le [menu contextuel](https://fr.wikipedia.org/wiki/Menu_contextuel).
 
@@ -34,7 +34,7 @@ Le serveur et le navigateur Web communiquent entre eux à l'aide du protocole [H
 
 Lorsque vous rechargez la page (appuyez sur les touches _Fn_-_F5_ sur PC, _cmd_-_R_ sur macOS, ou cliquez sur le symbole &#8635; de votre navigateur), la console indique que deux événements se sont produits :
 
-- Le navigateur a récupéré le contenu de la page <i>studies.cs.helsinki.fi/exampleapp</i> du serveur
+- Le navigateur a récupéré le contenu de la page <i>exampleapp</i> du serveur
 - Et a téléchargé l'image <i>kuva.png</i>
 
 ![Capture d'écran de la console développeur montrant ces deux événements](../../images/0/2e.png)
@@ -45,7 +45,7 @@ Cliquer sur le premier événement révèle plus d'informations sur ce qui se pa
 
 ![Vue détaillée d'un seul événement](../../images/0/3e.png)
 
-La partie supérieure, <i>Général</i>, montre que le navigateur a fait une requête à l'adresse <i><https://studies.cs.helsinki.fi/exampleapp></i> (bien que l'adresse ait légèrement changé depuis que cette photo a été prise) en utilisant la méthode [GET](https://developer.mozilla.org/fr/docs/Web/HTTP/Methods/GET), et que la requête a réussi, car la réponse du serveur avait le [code de statut](https://fr.wikipedia.org/wiki/Liste_des_codes_HTTP) 200.
+La partie supérieure, <i>Général</i>, montre que le navigateur a fait une requête à l'adresse <i>[/exampleapp](/exampleapp)</i> (bien que l'adresse ait légèrement changé depuis que cette photo a été prise) en utilisant la méthode [GET](https://developer.mozilla.org/fr/docs/Web/HTTP/Methods/GET), et que la requête a réussi, car la réponse du serveur avait le [code de statut](https://fr.wikipedia.org/wiki/Liste_des_codes_HTTP) 200.
 
 La requête et la réponse du serveur ont plusieurs [en-têtes](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields) :
 
@@ -64,9 +64,9 @@ En raison de la balise img, le navigateur effectue une seconde <i>requête HTTP<
 
 ![Vue détaillée du deuxième événement](../../images/0/6e.png)
 
-La requête a été faite à l'adresse <https://studies.cs.helsinki.fi/exampleapp/kuva.png> et son type est HTTP GET. Les en-têtes de réponse nous indiquent que la taille de la réponse est de 89350 octets et que son [Content-type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type) est <i >image/png</i>, c'est donc une image png. Le navigateur utilise ces informations pour restituer correctement l'image à l'écran.
+La requête a été faite à l'adresse [/exampleapp/kuva.png](/exampleapp/kuva.png) et son type est HTTP GET. Les en-têtes de réponse nous indiquent que la taille de la réponse est de 89350 octets et que son [Content-type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type) est <i >image/png</i>, c'est donc une image png. Le navigateur utilise ces informations pour restituer correctement l'image à l'écran.
 
-La chaîne d'événements provoquée par l'ouverture de la page https://studies.cs.helsinki.fi/exampleapp sur un navigateur se présente comme suit [diagramme de séquence](https://www.geeksforgeeks.org/unified-modeling-language-uml-séquence-diagrammes/):
+La chaîne d'événements provoquée par l'ouverture de la page /exampleapp sur un navigateur se présente comme suit [diagramme de séquence](https://www.geeksforgeeks.org/unified-modeling-language-uml-séquence-diagrammes/):
 
 ![Schéma de séquence du flux traité ci-dessus](../../images/0/7e.png)
 
@@ -121,7 +121,7 @@ Ce cours utilisera Node.js et Express pour créer des serveurs Web.
 ### Exécution de la logique d'application dans le navigateur
 
 Gardez la Developer Console ouverte. Videz la console en cliquant sur le symbole 🚫 ou en tapant clear() dans la console.
-Désormais, lorsque vous accédez à la page [notes](https://studies.cs.helsinki.fi/exampleapp/notes), le navigateur effectue 4 requêtes HTTP :
+Désormais, lorsque vous accédez à la page [notes](/exampleapp/notes), le navigateur effectue 4 requêtes HTTP :
 
 ![Capture d'écran de la console développeur avec les 4 requêtes visibles](../../images/0/8e.png)
 
@@ -173,7 +173,7 @@ xhttp.send()
 ```
 Il s'agit de la dernière requête affichée dans l'onglet Réseau.
 
-Nous pouvons essayer d'aller à l'adresse <https://studies.cs.helsinki.fi/exampleapp/data.json> directement depuis le navigateur :
+Nous pouvons essayer d'aller à l'adresse [/exampleapp/data.json](/exampleapp/data.json) directement depuis le navigateur :
 
 ![](../../images/0/10e.png)
 
@@ -350,11 +350,11 @@ list.appendChild(newElement)
 
 ![Capture d'écran de la page avec la nouvelle note ajoutée à la liste](../../images/0/16e.png)
 
-Même si la page est mise à jour sur votre navigateur, les modifications ne sont pas permanentes. Si la page est rechargée, la nouvelle note disparaîtra, car les modifications n'ont pas été transmises au serveur. Le code JavaScript que le navigateur récupère créera toujours la liste des notes basées sur les données JSON à partir de l'adresse <https://studies.cs.helsinki.fi/exampleapp/data.json>.
+Même si la page est mise à jour sur votre navigateur, les modifications ne sont pas permanentes. Si la page est rechargée, la nouvelle note disparaîtra, car les modifications n'ont pas été transmises au serveur. Le code JavaScript que le navigateur récupère créera toujours la liste des notes basées sur les données JSON à partir de l'adresse [/exampleapp/data.json](/exampleapp/data.json).
 
 ### CSS
 
-L'élément <i>head</i> du code HTML de la page Notes contient une balise [link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link), qui détermine que le navigateur doit récupérer une feuille de style [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) à partir de l'adresse [main.css](https://studies.cs.helsinki.fi/exampleapp/main.css).
+L'élément <i>head</i> du code HTML de la page Notes contient une balise [link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link), qui détermine que le navigateur doit récupérer une feuille de style [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) à partir de l'adresse [main.css](/exampleapp/main.css).
 
 Les feuilles de style en cascade, ou CSS, sont un langage de feuille de style utilisé pour déterminer l'apparence des pages Web.
 
@@ -396,14 +396,14 @@ Les modifications apportées sur la console ne seront pas permanentes. Si vous s
 
 ### Chargement d'une page contenant JavaScript - révision
 
-Passons en revue ce qui se passe lorsque la page https://studies.cs.helsinki.fi/exampleapp/notes est ouverte sur le navigateur.
+Passons en revue ce qui se passe lorsque la page /exampleapp/notes est ouverte sur le navigateur.
 
 ![](../../images/0/19e.png)
 
 - Le navigateur va chercher le code HTML définissant le contenu et la structure de la page sur le serveur à l'aide d'une requête HTTP GET.
 - Les liens dans le code HTML amènent le navigateur à récupérer également la feuille de style CSS <i>main.css</i>...
 - ...et un fichier de code JavaScript <i>main.js</i>
-- Le navigateur exécute le code JavaScript. Le code fait une requête HTTP GET à l'adresse https://studies.cs.helsinki.fi/exampleapp/data.json, qui renvoie les notes sous forme de données JSON.
+- Le navigateur exécute le code JavaScript. Le code fait une requête HTTP GET à l'adresse /exampleapp/data.json, qui renvoie les notes sous forme de données JSON.
 - Lorsque les données ont été récupérées, le navigateur exécute un <i>gestionnaire d'événements</i>, qui affiche les notes sur la page à l'aide de l'API DOM. 
 
 ### Formulaires et HTTP POST
@@ -479,7 +479,7 @@ Toutes les données affichées sur la page étaient issues du code HTML génér�
 
 La page Notes utilise AJAX pour récupérer les données des notes. La soumission du formulaire utilise toujours le mécanisme traditionnel de soumission de formulaires Web.
 
-Les URL de notre exemple d'application reflètent les pratiques d'un temps ancien et insouciant. Les données JSON sont extraites de l'URL <https://studies.cs.helsinki.fi/exampleapp/data.json> et les nouvelles notes sont envoyées à l'URL <https://studies.cs.helsinki.fi/exampleapp/new_note>.
+Les URL de notre exemple d'application reflètent les pratiques d'un temps ancien et insouciant. Les données JSON sont extraites de l'URL [/exampleapp/data.json](/exampleapp/data.json) et les nouvelles notes sont envoyées à l'URL [/exampleapp/new_note](/exampleapp/new_note).
 De nos jours, de telles URL ne seraient pas considérées comme acceptables, car elles ne respectent pas les conventions généralement reconnues des API [REST](https://fr.wikipedia.org/wiki/Representational_state_transfer), que nous étudierons plus en détail dans la [partie 3](/fr/part3)
 
 L'approche appelée AJAX est maintenant si banale qu'elle est tenue pour acquise. Le terme est tombé dans l'oubli, et la nouvelle génération n'en a même pas entendu parler.
@@ -494,7 +494,7 @@ Ces dernières années, le style [application web monopage](https://fr.wikipedia
 
 La page Notes de notre application ressemble un peu aux applications de style SPA, mais n'en est pas tout à fait une. Même si la logique de rendu des notes est exécutée sur le navigateur, la page utilise toujours la méthode traditionnelle d'ajout de nouvelles notes. Les données sont envoyées au serveur avec la soumission du formulaire, et le serveur demande au navigateur de recharger la page Notes avec une <i>redirection</i>.
 
-Une version SPA de notre exemple d'application peut être trouvée sur <https://studies.cs.helsinki.fi/exampleapp/spa>.
+Une version SPA de notre exemple d'application peut être trouvée sur [/exampleapp/spa](/exampleapp/spa).
 À première vue, l'application ressemble exactement à la précédente.
 Le code HTML est presque identique, mais le fichier JavaScript est différent (<i>spa.js</i>) et il y a un petit changement dans la façon dont la balise <form> est définie :
 
@@ -653,7 +653,7 @@ Découvrez les bases des formulaires HTML en lisant le didacticiel de Mozilla [V
 
   <h4>0.4 : Nouvelle note</h4>
 
-Dans le chapitre [Chargement d'une page contenant JavaScript - révision](/fr/part0/introduction_aux_applications_web#chargement-dune-page-contenant-java-script-revision) la chaîne d'événements causés par l'ouverture de la page https://studies.cs.helsinki.fi/exampleapp/notes est représentée comme un [diagramme de séquence](https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/)
+Dans le chapitre [Chargement d'une page contenant JavaScript - révision](/fr/part0/introduction_aux_applications_web#chargement-dune-page-contenant-java-script-revision) la chaîne d'événements causés par l'ouverture de la page /exampleapp/notes est représentée comme un [diagramme de séquence](https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/)
 
 Le diagramme est en réalité un fichier Markdown de gitHub qui a été créé à l'aide de la syntaxe [Mermaid](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams) comme suit :
 
@@ -662,24 +662,24 @@ sequenceDiagram
     participant browser
     participant server
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+    browser->>server: GET /exampleapp/notes
     activate server
     server-->>browser: HTML document
     deactivate server
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+    browser->>server: GET /exampleapp/main.css
     activate server
     server-->>browser: the css file
     deactivate server
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
+    browser->>server: GET /exampleapp/main.js
     activate server
     server-->>browser: the JavaScript file
     deactivate server
 
     Note right of browser: The browser starts executing the JavaScript code that fetches the JSON from the server
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    browser->>server: GET /exampleapp/data.json
     activate server
     server-->>browser: [{ "content": "HTML is easy", "date": "2023-1-1" }, ... ]
     deactivate server
@@ -687,7 +687,7 @@ sequenceDiagram
     Note right of browser: The browser executes the callback function that renders the notes
 ```
 
-**Créez un diagramme similaire** illustrant ce qu'il se passe quand l'utilisateur crée une nouvelle note sur la page <https://studies.cs.helsinki.fi/exampleapp/notes> en écrivant quelque chose dans le champ de texte et en cliquant sur le <i> bouton envoyer</i>.
+**Créez un diagramme similaire** illustrant ce qu'il se passe quand l'utilisateur crée une nouvelle note sur la page [/exampleapp/notes](/exampleapp/notes) en écrivant quelque chose dans le champ de texte et en cliquant sur le <i> bouton envoyer</i>.
 
 Si nécessaire, affichez les opérations sur le navigateur ou sur le serveur sous forme de commentaires sur le diagramme.
 
@@ -700,7 +700,7 @@ Vous pouvez réaliser le diagramme à l'aide de n'importe quel programme, mais l
 
   <h4>0.5 : Application à page unique</h4>
 
-Créez un diagramme illustrant la situation dans laquelle l'utilisateur accède à la version [application à page unique](/fr/part0/introduction_aux_applications_web#application-a-page-unique) de l'application de notes sur <https://studies.cs.helsinki.fi/exampleapp/spa>.
+Créez un diagramme illustrant la situation dans laquelle l'utilisateur accède à la version [application à page unique](/fr/part0/introduction_aux_applications_web#application-a-page-unique) de l'application de notes sur [/exampleapp/spa](/exampleapp/spa).
 
   <h4>0.6 : Nouvelle note</h4>
 

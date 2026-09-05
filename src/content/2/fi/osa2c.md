@@ -88,7 +88,7 @@ Esim. Java-ohjelmoinnista tuttu synkroninen tapa tehdä kyselyjä etenisi seuraa
 ```java
 HTTPRequest request = new HTTPRequest();
 
-String url = "https://studies.cs.helsinki.fi/exampleapp/data.json";
+String url = "/exampleapp/data.json";
 List<Note> notes = request.get(url);
 
 notes.forEach(m => {

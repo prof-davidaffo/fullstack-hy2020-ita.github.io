@@ -7,13 +7,13 @@ lang: ptbr
 
 <div class="content">
 
-Antes de começarmos a programar, passaremos por alguns princípios de desenvolvimento web examinando uma aplicação de exemplo em <https://studies.cs.helsinki.fi/exampleapp>.
+Antes de começarmos a programar, passaremos por alguns princípios de desenvolvimento web examinando uma aplicação de exemplo em [/exampleapp](/exampleapp).
 
 A aplicação serve apenas para demonstrar alguns conceitos básicos do curso e, de maneira alguma, é um exemplo de <i>como</i> uma aplicação web moderna deve ser feita. Pelo contrário, ela demonstra algumas técnicas antigas de desenvolvimento web, que até poderiam ser consideradas como <i>práticas ruins</i> hoje em dia.
 
 O código seguirá as melhores práticas contemporâneas a partir da [parte 1](/ptbr/part1) em diante.
 
-Abra a [aplicação de exemplo](https://studies.cs.helsinki.fi/exampleapp) em seu navegador. Às vezes demora um pouco.
+Abra a [aplicação de exemplo](/exampleapp) em seu navegador. Às vezes demora um pouco.
 
 O conteúdo do curso é feito utilizando o navegador Chrome.
 
@@ -35,7 +35,7 @@ O servidor e o navegador web se comunicam usando o protocolo [HTTP](https://deve
 
 Quando você recarrega a página (pressione a tecla F5 ou o símbolo &#8635; em seu navegador), o console mostrará que dois eventos aconteceram:
 
-- O navegador baixou o conteúdo da página <i>studies.cs.helsinki.fi/exampleapp</i> do servidor; e
+- O navegador baixou o conteúdo da página <i>exampleapp</i> do servidor; e
 - E baixou a imagem <i>kuva.png</i>.
 
 ![Captura de tela do console do desenvolvedor mostrando esses dois eventos](../../images/0/2e.png)
@@ -46,7 +46,7 @@ Ao clicar no primeiro evento, mais informações sobre o que está acontecendo s
 
 ![Visão detalhada de um único evento](../../images/0/3e.png)
 
-Na parte superior, <i>Geral (General)</i>, mostra que o navegador requisitou o endereço <i>https://studies.cs.helsinki.fi/exampleapp</i>  usando o método [GET](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) (embora o endereço tenha mudado ligeiramente desde que esta imagem foi feita) e que a requisição foi bem-sucedida, pois o servidor respondeu com o código de status [200](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
+Na parte superior, <i>Geral (General)</i>, mostra que o navegador requisitou o endereço <i>/exampleapp</i>  usando o método [GET](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) (embora o endereço tenha mudado ligeiramente desde que esta imagem foi feita) e que a requisição foi bem-sucedida, pois o servidor respondeu com o código de status [200](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
 
 A requisição e a resposta do servidor possuem vários [cabeçalhos (headers)](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields):
 
@@ -64,9 +64,9 @@ Devido à tag "img", o navegador faz uma segunda requisição <i>HTTP</i> para b
 
 ![Imagem detalhada do segundo evento](../../images/0/6e.png)
 
-A requisição foi feita para o endereço <https://studies.cs.helsinki.fi/exampleapp/kuva.png> e o seu tipo é HTTP GET. Os cabeçalhos de resposta (response headers) nos dizem que o tamanho da resposta é 89350 bytes e seu [Content-type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type) é <i>image/png</i>, então é uma imagem png. O navegador usa essa informação para renderizar a imagem corretamente na tela.
+A requisição foi feita para o endereço [/exampleapp/kuva.png](/exampleapp/kuva.png) e o seu tipo é HTTP GET. Os cabeçalhos de resposta (response headers) nos dizem que o tamanho da resposta é 89350 bytes e seu [Content-type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type) é <i>image/png</i>, então é uma imagem png. O navegador usa essa informação para renderizar a imagem corretamente na tela.
 
-O encadeamento de eventos causado pela abertura da página https://studies.cs.helsinki.fi/exampleapp no navegador forma o seguinte [diagrama de sequência](https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/):
+O encadeamento de eventos causado pela abertura da página /exampleapp no navegador forma o seguinte [diagrama de sequência](https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/):
 
 ![Diagrama de sequência do fluxo descrito acima](../../images/0/7m_ptbr.png)
 
@@ -123,7 +123,7 @@ O exemplo usa a biblioteca [Express](https://expressjs.com/) com Node.js. Este c
 ### Executando a lógica da aplicação no navegador
 
 Mantenha o Console do Desenvolvedor aberto. Esvazie o console clicando no símbolo 🚫 ou digitando _clear()_ no console.
-Agora, quando você for para a página [notes](https://studies.cs.helsinki.fi/exampleapp/notes), o navegador fará 4 (quatro) requisições HTTP:
+Agora, quando você for para a página [notes](/exampleapp/notes), o navegador fará 4 (quatro) requisições HTTP:
 
 ![Captura de tela do console do desenvolvedor com 4 requisições visíveis](../../images/0/8e.png)
 
@@ -177,7 +177,7 @@ xhttp.send()
 
 Esta é a requisição mais "profunda" exibida na guia de Rede.
 
-Podemos tentar ir ao endereço <https://studies.cs.helsinki.fi/exampleapp/data.json> diretamente do navegador:
+Podemos tentar ir ao endereço [/exampleapp/data.json](/exampleapp/data.json) diretamente do navegador:
 
 ![Dados JSON brutos](../../images/0/10e.png)
 
@@ -356,11 +356,11 @@ list.appendChild(newElement)
 
 ![Captura de tela da página com a nova nota adicionada à lista](../../images/0/16e.png)
 
-Mesmo que a página seja atualizada no seu navegador, as mudanças não são permanentes. Se a página for recarregada, a nova nota desaparecerá, pois as mudanças não foram enviadas ao servidor. O código JavaScript que o navegador busca sempre criará a lista de notas com base nos dados JSON do endereço <https://studies.cs.helsinki.fi/exampleapp/data.json>.
+Mesmo que a página seja atualizada no seu navegador, as mudanças não são permanentes. Se a página for recarregada, a nova nota desaparecerá, pois as mudanças não foram enviadas ao servidor. O código JavaScript que o navegador busca sempre criará a lista de notas com base nos dados JSON do endereço [/exampleapp/data.json](/exampleapp/data.json).
 
 ### CSS
 
-O elemento <i>head</i> (cabeçalho) do código HTML da página Notes contém uma tag [link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link), que determina que o navegador deve buscar uma folha de estilo [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) a partir do endereço [main.css](https://studies.cs.helsinki.fi/exampleapp/main.css).
+O elemento <i>head</i> (cabeçalho) do código HTML da página Notes contém uma tag [link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link), que determina que o navegador deve buscar uma folha de estilo [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) a partir do endereço [main.css](/exampleapp/main.css).
 
 CSS (<i>Cascading Style Sheets</i> - folhas de estilo em cascata), é uma linguagem de estilo usada para determinar a aparência de páginas web.
 
@@ -403,14 +403,14 @@ As alterações feitas no console não serão permanentes. Se deseja fazer alter
 
 ### Carregando uma página contendo JavaScript — revisão
 
-Vamos revisar o que acontece quando a página https://studies.cs.helsinki.fi/exampleapp/notes é aberta no navegador.
+Vamos revisar o que acontece quando a página /exampleapp/notes é aberta no navegador.
 
 ![Diagrama de sequência da interação navegador/servidor](../../images/0/19m_ptbr.png)
 
 - O navegador busca o código HTML que define o conteúdo e a estrutura da página do servidor usando uma requisição HTTP GET;
 - Os links no código HTML fazem com que o navegador também busque a folha de estilo CSS <i>main.css</i>...
 - ...e um arquivo de código JavaScript <i>main.js</i>;
-- O navegador executa o código JavaScript. O código faz uma requisição HTTP GET para o endereço https://studies.cs.helsinki.fi/exampleapp/data.json, que
+- O navegador executa o código JavaScript. O código faz uma requisição HTTP GET para o endereço /exampleapp/data.json, que
   retorna as notas como dados JSON; e
 - Quando é finalizada a busca pelos dados, o navegador executa um <i>event handler</i>, que renderiza as notas na página usando a API DOM.
 
@@ -485,7 +485,7 @@ Antes da Era AJAX, todas as páginas web funcionavam como a [aplicação web tra
 
 A página "Notes" usa AJAX para buscar os dados das notas. O envio do formulário ainda usa o mecanismo tradicional de envio de formulários web.
 
-As URLs da aplicação refletem os tempos antigos e despreocupados. Os dados JSON são buscados na URL <https://studies.cs.helsinki.fi/exampleapp/data.json> e novas notas são enviadas para a URL <https://studies.cs.helsinki.fi/exampleapp/new_note>. Hoje em dia, URLs como essas não seriam consideradas aceitáveis, pois não seguem as convenções geralmente reconhecidas de [APIs RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer#Applied_to_web_services) (Representational State Transfer (REST) [Transferência de Estado Representacional]), que veremos com mais detalhes na [parte 3](/ptbr/part3).
+As URLs da aplicação refletem os tempos antigos e despreocupados. Os dados JSON são buscados na URL [/exampleapp/data.json](/exampleapp/data.json) e novas notas são enviadas para a URL [/exampleapp/new_note](/exampleapp/new_note). Hoje em dia, URLs como essas não seriam consideradas aceitáveis, pois não seguem as convenções geralmente reconhecidas de [APIs RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer#Applied_to_web_services) (Representational State Transfer (REST) [Transferência de Estado Representacional]), que veremos com mais detalhes na [parte 3](/ptbr/part3).
 
 O conceito por detrás do termo AJAX agora é tão cotidiano e básico que não se verifica nele nenhuma novidade para os dias atuais. O termo caiu no esquecimento e a nova geração nem sequer ouviu falar dele.
 
@@ -499,7 +499,7 @@ Nos últimos anos, o estilo [SPA](https://en.wikipedia.org/wiki/Single-page_appl
 
 A página "Notes" da nossa aplicação tem alguma semelhança com as aplicações de estilo SPA, mas ainda não está bem lá. Mesmo que a lógica para renderizar as notas seja executada no navegador, a página ainda usa o mecanismo tradicional de adição de novas notas. Os dados são enviados para o servidor através do envio do formulário e o servidor instrui o navegador a recarregar a página "Notes" com um <i>redirect</i>.
 
-Uma versão SPA da aplicação que estamos utilizando de exemplo pode ser encontrada em <https://studies.cs.helsinki.fi/exampleapp/spa>.
+Uma versão SPA da aplicação que estamos utilizando de exemplo pode ser encontrada em [/exampleapp/spa](/exampleapp/spa).
 À primeira vista, a aplicação parece igual à anterior.
 O código HTML é quase idêntico, mas o arquivo JavaScript é diferente (<i>spa.js</i>), e há uma pequena mudança na maneira como a tag "form" é definida:
 
@@ -655,7 +655,7 @@ Aprenda sobre os conceitos básicos de formulários HTML lendo o tutorial do Moz
 
   <h4>0.4: Novo diagrama das notas</h4>
 
-Na seção [Carregando uma página contendo JavaScript — revisão](/ptbr/part0/fundamentos_de_aplicacoes_web#carregando-uma-pagina-contendo-java-script-revisao), a cadeia de eventos causada pela abertura da página <https://studies.cs.helsinki.fi/exampleapp/notes> é retratada como um [diagrama de sequência](https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/).
+Na seção [Carregando uma página contendo JavaScript — revisão](/ptbr/part0/fundamentos_de_aplicacoes_web#carregando-uma-pagina-contendo-java-script-revisao), a cadeia de eventos causada pela abertura da página [/exampleapp/notes](/exampleapp/notes) é retratada como um [diagrama de sequência](https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/).
 
 O diagrama foi feito como um arquivo GitHub Markdown usando a sintaxe [Mermaid](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams), como o exemplo a seguir:
 
@@ -664,24 +664,24 @@ sequenceDiagram
     participant browser
     participant server
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+    browser->>server: GET /exampleapp/notes
     activate server
     server-->>browser: HTML document
     deactivate server
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+    browser->>server: GET /exampleapp/main.css
     activate server
     server-->>browser: the css file
     deactivate server
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
+    browser->>server: GET /exampleapp/main.js
     activate server
     server-->>browser: the JavaScript file
     deactivate server
 
     Note right of browser: O navegador começa a executar o código JavaScript que busca o JSON do servidor
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    browser->>server: GET /exampleapp/data.json
     activate server
     server-->>browser: [{ "content": "HTML é fácil", "date": "2023-1-1" }, ... ]
     deactivate server
@@ -689,7 +689,7 @@ sequenceDiagram
     Note right of browser: O navegador executa a função callback (função de retorno de chamada) que renderiza as notas
 ```
 
-**Crie um diagrama semelhante** que retrate a situação em que o usuário cria uma nova nota na página <https://studies.cs.helsinki.fi/exampleapp/notes> escrevendo algo no campo de texto e clicando no botão <i>submit</i>.
+**Crie um diagrama semelhante** que retrate a situação em que o usuário cria uma nova nota na página [/exampleapp/notes](/exampleapp/notes) escrevendo algo no campo de texto e clicando no botão <i>submit</i>.
 
 Se necessário, mostre operações no navegador ou no servidor como comentários no diagrama.
 
@@ -702,7 +702,7 @@ Você pode fazer os diagramas com qualquer programa, mas talvez a maneira mais f
 
 <h4>0.5: Diagrama de SPA</h4>
 
-Crie um diagrama que retrate o contexto em que o usuário utilize a versão de aplicação de página única das notas em <https://studies.cs.helsinki.fi/exampleapp/spa>.
+Crie um diagrama que retrate o contexto em que o usuário utilize a versão de aplicação de página única das notas em [/exampleapp/spa](/exampleapp/spa).
 
 <h4>0.6: Nova nota no diagrama de SPA</h4>
 

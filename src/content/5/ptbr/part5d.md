@@ -666,11 +666,11 @@ cy.contains('Matti Luukkainen logged in').should('not.exist')
 
 **NOTA:** Algumas propriedades CSS [comportam-se de forma diferente no Firefox](https://github.com/cypress-io/cypress/issues/9349). Se você executar os testes com o Firefox:
   
-  ![running](https://user-images.githubusercontent.com/4255997/119015927-0bdff800-b9a2-11eb-9234-bb46d72c0368.png)
+  ![running](../../images/external/testing-running.png)
   
   então os testes que envolvem, por exemplo, `border-style`, `border-radius` e `padding`, serão aprovados no Chrome ou Electron, mas falharão no Firefox:
   
-  ![borderstyle](https://user-images.githubusercontent.com/4255997/119016340-7b55e780-b9a2-11eb-82e0-bab0418244c0.png)
+  ![borderstyle](../../images/external/testing-border-style.png)
 
 ### Bypassando a interface de usuário
 

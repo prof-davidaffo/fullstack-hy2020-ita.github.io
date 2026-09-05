@@ -7,13 +7,13 @@ lang: es
 
 <div class="content">
 
-Antes de comenzar a programar, repasaremos algunos principios del desarrollo web al examinar una aplicación de ejemplo en <https://studies.cs.helsinki.fi/exampleapp>.
+Antes de comenzar a programar, repasaremos algunos principios del desarrollo web al examinar una aplicación de ejemplo en [/exampleapp](/exampleapp).
 
 La aplicación existe solo para demostrar algunos conceptos básicos del curso, y de ninguna manera es un ejemplo de <i>cómo</i> se debe hacer una aplicación web moderna. Por el contrario, demuestra algunas técnicas antiguas de desarrollo web, que incluso pueden verse como <i>malas prácticas</i> en la actualidad.
 
 El código cumplirá con las mejores prácticas contemporáneas a partir de la [parte 1](/es/part1) en adelante.
 
-Abre la [aplicación de ejemplo](https://studies.cs.helsinki.fi/exampleapp) en tu navegador. A veces, esto toma un tiempo.
+Abre la [aplicación de ejemplo](/exampleapp) en tu navegador. A veces, esto toma un tiempo.
 
 El material del curso es realizado con el navegador Chrome.
 
@@ -35,7 +35,7 @@ El servidor y el navegador web se comunican entre sí mediante el protocolo [HTT
 
 Cuando recargas la página (para refrescar una página web, en Windows, presiona las teclas _Fn_-_F5_. En macOS, presiona _command_-_R_. O presiona el símbolo &#8635; en tu navegador), la consola mostrará que han ocurrido dos eventos:
 
-- El navegador recupera el contenido de la página <i>studies.cs.helsinki.fi/exampleapp</i> del servidor
+- El navegador recupera el contenido de la página <i>exampleapp</i> del servidor
 - Y descarga la imagen <i>kuva.png</i>
 
 ![Captura de pantalla de la consola de desarrollo mostrando estos dos eventos](../../images/0/2e.png)
@@ -46,7 +46,7 @@ Al hacer clic en el primer evento, se muestra más información sobre lo que est
 
 ![Vista detallada de un solo evento](../../images/0/3e.png)
 
-La parte superior, <i>General</i>, muestra que el navegador hizo una solicitud a la dirección <i>https://studies.cs.helsinki.fi/exampleapp</i> (aunque la dirección ha cambiado ligeramente desde que se tomó esta imagen) usando el método [GET](https://developer.mozilla.org/es/docs/Web/HTTP/Methods/GET), y que la solicitud fue exitosa, porque la respuesta del servidor tenía el [Código de estado](https://es.wikipedia.org/wiki/Anexo:C%C3%B3digos_de_estado_HTTP) 200.
+La parte superior, <i>General</i>, muestra que el navegador hizo una solicitud a la dirección <i>/exampleapp</i> (aunque la dirección ha cambiado ligeramente desde que se tomó esta imagen) usando el método [GET](https://developer.mozilla.org/es/docs/Web/HTTP/Methods/GET), y que la solicitud fue exitosa, porque la respuesta del servidor tenía el [Código de estado](https://es.wikipedia.org/wiki/Anexo:C%C3%B3digos_de_estado_HTTP) 200.
 
 La solicitud y la respuesta del servidor tienen varias [cabeceras](https://es.wikipedia.org/wiki/Anexo:Cabeceras_HTTP):
 
@@ -64,9 +64,9 @@ Debido a la etiqueta img, el navegador realiza una segunda <i>solicitud HTTP</i>
 
 ![Vista detallada del segundo evento](../../images/0/6e.png)
 
-La solicitud se realizó a la dirección <https://studies.cs.helsinki.fi/exampleapp/kuva.png> y su tipo es HTTP GET. Las Cabeceras de Respuesta nos dicen que el tamaño de la respuesta es 89350 bytes y su [Content-Type](https://developer.mozilla.org/es/docs/Web/HTTP/Headers/Content-Type) es <i>image/png</i>, por lo que es una imagen png. El navegador utiliza esta información para mostrar la imagen correctamente en la pantalla.
+La solicitud se realizó a la dirección [/exampleapp/kuva.png](/exampleapp/kuva.png) y su tipo es HTTP GET. Las Cabeceras de Respuesta nos dicen que el tamaño de la respuesta es 89350 bytes y su [Content-Type](https://developer.mozilla.org/es/docs/Web/HTTP/Headers/Content-Type) es <i>image/png</i>, por lo que es una imagen png. El navegador utiliza esta información para mostrar la imagen correctamente en la pantalla.
 
-La cadena de eventos causada por abrir la página <https://studies.cs.helsinki.fi/exampleapp> en un navegador forma el siguiente [diagrama de secuencia](https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/):
+La cadena de eventos causada por abrir la página [/exampleapp](/exampleapp) en un navegador forma el siguiente [diagrama de secuencia](https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/):
 
 ![Diagrama de secuencia del flujo cubierto arriba](../../images/0/7e.png)
 
@@ -123,7 +123,7 @@ El ejemplo utiliza la librería [Express](https://expressjs.com/) con Node.js. E
 ### Ejecución de la lógica de la aplicación en el navegador
 
 Mantén abierta la Consola para desarrolladores. Vacía la consola haciendo clic en el símbolo 🚫 o escribiendo clear() en la consola.
-Ahora, cuando vayas a la página [notes](https://studies.cs.helsinki.fi/exampleapp/notes), el navegador realiza 4 solicitudes HTTP:
+Ahora, cuando vayas a la página [notes](/exampleapp/notes), el navegador realiza 4 solicitudes HTTP:
 
 ![Captura de pantalla de la consola de desarrollador con 4 solicitudes visibles](../../images/0/8e.png)
 
@@ -177,7 +177,7 @@ xhttp.send()
 
 Esta es la solicitud que se muestra más abajo en la pestaña Network (Red).
 
-Podemos intentar ir a la dirección <https://studies.cs.helsinki.fi/exampleapp/data.json> directamente desde el navegador:
+Podemos intentar ir a la dirección [/exampleapp/data.json](/exampleapp/data.json) directamente desde el navegador:
 
 ![Datos JSON sin procesar](../../images/0/10e.png)
 
@@ -356,11 +356,11 @@ list.appendChild(newElement)
 
 ![Captura de pantalla de la página con la nueva nota agregada a la lista](../../images/0/16e.png)
 
-Aunque la página se actualiza en tu navegador, los cambios no son permanentes. Si se vuelve a cargar la página, la nueva nota desaparecerá porque los cambios no se enviaron al servidor. El código JavaScript que obtiene el navegador siempre creará la lista de notas basada en datos JSON de la dirección <https://studies.cs.helsinki.fi/exampleapp/data.json>.
+Aunque la página se actualiza en tu navegador, los cambios no son permanentes. Si se vuelve a cargar la página, la nueva nota desaparecerá porque los cambios no se enviaron al servidor. El código JavaScript que obtiene el navegador siempre creará la lista de notas basada en datos JSON de la dirección [/exampleapp/data.json](/exampleapp/data.json).
 
 ### CSS
 
-El elemento <i>head</i> del código HTML de la página de Notes contiene un [enlace](https://developer.mozilla.org/es/docs/Web/HTML/Element/link), que determina que el navegador debe obtener una hoja de estilos [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) de la dirección [main.css](https://studies.cs.helsinki.fi/exampleapp/main.css).
+El elemento <i>head</i> del código HTML de la página de Notes contiene un [enlace](https://developer.mozilla.org/es/docs/Web/HTML/Element/link), que determina que el navegador debe obtener una hoja de estilos [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) de la dirección [main.css](/exampleapp/main.css).
 
 Cascading Style Sheets (Hojas de Estilos en Cascada), o CSS, es un lenguaje de hojas de estilo utilizado para determinar la apariencia de las páginas web.
 
@@ -403,14 +403,14 @@ Los cambios realizados en la consola no serán permanentes. Si deseas realizar c
 
 ### Cargando una página que contiene JavaScript - revisión
 
-Revisemos lo que sucede cuando la página <https://studies.cs.helsinki.fi/exampleapp/notes> se abre en el navegador.
+Revisemos lo que sucede cuando la página [/exampleapp/notes](/exampleapp/notes) se abre en el navegador.
 
 ![Diagrama de secuencia de la interacción entre el navegador y el servidor](../../images/0/19e.png)
 
 - El navegador obtiene el código HTML que define el contenido y la estructura de la página del servidor mediante una solicitud HTTP GET.
 - Los enlaces en el código HTML hacen que el navegador también busque la hoja de estilos CSS <i>main.css</i>...
 - ...y un archivo de código JavaScript <i>main.js</i>
-- El navegador ejecuta el código JavaScript. El código realiza una solicitud HTTP GET a la dirección https://studies.cs.helsinki.fi/exampleapp/data.json, que devuelve las notas como datos JSON.
+- El navegador ejecuta el código JavaScript. El código realiza una solicitud HTTP GET a la dirección /exampleapp/data.json, que devuelve las notas como datos JSON.
 - Cuando se han obtenido los datos, el navegador ejecuta un <i>controlador de eventos</i>, que muestra las notas en la página utilizando DOM-API.
 
 ### Formularios y HTTP POST
@@ -485,7 +485,7 @@ Todos los datos que se muestran en la página se obtuvieron con el código HTML 
 
 La página Notas utiliza AJAX para obtener los datos de las notas. El envío del formulario todavía utiliza el mecanismo tradicional de envío de formularios web.
 
-Las URLs de la aplicación reflejan los viejos tiempos sin preocupaciones. Los datos JSON se obtienen de la URL <https://studies.cs.helsinki.fi/exampleapp/data.json> y se envían nuevas notas a la URL <https://studies.cs.helsinki.fi/exampleapp/new_note>.
+Las URLs de la aplicación reflejan los viejos tiempos sin preocupaciones. Los datos JSON se obtienen de la URL [/exampleapp/data.json](/exampleapp/data.json) y se envían nuevas notas a la URL [/exampleapp/new_note](/exampleapp/new_note).
 Hoy en día, URLs como estas no se consideran aceptables, ya que no siguen las convenciones generalmente reconocidas de las APIs [RESTful](https://es.wikipedia.org/wiki/Transferencia_de_Estado_Representacional), que analizaremos más en la [parte 3](/es/part3)
 
 La cosa denominada AJAX es ahora tan común que se da por sentado. El término se ha desvanecido en el olvido, y la nueva generación ni siquiera ha oído hablar de él.
@@ -500,7 +500,7 @@ En los últimos años, ha surgido el estilo de [Aplicación de una sola página]
 
 La página Notas de nuestra aplicación tiene cierto parecido con las aplicaciones de estilo SPA, pero aún no está del todo lista. Aunque la lógica para representar las notas se ejecuta en el navegador, la página sigue utilizando la forma tradicional de agregar nuevas notas. Los datos se envían al servidor con el envío del formulario, y el servidor indica al navegador que vuelva a cargar la página Notas con un <i>redireccionamiento</i>.
 
-Puedes encontrar una versión "aplicación de una sola página" de nuestra aplicación de ejemplo en <https://studies.cs.helsinki.fi/exampleapp/spa>.
+Puedes encontrar una versión "aplicación de una sola página" de nuestra aplicación de ejemplo en [/exampleapp/spa](/exampleapp/spa).
 A primera vista, la aplicación se ve exactamente igual que la anterior.
 El código HTML es casi idéntico, pero el archivo JavaScript es diferente (<i>spa.js</i>) y hay un pequeño cambio en cómo se define la etiqueta form:
 
@@ -658,7 +658,7 @@ Aprende sobre los conceptos básicos de los formularios HTML leyendo el tutorial
 
   <h4>0.4: Nuevo diagrama de nota</h4>
 
-En el capítulo [Cargando una página que contiene JavaScript - revisión](/es/part0/fundamentos_de_las_aplicaciones_web#cargando-una-pagina-que-contiene-java-script-revisada) la cadena de eventos causada al abrir la página <https://studies.cs.helsinki.fi/exampleapp/notes> se representa como un [diagrama de secuencia](https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/)
+En el capítulo [Cargando una página que contiene JavaScript - revisión](/es/part0/fundamentos_de_las_aplicaciones_web#cargando-una-pagina-que-contiene-java-script-revisada) la cadena de eventos causada al abrir la página [/exampleapp/notes](/exampleapp/notes) se representa como un [diagrama de secuencia](https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/)
 
 El diagrama se hizo como un archivo Markdown de GitHub usando la sintaxis [Mermaid](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams), de la siguiente manera:
 
@@ -667,24 +667,24 @@ sequenceDiagram
     participant browser
     participant server
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+    browser->>server: GET /exampleapp/notes
     activate server
     server-->>browser: HTML document
     deactivate server
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+    browser->>server: GET /exampleapp/main.css
     activate server
     server-->>browser: the css file
     deactivate server
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
+    browser->>server: GET /exampleapp/main.js
     activate server
     server-->>browser: the JavaScript file
     deactivate server
 
     Note right of browser: The browser starts executing the JavaScript code that fetches the JSON from the server
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    browser->>server: GET /exampleapp/data.json
     activate server
     server-->>browser: [{ "content": "HTML is easy", "date": "2023-1-1" }, ... ]
     deactivate server
@@ -692,7 +692,7 @@ sequenceDiagram
     Note right of browser: The browser executes the callback function that renders the notes
 ```
 
-**Crea un diagrama similar** que describa la situación en la que el usuario crea una nueva nota en la página <https://studies.cs.helsinki.fi/exampleapp/notes> escribiendo algo en el campo de texto y haciendo clic en el botón <i>Save</i>.
+**Crea un diagrama similar** que describa la situación en la que el usuario crea una nueva nota en la página [/exampleapp/notes](/exampleapp/notes) escribiendo algo en el campo de texto y haciendo clic en el botón <i>Save</i>.
 
 Si es necesario, muestra las operaciones en el navegador o en el servidor como comentarios en el diagrama.
 
@@ -705,7 +705,7 @@ Puedes crear los diagramas con cualquier programa, pero quizás la mejor y más 
 
   <h4>0.5: Diagrama de aplicación de una sola página</h4>
 
-Crea un diagrama que describa la situación en la que el usuario accede a la versión de [aplicación de una sola página](/es/part0/fundamentos_de_las_aplicaciones_web#aplicacion-de-una-sola-pagina) de la aplicación de notas en <https://studies.cs.helsinki.fi/exampleapp/spa>.
+Crea un diagrama que describa la situación en la que el usuario accede a la versión de [aplicación de una sola página](/es/part0/fundamentos_de_las_aplicaciones_web#aplicacion-de-una-sola-pagina) de la aplicación de notas en [/exampleapp/spa](/exampleapp/spa).
 
 <h4>0.6: Nueva nota en diagrama de aplicación de una sola página</h4>
 

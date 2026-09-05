@@ -15,7 +15,7 @@ lang: zh
 <!-- Let's start by adding information about users to the database. There is a one-to-many relationship between the user (<i>User</i>) and notes (<i>Note</i>):-->
  让我们先把用户的信息添加到数据库中。在用户（<i>User</i>）和笔记（<i>Note</i>）之间有一个一对多的关系。
 
-![](https://yuml.me/a187045b.png)
+![](../../images/external/user-notes-relation.png)
 
 
 <!-- If we were working with a relational database the implementation would be straightforward. Both resources would have their separate database tables, and the id of the user who created a note would be stored in the notes table as a foreign key.-->

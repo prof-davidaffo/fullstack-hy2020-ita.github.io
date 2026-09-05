@@ -11,7 +11,7 @@ Queremos adicionar autenticação e autorização do usuário ao nosso aplicativ
 
 Vamos começar adicionando informações sobre usuários ao banco de dados. Existe uma relação um-para-muitos entre o usuário (<i>Usuário</i>) e as notas (<i>Nota</i>):
 
-![diagrama ligando usuário e notas](https://yuml.me/a187045b.png)
+![diagrama ligando usuário e notas](../../images/external/user-notes-relation.png)
 
 Se estivéssemos trabalhando com um banco de dados relacional, a implementação seria direta. Ambos os recursos teriam suas tabelas de banco de dados separadas e o id do usuário que criou uma nota seria armazenado na tabela notas como uma chave estrangeira.
 

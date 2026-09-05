@@ -104,7 +104,7 @@ xhttp.send()
 ```java
 HTTPRequest request = new HTTPRequest();
 
-String url = "https://studies.cs.helsinki.fi/exampleapp/data.json";
+String url = "/exampleapp/data.json";
 List<Note> notes = request.get(url);
 
 notes.forEach(m => {

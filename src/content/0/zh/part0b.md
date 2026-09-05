@@ -6,8 +6,8 @@ lang: zh
 ---
 
 <div class="content">
-<!-- Before we start programming, we will go through some principles of web development by examining an example application at <https://studies.cs.helsinki.fi/exampleapp>.-->
- 在我们正式开始编程之前，先简单看一个样例应用<https://studies.cs.helsinki.fi/exampleapp>，了解一些 Web 开发的原则。
+<!-- Before we start programming, we will go through some principles of web development by examining an example application at [/exampleapp](/exampleapp).-->
+ 在我们正式开始编程之前，先简单看一个样例应用[/exampleapp](/exampleapp)，了解一些 Web 开发的原则。
 
 <!-- The application exists only to demonstrate some basic concepts of the course, and is, by no means, an example of <i>how</i> a modern web application should be made.-->
 这个应用只是为了演示课程的一些基本概念，绝不是一个现代 Web 应用应有的样子。
@@ -17,8 +17,8 @@ lang: zh
 <!-- Code will conform to contemporary best practices from  [part 1](/en/part1) onwards.-->
  从[第一章节](/en/part1)开始，代码将符合现代开发的最佳实践。
 
-<!-- Open the [example application](https://studies.cs.helsinki.fi/exampleapp) in your browser. Sometimes this takes a while.-->
-在浏览器中打开[示例应用](https://studies.cs.helsinki.fi/exampleapp)。有时打开需要等一会儿。
+<!-- Open the [example application](/exampleapp) in your browser. Sometimes this takes a while.-->
+在浏览器中打开[示例应用](/exampleapp)。有时打开需要等一会儿。
 
 <!-- **The 1st rule of web development**: Always keep the Developer Console open on your web browser. On macOS, open the console by pressing _F12_ or _option-cmd-i_ simultaneously.  On Windows or Linux, open the console by pressing _F12_ or _ctrl-shift-i_ simultaneously. The console can also be opened via the [context menu](https://en.wikipedia.org/wiki/Menu_key).-->
  **Web 开发的第一原则**。始终打开你的网络浏览器上的开发者控制台。在macOS上，通过_F12_或同时按下_option-cmd-i_来打开控制台。  在Windows或Linux上，通过_F12_或同时按_ctrl-shift-i_来打开控制台。控制台也可以通过[上下文菜单](https://en.wikipedia.org/wiki/Menu_key)打开。
@@ -45,9 +45,9 @@ lang: zh
 <!-- When you reload the page (press the F5 key or the &#8635; symbol on your browser), and the console will show that two events have happened:-->
  当你重新加载页面时（按F5键或浏览器上的&#8635;符号），控制台将显示有两个事件发生：
 
-<!-- - The browser has fetched the contents of the page <i>studies.cs.helsinki.fi/exampleapp</i> from the server-->
+<!-- - The browser has fetched the contents of the page <i>exampleapp</i> from the server-->
 
- - 浏览器已经从服务器获取了<i>studies.cs.helsinki.fi/exampleapp</i>页面的内容
+ - 浏览器已经从服务器获取了<i>exampleapp</i>页面的内容
 <!-- - And has downloaded the image <i>kuva.png</i>-->
  - 并已下载了图片<i>kuva.png</i>。
 
@@ -61,8 +61,8 @@ lang: zh
 
 ![Detail view of a single event](../../images/0/3e.png)
 
-<!-- The upper part, <i>General</i>, shows that the browser made a request to the address <i>https://studies.cs.helsinki.fi/exampleapp</i> (though the address has changed slightly since this picture was taken) using the  [GET](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) method, and that the request was successful, because the server response had the [Status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) 200.-->
- 上半部分，<i>General中的内容</i>，显示浏览器使用[GET](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET)方法向地址<i>https://studies.cs.helsinki.fi/exampleapp</i>发送了一个请求(地址是截图时的，现在已经略有改变)，并且请求是成功的，因为服务器的响应[状态代码](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) 为200。
+<!-- The upper part, <i>General</i>, shows that the browser made a request to the address <i>/exampleapp</i> (though the address has changed slightly since this picture was taken) using the  [GET](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) method, and that the request was successful, because the server response had the [Status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) 200.-->
+ 上半部分，<i>General中的内容</i>，显示浏览器使用[GET](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET)方法向地址<i>/exampleapp</i>发送了一个请求(地址是截图时的，现在已经略有改变)，并且请求是成功的，因为服务器的响应[状态代码](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) 为200。
 
 <!-- The request and the server response have several [headers](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields):-->
 浏览器的请求（request）和服务器的响应（response）有几个[头信息](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields)。
@@ -85,10 +85,10 @@ lang: zh
 
 ![Detail view of the second event](../../images/0/6e.png)
 
-<!-- The request was made to the address <https://studies.cs.helsinki.fi/exampleapp/kuva.png> and its type is HTTP GET. The response headers tell us that the response size is 89350 bytes, and its [Content-type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type) is <i>image/png</i>, so it is a png image. The browser uses this information to render the image correctly to the screen.-->
- 该请求是向地址<https://studies.cs.helsinki.fi/exampleapp/kuva.png>发出的，方法类型是HTTP GET。响应头告诉我们，响应大小为89350字节，其[内容类型](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type)为<i>image/png</i>，所以它是一个png图像。浏览器利用这些信息将图像正确地渲染在屏幕上。
+<!-- The request was made to the address [/exampleapp/kuva.png](/exampleapp/kuva.png) and its type is HTTP GET. The response headers tell us that the response size is 89350 bytes, and its [Content-type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type) is <i>image/png</i>, so it is a png image. The browser uses this information to render the image correctly to the screen.-->
+ 该请求是向地址[/exampleapp/kuva.png](/exampleapp/kuva.png)发出的，方法类型是HTTP GET。响应头告诉我们，响应大小为89350字节，其[内容类型](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type)为<i>image/png</i>，所以它是一个png图像。浏览器利用这些信息将图像正确地渲染在屏幕上。
 
-<!-- The chain of events caused by opening the page https://studies.cs.helsinki.fi/exampleapp on a browser form the following [sequence diagram](https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/):-->
+<!-- The chain of events caused by opening the page /exampleapp on a browser form the following [sequence diagram](https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/):-->
 在浏览器上打开网页<https://studies.cs.helsinki.fi/exampleap>，所引起的一系列事件构成了以下[时序图](https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/)。
 
 ![Sequence diagram of the flow covered above](../../images/0/7e.png)
@@ -157,8 +157,8 @@ HTML页面的内容已被保存为一个模板字符串，或一个能够运行�
 
 <!-- Keep the Developer Console open. Empty the console by clicking the 🚫 symbol, or by typing clear() in the console.-->
  保持开发者控制台打开。通过点击🚫符号清空控制台，或者在控制台中输入clear()。
-<!-- Now when you go to the [notes](https://studies.cs.helsinki.fi/exampleapp/notes) page, the browser does 4 HTTP requests:-->
-现在当你进入[notes](https://studies.cs.helsinki.fi/exampleapp/notes)页面时，浏览器会做4个HTTP请求。
+<!-- Now when you go to the [notes](/exampleapp/notes) page, the browser does 4 HTTP requests:-->
+现在当你进入[notes](/exampleapp/notes)页面时，浏览器会做4个HTTP请求。
 
 ![Screenshot of the developer console with the 4 requests visible](../../images/0/8e.png)
 
@@ -219,8 +219,8 @@ xhttp.send()
 <!-- This is the bottom-most request shown on the Network tab.-->
 这是“Network”选项卡上显示的最下面的请求。
 
-<!-- We can try going to the address <https://studies.cs.helsinki.fi/exampleapp/data.json> straight from the browser:-->
- 我们可以尝试从浏览器直接访问地址<https://studies.cs.helsinki.fi/exampleapp/data.json>。
+<!-- We can try going to the address [/exampleapp/data.json](/exampleapp/data.json) straight from the browser:-->
+ 我们可以尝试从浏览器直接访问地址[/exampleapp/data.json](/exampleapp/data.json)。
 
 ![](../../images/0/10e.png)
 
@@ -423,13 +423,13 @@ list.appendChild(newElement)
 
 ![Screenshot of the page with the new note added to the list](../../images/0/16e.png)
 
-<!-- Even though the page updates on your browser, the changes are not permanent. If the page is reloaded, the new note will disappear, because the changes were not pushed to the server. The JavaScript code the browser fetches will always create the list of notes based on JSON-data from the address <https://studies.cs.helsinki.fi/exampleapp/data.json>.-->
- 虽然页面在你的浏览器上更新，这些变化也不是永久性的。如果页面被重新加载，新的笔记将会消失，因为这些变化没有被推送到服务器上。浏览器获取的JavaScript代码将始终基于来自地址<https://studies.cs.helsinki.fi/exampleapp/data.json>的JSON-数据，来创建笔记列表。
+<!-- Even though the page updates on your browser, the changes are not permanent. If the page is reloaded, the new note will disappear, because the changes were not pushed to the server. The JavaScript code the browser fetches will always create the list of notes based on JSON-data from the address [/exampleapp/data.json](/exampleapp/data.json).-->
+ 虽然页面在你的浏览器上更新，这些变化也不是永久性的。如果页面被重新加载，新的笔记将会消失，因为这些变化没有被推送到服务器上。浏览器获取的JavaScript代码将始终基于来自地址[/exampleapp/data.json](/exampleapp/data.json)的JSON-数据，来创建笔记列表。
 
 ### CSS
 
-<!-- The <i>head</i> element of the HTML code of the Notes page contains a [link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link) tag, which determines that the browser must fetch a [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) style sheet from the address [main.css](https://studies.cs.helsinki.fi/exampleapp/main.css).-->
- 笔记页面的HTML代码中的<i>head</i>元素包含一个[link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link)标签，它决定了浏览器必须从地址[main.css](https://studies.cs.helsinki.fi/exampleapp/main.css)获取一个[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)样式表。
+<!-- The <i>head</i> element of the HTML code of the Notes page contains a [link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link) tag, which determines that the browser must fetch a [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) style sheet from the address [main.css](/exampleapp/main.css).-->
+ 笔记页面的HTML代码中的<i>head</i>元素包含一个[link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link)标签，它决定了浏览器必须从地址[main.css](/exampleapp/main.css)获取一个[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)样式表。
 
 <!-- Cascading Style Sheets, or CSS, is a style sheet language used to determine the appearance of web pages.-->
  层叠样式表Cascading Style Sheets，或称CSS，是一种用来决定网页外观的样式表语言。
@@ -483,8 +483,8 @@ list.appendChild(newElement)
 
 ### Loading a page containing JavaScript - review
 
-<!-- Let's review what happens when the page https://studies.cs.helsinki.fi/exampleapp/notes is opened on the browser.-->
- 让我们回顾一下在浏览器上打开 https://studies.cs.helsinki.fi/exampleapp/notes ，会发生什么。
+<!-- Let's review what happens when the page /exampleapp/notes is opened on the browser.-->
+ 让我们回顾一下在浏览器上打开 /exampleapp/notes ，会发生什么。
 
 ![](../../images/0/19e.png)
 
@@ -494,8 +494,8 @@ list.appendChild(newElement)
  - HTML代码中的链接使浏览器也获取了CSS样式表<i>main.css</i>...
 <!-- - ...and a JavaScript code file <i>main.js</i>-->
  - ...和一个JavaScript代码文件<i>main.js</i>。
-<!-- - The browser executes the JavaScript code. The code makes an HTTP GET request to the address https://studies.cs.helsinki.fi/exampleapp/data.json, which-->
- - 浏览器执行该JavaScript代码。该代码向地址https://studies.cs.helsinki.fi/exampleapp/data.json 发出HTTP GET请求，该地址
+<!-- - The browser executes the JavaScript code. The code makes an HTTP GET request to the address /exampleapp/data.json, which-->
+ - 浏览器执行该JavaScript代码。该代码向地址/exampleapp/data.json 发出HTTP GET请求，该地址
 <!--   returns the notes as JSON  data.-->
  以JSON数据形式返回笔记。
 <!-- - When the data has been fetched, the browser executes an <i>event handler</i>, which renders the notes to the page using the DOM-API.-->
@@ -595,8 +595,8 @@ notes.push({
 <!-- The Notes page uses AJAX to fetch the notes data. Submitting the form still uses the traditional mechanism of submitting web-forms.-->
  笔记页面使用AJAX来获取笔记数据。提交表单仍然使用传统的提交网络表单的机制。
 
-<!-- The application URLs reflect the old, carefree times. JSON data is fetched from the url <https://studies.cs.helsinki.fi/exampleapp/data.json> and new notes are sent to the URL <https://studies.cs.helsinki.fi/exampleapp/new_note>.-->
- 应用的URL反映了古老的、无忧无虑的时代。JSON数据从URL <https://studies.cs.helsinki.fi/exampleapp/data.json>中获取，新的笔记被发送到URL <https://studies.cs.helsinki.fi/exampleapp/new_note>中。
+<!-- The application URLs reflect the old, carefree times. JSON data is fetched from the url [/exampleapp/data.json](/exampleapp/data.json) and new notes are sent to the URL [/exampleapp/new_note](/exampleapp/new_note).-->
+ 应用的URL反映了古老的、无忧无虑的时代。JSON数据从URL [/exampleapp/data.json](/exampleapp/data.json)中获取，新的笔记被发送到URL [/exampleapp/new_note](/exampleapp/new_note)中。
 <!-- Nowadays URLs like these would not be considered acceptable, as they don't follow the generally acknowledged conventions of [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer#Applied_to_Web_services) APIs, which we'll look into more in [part 3](/en/part3)-->
  现在像这样的URL是不会被接受的，因为它们不遵循公认的[RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer#Applied_to_Web_services)API的惯例，我们将在[第三章](/en/part3)中进一步研究。
 
@@ -617,8 +617,8 @@ notes.push({
 <!-- The Notes page of our application bears some resemblance to SPA-style apps, but it's not quite there yet. Even though the logic for rendering the notes is run on the browser, the page still uses the traditional way of adding new notes. The data is sent to the server with form submit, and the server instructs the browser to reload the Notes page with a <i>redirect</i>.-->
  我们应用的笔记页面与SPA风格的应用有一些相似之处，但还没有完全达到目的。尽管渲染笔记的逻辑是在浏览器上运行的，但该页面仍然使用传统的方式来添加新的笔记。数据通过表单提交被发送到服务器，服务器通过<i>redirect</i>指示浏览器重新加载笔记页面。
 
-<!-- A single page app version of our example application can be found at <https://studies.cs.helsinki.fi/exampleapp/spa>.-->
- 我们的例子应用的单页应用版本可以在<https://studies.cs.helsinki.fi/exampleapp/spa>找到。
+<!-- A single page app version of our example application can be found at [/exampleapp/spa](/exampleapp/spa).-->
+ 我们的例子应用的单页应用版本可以在[/exampleapp/spa](/exampleapp/spa)找到。
 <!-- At first glance, the application looks exactly the same as the previous one.-->
  乍看之下，这个应用与之前的应用完全一样。
 <!-- The HTML code is almost identical, but the JavaScript file is different (<i>spa.js</i>) and there is a small change in how the form-tag is defined:-->
@@ -831,18 +831,18 @@ part2
 
 <h4>0.4: 新的笔记</h4>
 
-<!-- In chapter [Loading a page containing JavaScript - review](/en/part0/fundamentals_of_web_apps#loading-a-page-containing-java-script-review) the chain of events caused by opening the page <https://studies.cs.helsinki.fi/exampleapp/notes> is depicted as a [sequence diagram](https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/)-->
- 在[加载含有JavaScript的页面-回顾](/en/part0/fundamentals_of_web_apps#loading-a-page-containing-java-script-review)一章中，打开页面<https://studies.cs.helsinki.fi/exampleapp/notes>所引起的事件链被描绘成一个[时序图](https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/)。
+<!-- In chapter [Loading a page containing JavaScript - review](/en/part0/fundamentals_of_web_apps#loading-a-page-containing-java-script-review) the chain of events caused by opening the page [/exampleapp/notes](/exampleapp/notes) is depicted as a [sequence diagram](https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/)-->
+ 在[加载含有JavaScript的页面-回顾](/en/part0/fundamentals_of_web_apps#loading-a-page-containing-java-script-review)一章中，打开页面[/exampleapp/notes](/exampleapp/notes)所引起的事件链被描绘成一个[时序图](https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/)。
 
 <!-- The diagram was made using [websequencediagrams](https://www.websequencediagrams.com) service as follows:-->
  该图是使用[websequencediagrams](https://www.websequencediagrams.com)服务制作的，如下：
 
 ```
-browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+browser->server: HTTP GET /exampleapp/notes
 server-->browser: HTML-code
-browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+browser->server: HTTP GET /exampleapp/main.css
 server-->browser: main.css
-browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+browser->server: HTTP GET /exampleapp/main.js
 server-->browser: main.js
 
 note over browser:
@@ -850,7 +850,7 @@ browser starts executing js-code
 that requests JSON data from server
 end note
 
-browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+browser->server: HTTP GET /exampleapp/data.json
 server-->browser: [{ content: "HTML is easy", date: "2019-05-23" }, ...]
 
 note over browser:
@@ -859,8 +859,8 @@ that renders notes to display
 end note
 ```
 
-<!-- **Create a similar diagram** depicting the situation where the user creates a new note on page <https://studies.cs.helsinki.fi/exampleapp/notes> when writing something into the text field and clicking the <i>submit</i> button.-->
- **创建一个类似的图**，描述当用户通过文本框输入一些内容并点击<i>submit</i>按钮后在<https://studies.cs.helsinki.fi/exampleapp/notes>页面上创建一个新笔记的情况。
+<!-- **Create a similar diagram** depicting the situation where the user creates a new note on page [/exampleapp/notes](/exampleapp/notes) when writing something into the text field and clicking the <i>submit</i> button.-->
+ **创建一个类似的图**，描述当用户通过文本框输入一些内容并点击<i>submit</i>按钮后在[/exampleapp/notes](/exampleapp/notes)页面上创建一个新笔记的情况。
 
 <!-- If necessary, show operations on the browser or on the server as comments on the diagram.-->
  如果有必要，将浏览器或服务器上的操作显示为图中的注释。
@@ -876,8 +876,8 @@ end note
 <!--   <h4>0.5: Single page app</h4>-->
  <h4>0.5: 单页应用</h4>
 
-<!-- Create a diagram depicting the situation where the user goes to the [single page app](/en/part0/fundamentals_of_web_apps#single-page-app) version of the notes app at <https://studies.cs.helsinki.fi/exampleapp/spa>.-->
- 创建一个图表，描述用户进入[单页应用](/en/part0/fundamentals_of_web_apps#single-page-app)版本的笔记应用的情况，网址为<https://studies.cs.helsinki.fi/exampleapp/spa>。
+<!-- Create a diagram depicting the situation where the user goes to the [single page app](/en/part0/fundamentals_of_web_apps#single-page-app) version of the notes app at [/exampleapp/spa](/exampleapp/spa).-->
+ 创建一个图表，描述用户进入[单页应用](/en/part0/fundamentals_of_web_apps#single-page-app)版本的笔记应用的情况，网址为[/exampleapp/spa](/exampleapp/spa)。
 
 <!--   <h4>0.6: New note</h4>-->
 <h4>0.6: 新的笔记</h4>

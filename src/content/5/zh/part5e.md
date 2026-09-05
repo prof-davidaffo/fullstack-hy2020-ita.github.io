@@ -764,14 +764,14 @@ it('login fails with wrong password', function() {
 <!-- **NOTE:** Some CSS properties [behave differently on Firefox](https://github.com/cypress-io/cypress/issues/9349). If you run the tests with Firefox:-->
  **注意：**一些CSS属性[在Firefox上的表现不同](https://github.com/cypress-io/cypress/issues/9349)。如果你用Firefox运行测试。
 
-<!--   ![running](https://user-images.githubusercontent.com/4255997/119015927-0bdff800-b9a2-11eb-9234-bb46d72c0368.png)-->
- ![running](https://user-images.githubusercontent.com/4255997/119015927-0bdff800-b9a2-11eb-9234-bb46d72c0368.png)
+<!--   ![running](../../images/external/testing-running.png)-->
+ ![running](../../images/external/testing-running.png)
 
 <!--   then tests that involve, for example, `border-style`, `border-radius` and `padding`, will pass in Chrome or Electron, but fail in Firefox:-->
  那么涉及到 "border-style"、"border-radius "和 "padding "的测试，在Chrome或Electron上会通过，但在Firefox上会失败。
 
-<!--   ![borderstyle](https://user-images.githubusercontent.com/4255997/119016340-7b55e780-b9a2-11eb-82e0-bab0418244c0.png)-->
- ![borderstyle](https://user-images.githubusercontent.com/4255997/119016340-7b55e780-b9a2-11eb-82e0-bab0418244c0.png)
+<!--   ![borderstyle](../../images/external/testing-border-style.png)-->
+ ![borderstyle](../../images/external/testing-border-style.png)
 
 ### Bypassing the UI
 

@@ -111,6 +111,7 @@ module.exports = {
   it: {
     0: {
       a: 'Informazioni generali',
+      b: 'Fondamenti delle applicazioni web',
     },
     1: {},
     2: {},

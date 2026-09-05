@@ -7,13 +7,13 @@ lang: en
 
 <div class="content">
 
-Before we start programming, we will go through some principles of web development by examining an example application at <https://studies.cs.helsinki.fi/exampleapp>.
+Before we start programming, we will go through some principles of web development by examining an example application at [/exampleapp](/exampleapp).
 
 The application exists only to demonstrate some basic concepts of the course, and is, by no means, an example of <i>how</i> a modern web application should be made. On the contrary, it demonstrates some old techniques of web development, which could even be considered <i>bad practices</i> nowadays.
 
 Code will conform to contemporary best practices from [part 1](/en/part1) onwards.
 
-Open the [example application](https://studies.cs.helsinki.fi/exampleapp) in your browser. Sometimes this takes a while.
+Open the [example application](/exampleapp) in your browser. Sometimes this takes a while.
 
 The course material was done with and adapted for the Chrome browser.
 
@@ -35,7 +35,7 @@ The server and the web browser communicate with each other using the [HTTP](http
 
 When you reload the page (To refresh a webpage, on windows, press the _Fn_-_F5_ keys. On macOS, press _command_-_R_. Or press the &#8635; symbol on your browser), the console will show that two events have happened:
 
-- The browser has fetched the contents of the page <i>studies.cs.helsinki.fi/exampleapp</i> from the server
+- The browser has fetched the contents of the page <i>exampleapp</i> from the server
 - And has downloaded the image <i>kuva.png</i>
 
 ![Screenshot of the developer console showing these two events](../../images/0/2e.png)
@@ -46,7 +46,7 @@ Clicking the first event reveals more information on what's happening:
 
 ![Detailed view of a single event](../../images/0/3e.png)
 
-The upper part, <i>General</i>, shows that the browser requested the address <i><https://studies.cs.helsinki.fi/exampleapp></i> (though the address has changed slightly since this picture was taken) using the [GET](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) method, and that the request was successful, because the server response had the [Status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) 200.
+The upper part, <i>General</i>, shows that the browser requested the address <i>[/exampleapp](/exampleapp)</i> (though the address has changed slightly since this picture was taken) using the [GET](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) method, and that the request was successful, because the server response had the [Status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) 200.
 
 The request and the server response have several [headers](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields):
 
@@ -64,9 +64,9 @@ Because of the img tag, the browser does a second <i>HTTP request</i> to fetch t
 
 ![Detailed view of the second event](../../images/0/6e.png)
 
-The request was made to the address <https://studies.cs.helsinki.fi/exampleapp/kuva.png> and its type is HTTP GET. The response headers tell us that the response size is 89350 bytes, and its [Content-type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type) is <i>image/png</i>, so it is a png image. The browser uses this information to render the image correctly to the screen.
+The request was made to the address [/exampleapp/kuva.png](/exampleapp/kuva.png) and its type is HTTP GET. The response headers tell us that the response size is 89350 bytes, and its [Content-type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type) is <i>image/png</i>, so it is a png image. The browser uses this information to render the image correctly to the screen.
 
-The chain of events caused by opening the page <https://studies.cs.helsinki.fi/exampleapp> on a browser forms the following [sequence diagram](https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/):
+The chain of events caused by opening the page [/exampleapp](/exampleapp) on a browser forms the following [sequence diagram](https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/):
 
 ![Sequence diagram of the flow covered above](../../images/0/7m.png)
 
@@ -123,7 +123,7 @@ The example uses [Express](https://expressjs.com/) library with Node.js. This co
 ### Running application logic in the browser
 
 Keep the Developer Console open. Empty the console by clicking the 🚫 symbol, or by typing clear() in the console.
-Now when you go to the [notes](https://studies.cs.helsinki.fi/exampleapp/notes) page, the browser does 4 HTTP requests:
+Now when you go to the [notes](/exampleapp/notes) page, the browser does 4 HTTP requests:
 
 ![Screenshot of the developer console with the 4 requests visible](../../images/0/8e.png)
 
@@ -177,7 +177,7 @@ xhttp.send()
 
 This is the bottom-most request shown on the Network tab.
 
-We can try going to the address <https://studies.cs.helsinki.fi/exampleapp/data.json> straight from the browser:
+We can try going to the address [/exampleapp/data.json](/exampleapp/data.json) straight from the browser:
 
 ![Raw JSON Data](../../images/0/10e.png)
 
@@ -356,11 +356,11 @@ list.appendChild(newElement)
 
 ![Screenshot of the page with the new note added to the list](../../images/0/16e.png)
 
-Even though the page updates on your browser, the changes are not permanent. If the page is reloaded, the new note will disappear, because the changes were not pushed to the server. The JavaScript code the browser fetches will always create the list of notes based on JSON data from the address <https://studies.cs.helsinki.fi/exampleapp/data.json>.
+Even though the page updates on your browser, the changes are not permanent. If the page is reloaded, the new note will disappear, because the changes were not pushed to the server. The JavaScript code the browser fetches will always create the list of notes based on JSON data from the address [/exampleapp/data.json](/exampleapp/data.json).
 
 ### CSS
 
-The <i>head</i> element of the HTML code of the Notes page contains a [link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link) tag, which determines that the browser must fetch a [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) style sheet from the address [main.css](https://studies.cs.helsinki.fi/exampleapp/main.css).
+The <i>head</i> element of the HTML code of the Notes page contains a [link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link) tag, which determines that the browser must fetch a [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) style sheet from the address [main.css](/exampleapp/main.css).
 
 Cascading Style Sheets, or CSS, is a style sheet language used to determine the appearance of web pages.
 
@@ -403,14 +403,14 @@ Changes made on the console will not be permanent. If you want to make lasting c
 
 ### Loading a page containing JavaScript - review
 
-Let's review what happens when the page <https://studies.cs.helsinki.fi/exampleapp/notes> is opened on the browser.
+Let's review what happens when the page [/exampleapp/notes](/exampleapp/notes) is opened on the browser.
 
 ![sequence diagram of browser/server interaction](../../images/0/19m.png)
 
 - The browser fetches the HTML code defining the content and the structure of the page from the server using an HTTP GET request.
 - Links in the HTML code cause the browser to also fetch the CSS style sheet <i>main.css</i>...
 - ...and the JavaScript code file <i>main.js</i>
-- The browser executes the JavaScript code. The code makes an HTTP GET request to the address <https://studies.cs.helsinki.fi/exampleapp/data.json>, which returns the notes as JSON data.
+- The browser executes the JavaScript code. The code makes an HTTP GET request to the address [/exampleapp/data.json](/exampleapp/data.json), which returns the notes as JSON data.
 - When the data has been fetched, the browser executes an <i>event handler</i>, which renders the notes to the page using the DOM-API.
 
 ### Forms and HTTP POST
@@ -483,7 +483,7 @@ All of the data shown on the page was fetched with the HTML code generated by th
 
 The Notes page uses AJAX to fetch the notes data. Submitting the form still uses the traditional mechanism of submitting web forms.
 
-The application URLs reflect the old, carefree times. JSON data is fetched from the URL <https://studies.cs.helsinki.fi/exampleapp/data.json> and new notes are sent to the URL <https://studies.cs.helsinki.fi/exampleapp/new_note>.
+The application URLs reflect the old, carefree times. JSON data is fetched from the URL [/exampleapp/data.json](/exampleapp/data.json) and new notes are sent to the URL [/exampleapp/new_note](/exampleapp/new_note).
 Nowadays URLs like these would not be considered acceptable, as they don't follow the generally acknowledged conventions of [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer#Applied_to_web_services) APIs, which we'll look into more in [part 3](/en/part3).
 
 The thing termed AJAX is now so commonplace that it's taken for granted. The term has faded into oblivion, and the new generation has not even heard of it.
@@ -498,7 +498,7 @@ In recent years, the [Single-page application](https://en.wikipedia.org/wiki/Sin
 
 The Notes page of our application bears some resemblance to SPA-style apps, but it's not quite there yet. Even though the logic for rendering the notes is run on the browser, the page still uses the traditional way of adding new notes. The data is sent to the server via the form's submit, and the server instructs the browser to reload the Notes page with a <i>redirect</i>.
 
-A single-page app version of our example application can be found at <https://studies.cs.helsinki.fi/exampleapp/spa>.
+A single-page app version of our example application can be found at [/exampleapp/spa](/exampleapp/spa).
 At first glance, the application looks exactly the same as the previous one.
 The HTML code is almost identical, but the JavaScript file is different (<i>spa.js</i>) and there is a small change in how the form-tag is defined:
 
@@ -655,7 +655,7 @@ Learn about the basics of HTML forms by reading Mozilla's tutorial [Your first f
 
   <h4>0.4: New note diagram</h4>
 
-In the section [Loading a page containing JavaScript - review](/en/part0/fundamentals_of_web_apps#loading-a-page-containing-java-script-review), the chain of events caused by opening the page <https://studies.cs.helsinki.fi/exampleapp/notes> is depicted as a [sequence diagram](https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/)
+In the section [Loading a page containing JavaScript - review](/en/part0/fundamentals_of_web_apps#loading-a-page-containing-java-script-review), the chain of events caused by opening the page [/exampleapp/notes](/exampleapp/notes) is depicted as a [sequence diagram](https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/)
 
 The diagram was made as a GitHub Markdown-file using the [Mermaid](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams)-syntax, as follows:
 
@@ -664,24 +664,24 @@ sequenceDiagram
     participant browser
     participant server
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+    browser->>server: GET /exampleapp/notes
     activate server
     server-->>browser: HTML document
     deactivate server
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+    browser->>server: GET /exampleapp/main.css
     activate server
     server-->>browser: the css file
     deactivate server
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
+    browser->>server: GET /exampleapp/main.js
     activate server
     server-->>browser: the JavaScript file
     deactivate server
 
     Note right of browser: The browser starts executing the JavaScript code that fetches the JSON from the server
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    browser->>server: GET /exampleapp/data.json
     activate server
     server-->>browser: [{ "content": "HTML is easy", "date": "2023-1-1" }, ... ]
     deactivate server
@@ -689,7 +689,7 @@ sequenceDiagram
     Note right of browser: The browser executes the callback function that renders the notes
 ```
 
-**Create a similar diagram** depicting the situation where the user creates a new note on the page <https://studies.cs.helsinki.fi/exampleapp/notes> by writing something into the text field and clicking the <i>Save</i> button.
+**Create a similar diagram** depicting the situation where the user creates a new note on the page [/exampleapp/notes](/exampleapp/notes) by writing something into the text field and clicking the <i>Save</i> button.
 
 If necessary, show operations on the browser or on the server as comments on the diagram.
 
@@ -702,7 +702,7 @@ You can do the diagrams with any program, but perhaps the easiest and the best w
 
   <h4>0.5: Single page app diagram</h4>
 
-Create a diagram depicting the situation where the user goes to the [single-page app](/en/part0/fundamentals_of_web_apps#single-page-app) version of the notes app at <https://studies.cs.helsinki.fi/exampleapp/spa>.
+Create a diagram depicting the situation where the user goes to the [single-page app](/en/part0/fundamentals_of_web_apps#single-page-app) version of the notes app at [/exampleapp/spa](/exampleapp/spa).
 
   <h4>0.6: New note in Single page app diagram</h4>
 

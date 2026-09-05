@@ -7,13 +7,13 @@ lang: fi
 
 <div class="content">
 
-Ennen kuin aloitamme ohjelmoinnin, käymme läpi web-sovellusten toimintaperiaatteita tarkastelemalla osoitteessa <https://studies.cs.helsinki.fi/exampleapp> olevaa esimerkkisovellusta.
+Ennen kuin aloitamme ohjelmoinnin, käymme läpi web-sovellusten toimintaperiaatteita tarkastelemalla osoitteessa [/exampleapp](/exampleapp) olevaa esimerkkisovellusta.
 
 Sovelluksen olemassaolon tarkoitus on ainoastaan havainnollistaa kurssin peruskäsitteistöä. Sovellus ei ole missään tapauksessa esimerkki siitä, <i>miten</i> web-sovelluksia kannattaisi kehittää. Päinvastoin se demonstroi eräitä historiallisia web-sovellusten toteutukseen käytettyjä tapoja ja tekniikoita, joiden katsotaan nykyään olevan jopa <i>huonoja käytänteitä</i>.
 
 Kurssin suosittelemaa tyyliä noudattavan koodin kirjoittaminen alkaa [osasta 1](/osa1).
 
-Avataan selaimella [esimerkkisovellus](https://studies.cs.helsinki.fi/exampleapp/). Sivun ensimmäinen lataus kestää joskus hetken.
+Avataan selaimella [esimerkkisovellus](/exampleapp/). Sivun ensimmäinen lataus kestää joskus hetken.
 
 Kurssimateriaali olettaa, että käytössä on Chrome-selain.
 
@@ -35,7 +35,7 @@ Selain ja web-palvelin kommunikoivat keskenään [HTTP](https://developer.mozill
 
 Kun päivität sivun (eli painat F5-näppäintä tai selaimessa olevaa symbolia &#8634;), konsoli kertoo, että tapahtuu kaksi asiaa:
 
-- selain hakee web-palvelimelta sivun https://studies.cs.helsinki.fi/exampleapp/ sisällön
+- selain hakee web-palvelimelta sivun /exampleapp/ sisällön
 - ja lataa kuvan <i>kuva.png</i>
 
 ![](../../images/0/2e.png)
@@ -46,7 +46,7 @@ Klikkaamalla näistä ensimmäistä paljastuu tarkempaa tietoa siitä, mistä on
 
 ![](../../images/0/3e.png)
 
-Ylimmästä osasta <i>General</i> selviää, että selain teki [GET](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET)-metodilla pyynnön osoitteeseen <i>https://studies.cs.helsinki.fi/exampleapp/</i> ja että pyyntö oli onnistunut, sillä pyyntöön saatiin vastaus, jonka [statuskoodi](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) on 200.
+Ylimmästä osasta <i>General</i> selviää, että selain teki [GET](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET)-metodilla pyynnön osoitteeseen <i>/exampleapp/</i> ja että pyyntö oli onnistunut, sillä pyyntöön saatiin vastaus, jonka [statuskoodi](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) on 200.
 
 Pyyntöön ja palvelimen lähettämään vastaukseen liittyy erinäinen määrä otsakkeita eli [headereita](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields):
 
@@ -64,9 +64,9 @@ img-tagin ansiosta selain tekee toisenkin <i>HTTP-pyynnön</i>, jonka avulla se 
 
 ![](../../images/0/6e.png)
 
-Eli pyyntö on tehty osoitteeseen <https://studies.cs.helsinki.fi/exampleapp/kuva.png>, ja se on tyypiltään HTTP GET. Vastaukseen liittyvät headerit kertovat, että vastauksen koko on 89350 tavua ja vastauksen [Content-type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type) on <i>image/png</i>, eli kyseessä on png-tyyppinen kuva. Tämän tiedon ansiosta selain tietää, miten kuva on piirrettävä HTML-sivulle.
+Eli pyyntö on tehty osoitteeseen [/exampleapp/kuva.png](/exampleapp/kuva.png), ja se on tyypiltään HTTP GET. Vastaukseen liittyvät headerit kertovat, että vastauksen koko on 89350 tavua ja vastauksen [Content-type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type) on <i>image/png</i>, eli kyseessä on png-tyyppinen kuva. Tämän tiedon ansiosta selain tietää, miten kuva on piirrettävä HTML-sivulle.
 
-Sivun https://studies.cs.helsinki.fi/exampleapp/ avaaminen selaimessa saa siis aikaan alla olevan [sekvenssikaavion](https://en.wikipedia.org/wiki/Sequence_diagram) kuvaaman tapahtumasarjan:
+Sivun /exampleapp/ avaaminen selaimessa saa siis aikaan alla olevan [sekvenssikaavion](https://en.wikipedia.org/wiki/Sequence_diagram) kuvaaman tapahtumasarjan:
 
 ![](../../images/0/7m.png)
 
@@ -117,7 +117,7 @@ Perinteisissä websovelluksissa selain on "tyhmä" – se ainoastaan pyytää pa
 
 Pidä konsoli edelleen auki. Tyhjennä konsolin näkymä painamalla vasemmalla olevaa &#x29B8;-symbolia.
 
-Kun menet nyt [muistiinpanojen](https://studies.cs.helsinki.fi/exampleapp/notes) sivulle eli klikkaat linkkiä <i>notes</i>, selain tekee neljä HTTP-pyyntöä:
+Kun menet nyt [muistiinpanojen](/exampleapp/notes) sivulle eli klikkaat linkkiä <i>notes</i>, selain tekee neljä HTTP-pyyntöä:
 
 ![](../../images/0/8e.png)
 
@@ -173,7 +173,7 @@ xhttp.send()
 
 Kyseessä on alin Network-välilehden näyttämistä selaimen tekemistä pyynnöistä.
 
-Voimme kokeilla mennä osoitteeseen <https://studies.cs.helsinki.fi/exampleapp/data.json> suoraan selaimella:
+Voimme kokeilla mennä osoitteeseen [/exampleapp/data.json](/exampleapp/data.json) suoraan selaimella:
 
 ![](../../images/0/10e.png)
 
@@ -356,11 +356,11 @@ list.appendChild(newElement)
 
 ![](../../images/0/16e.png)
 
-Vaikka selaimen näyttämä sivu päivittyy, muutos ei ole lopullinen. Jos sivu ladataan uudelleen, uusi muistiinpano katoaa, sillä muutos ei mennyt palvelimelle asti. Selaimen lataama JavaScript luo muistiinpanojen listan aina palvelimelta osoitteesta <https://studies.cs.helsinki.fi/exampleapp/data.json> haettavan JSON-muotoisen raakadatan perusteella.
+Vaikka selaimen näyttämä sivu päivittyy, muutos ei ole lopullinen. Jos sivu ladataan uudelleen, uusi muistiinpano katoaa, sillä muutos ei mennyt palvelimelle asti. Selaimen lataama JavaScript luo muistiinpanojen listan aina palvelimelta osoitteesta [/exampleapp/data.json](/exampleapp/data.json) haettavan JSON-muotoisen raakadatan perusteella.
 
 ### CSS
 
-Muistiinpanojen sivun HTML-koodin <i>head</i>-osio sisältää [link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link)-tagin, joka määrittelee, että selaimen tulee ladata palvelimelta osoitteesta [main.css](https://studies.cs.helsinki.fi/exampleapp/main.css) sivulla käytettävä [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)-tyylitiedosto.
+Muistiinpanojen sivun HTML-koodin <i>head</i>-osio sisältää [link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link)-tagin, joka määrittelee, että selaimen tulee ladata palvelimelta osoitteesta [main.css](/exampleapp/main.css) sivulla käytettävä [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)-tyylitiedosto.
 
 Cascading Style Sheets eli CSS on kieli, jonka avulla web-sovellusten ulkoasu määritellään.
 
@@ -403,14 +403,14 @@ Tehdyt muutokset eivät luonnollisesti jää voimaan, kun selaimen sivu uudellee
 
 ### JavaScriptia sisältävän sivun lataaminen - kertaus
 
-Kerrataan vielä, mitä tapahtuu, kun selaimessa avataan sivu https://studies.cs.helsinki.fi/exampleapp/notes
+Kerrataan vielä, mitä tapahtuu, kun selaimessa avataan sivu /exampleapp/notes
 
 ![](../../images/0/19m.png)
 
 - selain hakee palvelimelta sivun sisällön ja rakenteen määrittelevän HTML-koodin HTTP GET ‑pyynnöllä
 - HTML-koodi saa aikaan sen, että selain hakee sivun tyylit määrittelevän tiedoston <i>main.css</i>
 - sekä JavaScript-koodia sisältävän tiedoston <i>main.js</i>
-- selain alkaa suorittamaan hakemaansa JavaScript-koodia, joka tekee HTTP GET ‑pyynnön osoitteeseen https://studies.cs.helsinki.fi/exampleapp/data.json, josta muistiinpanot palautetaan JSON-muotoisena raakadatana
+- selain alkaa suorittamaan hakemaansa JavaScript-koodia, joka tekee HTTP GET ‑pyynnön osoitteeseen /exampleapp/data.json, josta muistiinpanot palautetaan JSON-muotoisena raakadatana
 - datan saapuessa selain suorittaa _tapahtumankäsittelijän_, joka renderöi muistiinpanot ruudulle käyttäen DOM-apia
 
 ### Lomake ja HTTP POST
@@ -479,7 +479,7 @@ Ennen AJAX:in aikakautta jokainen sivu toimi aiemmassa luvussa olevan [perinteis
 
 Muistiinpanojen sivu siis lataa näytettävän datan AJAX:illa. Lomakkeen lähetys sen sijaan tapahtuu perinteisen web-lomakkeen lähetysmekanismin kautta.
 
-Sovelluksen urlit heijastavat vanhaa, huoletonta aikaa. JSON-muotoinen data haetaan urlista <https://studies.cs.helsinki.fi/exampleapp/data.json>, ja uuden muistiinpanon tiedot lähetetään urliin <https://studies.cs.helsinki.fi/exampleapp/new_note>. Nykyään näin valittuja urleja ei pidetä ollenkaan hyvinä – ne eivät noudata ns. [RESTful](https://en.wikipedia.org/wiki/REST#Applied_to_web_services)-apien yleisesti hyväksyttyjä konventioita. Käsittelemme asiaa tarkemmin [osassa 3](/osa3).
+Sovelluksen urlit heijastavat vanhaa, huoletonta aikaa. JSON-muotoinen data haetaan urlista [/exampleapp/data.json](/exampleapp/data.json), ja uuden muistiinpanon tiedot lähetetään urliin [/exampleapp/new_note](/exampleapp/new_note). Nykyään näin valittuja urleja ei pidetä ollenkaan hyvinä – ne eivät noudata ns. [RESTful](https://en.wikipedia.org/wiki/REST#Applied_to_web_services)-apien yleisesti hyväksyttyjä konventioita. Käsittelemme asiaa tarkemmin [osassa 3](/osa3).
 
 AJAXiksi kutsuttu asia on arkipäiväistynyt ja muuttunut itsestäänselvyydeksi. Koko termi on hiipunut unholaan, ja nuori polvi ei ole sitä edes ikinä kuullut.
 
@@ -492,7 +492,7 @@ Viime vuosien aikana on noussut esiin tyyli tehdä web-sovelluksia käyttäen [S
 
 Sovelluksemme muistiinpanosivu muistuttaa jo hiukan SPA-tyylistä sovellusta. Sitä se ei kuitenkaan vielä ole, sillä vaikka muistiinpanojen renderöintilogiikka on toteutettu selaimessa, käyttää sivu vielä perinteistä mekanismia uusien muistiinpanojen luomiseen, eli se lähettää uuden muistiinpanon tiedot lomakkeen avulla ja palvelin pyytää <i>uudelleenohjauksen</i> avulla selainta lataamaan muistiinpanojen sivun uudelleen.
 
-Osoitteessa <https://studies.cs.helsinki.fi/exampleapp/spa> on sovelluksen Single Page App ‑versio.
+Osoitteessa [/exampleapp/spa](/exampleapp/spa) on sovelluksen Single Page App ‑versio.
 
 Sovellus näyttää ensivilkaisulta täsmälleen samalta kuin edellinen versio.
 
@@ -647,7 +647,7 @@ Tutustu HTML:n lomakkeiden perusteisiin lukemalla Mozillan tutoriaali [Your firs
 
   <h4>0.4: uusi muistiinpano</h4>
 
-Luvussa [JavaScriptia sisältävän sivun lataaminen - kertaus](/osa0/web_sovelluksen_toimintaperiaatteita#java-scriptia-sisaltavan-sivun-lataaminen-kertaus) kuvataan [sekvenssikaavion](https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/)) avulla sivun <https://studies.cs.helsinki.fi/exampleapp/notes> avaamisen aikaansaama tapahtumasarja.
+Luvussa [JavaScriptia sisältävän sivun lataaminen - kertaus](/osa0/web_sovelluksen_toimintaperiaatteita#java-scriptia-sisaltavan-sivun-lataaminen-kertaus) kuvataan [sekvenssikaavion](https://www.geeksforgeeks.org/unified-modeling-language-uml-sequence-diagrams/)) avulla sivun [/exampleapp/notes](/exampleapp/notes) avaamisen aikaansaama tapahtumasarja.
 
 Kaavio on luotu GitHubiin Markdown-tiedostona hyödyntäen [Mermaid](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams)-syntaksia seuraavasti:
 
@@ -656,24 +656,24 @@ sequenceDiagram
     participant browser
     participant server
     
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+    browser->>server: GET /exampleapp/notes
     activate server
     server-->>browser: HTML document
     deactivate server
     
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+    browser->>server: GET /exampleapp/main.css
     activate server
     server-->>browser: the css file
     deactivate server
     
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
+    browser->>server: GET /exampleapp/main.js
     activate server
     server-->>browser: the JavaScript file
     deactivate server
     
     Note right of browser: The browser starts executing the JavaScript code that fetches the JSON from the server
     
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    browser->>server: GET /exampleapp/data.json
     activate server
     server-->>browser: [{ "content": "HTML is easy", "date": "2023-1-1" }, ... ]
     deactivate server    
@@ -681,7 +681,7 @@ sequenceDiagram
     Note right of browser: The browser executes the callback function that renders the notes 
 ```
 
-**Tee vastaavanlainen kaavio**, joka kuvaa, mitä tapahtuu tilanteessa, jossa käyttäjä luo uuden muistiinpanon ollessaan sivulla <https://studies.cs.helsinki.fi/exampleapp/notes> eli kirjoittaa tekstikenttään jotain ja painaa nappia <i>tallenna</i>.
+**Tee vastaavanlainen kaavio**, joka kuvaa, mitä tapahtuu tilanteessa, jossa käyttäjä luo uuden muistiinpanon ollessaan sivulla [/exampleapp/notes](/exampleapp/notes) eli kirjoittaa tekstikenttään jotain ja painaa nappia <i>tallenna</i>.
 
 Kirjoita tarvittaessa palvelimella tai selaimessa tapahtuvat operaatiot sopivina kommentteina kaavion sekaan.
 
@@ -693,7 +693,7 @@ Kaikki oleellinen tieto tämän ja seuraavien kahden tehtävän tekemiseen on [t
 
   <h4>0.5: Single Page App</h4>
 
-Tee kaavio tilanteesta, jossa käyttäjä menee selaimella osoitteeseen <https://studies.cs.helsinki.fi/exampleapp/spa> eli muistiinpanojen [Single Page App](../osa0/web_sovelluksen_toimintaperiaatteita#single-page-app)-versioon
+Tee kaavio tilanteesta, jossa käyttäjä menee selaimella osoitteeseen [/exampleapp/spa](/exampleapp/spa) eli muistiinpanojen [Single Page App](../osa0/web_sovelluksen_toimintaperiaatteita#single-page-app)-versioon
 
   <h4>0.6: Uusi muistiinpano</h4>
 

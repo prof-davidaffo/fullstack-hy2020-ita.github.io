@@ -15,6 +15,7 @@
     "anchorate": "^1.2.4",
     "axios": "^1.20.0",
     "classnames": "^2.5.1",
+    "express": "4.22.2",
     "gatsby": "5.16.1",
     "gatsby-plugin-local-search": "2.0.1",
     "gatsby-plugin-manifest": "5.16.0",
@@ -57,8 +58,8 @@
     "develop": "gatsby develop",
     "clean": "gatsby clean",
     "start": "npm run develop",
-    "format": "prettier --write \"src/**/*.{js,json,scss}\" \"gatsby-*.js\" \"package.json\"",
-    "check": "prettier --check \"src/**/*.{js,json,scss}\" \"gatsby-*.js\" \"package.json\""
+    "format": "prettier --write \"src/**/*.{js,json,scss}\" \"static/exampleapp/**/*.{html,js,json,css,md}\" \"gatsby-*.js\" \"package.json\"",
+    "check": "prettier --check \"src/**/*.{js,json,scss}\" \"static/exampleapp/**/*.{html,js,json,css,md}\" \"gatsby-*.js\" \"package.json\""
   },
   "devDependencies": {
     "prettier": "^3.9.6"

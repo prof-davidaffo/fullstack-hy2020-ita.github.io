@@ -11,7 +11,7 @@ We want to add user authentication and authorization to our application. Users s
 
 Let's start by adding information about users to the database. There is a one-to-many relationship between the user (<i>User</i>) and notes (<i>Note</i>):
 
-![diagram linking user and notes](https://yuml.me/a187045b.png)
+![diagram linking user and notes](../../images/external/user-notes-relation.png)
 
 If we were working with a relational database the implementation would be straightforward. Both resources would have their separate database tables, and the id of the user who created a note would be stored in the notes table as a foreign key.
 

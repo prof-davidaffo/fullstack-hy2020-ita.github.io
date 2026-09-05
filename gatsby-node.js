@@ -1,8 +1,16 @@
 const path = require('path');
+const express = require('express');
 const snakeCase = require('lodash/fp/snakeCase');
 const isEmpty = require('lodash/fp/isEmpty');
 const navigation = require('./src/content/partnavigation/partnavigation');
 const { isContentVisible } = require('./src/courseConfig');
+
+exports.onCreateDevServer = ({ app }) => {
+  app.use(
+    '/exampleapp',
+    express.static(path.resolve(__dirname, 'static/exampleapp'))
+  );
+};
 
 exports.onCreateWebpackConfig = ({ actions, getConfig }) => {
   const config = getConfig();

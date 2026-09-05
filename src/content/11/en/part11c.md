@@ -291,9 +291,9 @@ https://dashboard.render.com/web/srv-randomcharachtershere
 
 Alternative, and perhaps a more reliable option is to use [Render Deploy Hook](https://render.com/docs/deploy-hooks) which is a private URL to trigger the deployment. You can get it from your app settings:
 
-![fsorender1](https://user-images.githubusercontent.com/47830671/230722899-1ebb414e-ae1e-4a5e-a7b8-f376c4f1ca4d.png)
+![fsorender1](../../images/external/cicd-render-service.png)
 
-DON'T USE the plain URL in your pipeline. Instead create GitHub secrets for your key and service id: ![fsorender2](https://user-images.githubusercontent.com/47830671/230723138-77d027be-3162-4697-987e-b654bc710187.png)
+DON'T USE the plain URL in your pipeline. Instead create GitHub secrets for your key and service id: ![fsorender2](../../images/external/cicd-render-secrets.png)
 Then you can use them like this: 
 ``` bash
 - name: Trigger deployment
