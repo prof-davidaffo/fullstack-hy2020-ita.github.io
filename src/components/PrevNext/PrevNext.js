@@ -7,6 +7,7 @@ import { PropTypes } from 'prop-types';
 import React from 'react';
 import navigation from '../../content/partnavigation/partnavigation';
 import snakeCase from 'lodash/fp/snakeCase';
+import getPartTranslationPath from '../../utils/getPartTranslationPath';
 import { useTranslation } from 'react-i18next';
 import { isContentVisible } from '../../courseConfig';
 
@@ -147,7 +148,7 @@ const PrevNext = ({ part, letter, lang }) => {
       } else if (hasPart(part + 1, lang)) {
         return (
           <Link
-            to={`${langUrl(lang)}${part + 1}`}
+            to={getPartTranslationPath(lang, part + 1)}
             className="col-4--mobile push-left-1 next"
           >
             <Element flex dirColumn>

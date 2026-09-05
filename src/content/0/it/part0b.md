@@ -11,7 +11,7 @@ Prima di iniziare a programmare, esamineremo alcuni principi dello sviluppo web 
 
 L'applicazione serve soltanto a illustrare alcuni concetti di base del corso e non è assolutamente un esempio di <i>come</i> dovrebbe essere realizzata un'applicazione web moderna. Al contrario, mostra alcune vecchie tecniche di sviluppo web che oggi potrebbero essere considerate persino <i>cattive pratiche</i>.
 
-Dalla [parte 1](/en/part1) in poi, il codice seguirà le pratiche moderne.
+Dalla [parte 1](/it/part1) in poi, il codice seguirà le pratiche moderne.
 
 Apri nel browser l'[applicazione di esempio](/exampleapp). A volte il caricamento richiede un po' di tempo.
 
@@ -159,7 +159,7 @@ xhttp.open('GET', '/data.json', true)
 xhttp.send()
 ```
 
-I dettagli non sono ancora importanti: inizieremo davvero a programmare nella [parte 1](/en/part1). Il codice di esempio di questa parte non rappresenta le tecniche di programmazione adottate nel corso.
+I dettagli non sono ancora importanti: inizieremo davvero a programmare nella [parte 1](/it/part1). Il codice di esempio di questa parte non rappresenta le tecniche di programmazione adottate nel corso.
 
 > Qualcuno potrebbe chiedersi perché venga usato l'oggetto xhttp invece del moderno fetch. Il motivo è che non vogliamo ancora introdurre le promise e che qui il codice ha un ruolo secondario. Torneremo ai metodi moderni per effettuare richieste al server nella [parte 2](/en/part2).
 

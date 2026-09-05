@@ -113,7 +113,9 @@ module.exports = {
       a: 'Informazioni generali',
       b: 'Fondamenti delle applicazioni web',
     },
-    1: {},
+    1: {
+      a: 'Introduzione a React',
+    },
     2: {},
     3: {},
     4: {},
